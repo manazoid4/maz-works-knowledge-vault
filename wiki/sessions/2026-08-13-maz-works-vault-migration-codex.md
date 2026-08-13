@@ -26,6 +26,9 @@ related:
 - Rewired the Local Knowledge watcher and SwarmVault launcher through neutral junctions, then restarted and verified the scheduled watcher.
 - Changed `origin` and `fork` to the standalone Maz Works repository while retaining the original MIT project as an `upstream` remote.
 - Renamed the Claude package and marketplace metadata to `maz-works-knowledge-vault@maz-works`.
+- Installed and enabled that new Claude package, then uninstalled the retired package, removed its marketplace, and cleared only its orphaned generated cache/data directories.
+- Renamed the former GitHub fork to `maz-works-vault-upstream-archive`, labelled it as provenance, linked it to the active repository, and archived it.
+- Recovered `10_Projects/agent-nudge-v05-plan.md` from a second stale one-note folder before removing that empty legacy folder.
 - Replaced active repository, agent, install, privacy, security, contribution, and integration instructions with Maz Works identity.
 - Preserved original authorship, copyright, upstream history, and third-party licenses in `LICENSE` and `ATTRIBUTION.md`.
 
@@ -35,6 +38,7 @@ related:
 - Package and integrations: `.claude-plugin/*`, `.cursor/rules/*`, `.windsurf/rules/*`, `.github/copilot-instructions.md`, `bin/*`, `commands/wiki.md`, selected `skills/*`.
 - Maintainer docs: `ATTRIBUTION.md`, `CITATION.cff`, `CONTRIBUTING.md`, `PRIVACY.md`, `SECURITY.md`, `docs/*`.
 - Knowledge memory: identity decision, project locations, overview, hot cache, log, and this session note.
+- Recovered project memory: `10_Projects/agent-nudge-v05-plan.md`.
 - Machine integration: Codex/OpenCode standing orders, Codex trusted-project path, Claude local permissions/plugin state, Obsidian registry, and Local Knowledge Agent config/launcher.
 
 ## Decisions made
@@ -54,7 +58,8 @@ related:
 - Claude package manifest validation passes.
 - All nine hermetic suites pass from a native Linux temporary tree (`make test`), including locking, concurrency, routing, retrieval, and contextual-prefix coverage.
 - An active-file audit leaves the retired upstream name only in explicit attribution, historical notes, and source-derived filenames.
-- Final remote and installed-plugin verification is recorded after the migration commit is published.
+- GitHub verifies the active repository is public, unarchived, non-fork, and on `main`; the old fork is renamed and archived.
+- Claude lists only `maz-works-knowledge-vault@maz-works` for this vault, enabled at version 2.0.0; the retired marketplace is absent.
 
 ## Next steps
 

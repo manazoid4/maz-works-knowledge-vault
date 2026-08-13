@@ -24,6 +24,7 @@ related:
 - Obsidian registers `C:\Users\manaz\Desktop\Maz Works Knowledge Vault` under the Maz Works identity.
 - The canonical cross-project identity is **Maz Works Knowledge Vault**. It covers all Maz Works software, products, experiments, client work, and operations.
 - The standalone repository is `manazoid4/maz-works-knowledge-vault`; it is not a GitHub fork. The original MIT foundation is retained only as the `upstream` remote and explicit attribution.
+- Claude uses the enabled `maz-works-knowledge-vault@maz-works` package. The retired package and marketplace are uninstalled; the former GitHub fork is renamed and archived as provenance.
 - Claude, Codex, and OpenCode use the same vault and the same `local-knowledge` MCP server.
 - The former Documents vault is under `Personal/`.
 - The compounding agent wiki remains under `wiki/`.
