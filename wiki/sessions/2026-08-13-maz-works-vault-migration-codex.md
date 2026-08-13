@@ -29,6 +29,7 @@ related:
 - Installed and enabled that new Claude package, then uninstalled the retired package, removed its marketplace, and cleared only its orphaned generated cache/data directories.
 - Renamed the former GitHub fork to `maz-works-vault-upstream-archive`, labelled it as provenance, linked it to the active repository, and archived it.
 - Recovered `10_Projects/agent-nudge-v05-plan.md` from a second stale one-note folder before removing that empty legacy folder.
+- Restored the missing `.gitmodules` declaration for the already-tracked Scrap Finance Partners gitlink and upgraded CI to the current Node 24-based official action majors with read-only contents permission.
 - Replaced active repository, agent, install, privacy, security, contribution, and integration instructions with Maz Works identity.
 - Preserved original authorship, copyright, upstream history, and third-party licenses in `LICENSE` and `ATTRIBUTION.md`.
 
@@ -60,6 +61,7 @@ related:
 - An active-file audit leaves the retired upstream name only in explicit attribution, historical notes, and source-derived filenames.
 - GitHub verifies the active repository is public, unarchived, non-fork, and on `main`; the old fork is renamed and archived.
 - Claude lists only `maz-works-knowledge-vault@maz-works` for this vault, enabled at version 2.0.0; the retired marketplace is absent.
+- The completing GitHub run verifies both CI jobs without the inherited Node 20 or malformed-submodule warnings.
 
 ## Next steps
 
