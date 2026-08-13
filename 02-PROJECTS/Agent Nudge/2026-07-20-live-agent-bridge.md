@@ -25,7 +25,7 @@ Across the repositories, the same coordination primitives recur:
 - MAZos: gates, explicit state, bounded loops, verified receipts.
 - JobFilter: explainable qualification and action thresholds.
 - Portfolio Deck: cross-repository attention and freshness.
-- Recall and claude-obsidian: source-backed durable knowledge.
+- Recall and Maz Works Knowledge Vault: source-backed durable knowledge.
 - AgentDock: handoffs and human review boundaries.
 - FlowLens: friction capture and outcome measurement.
 

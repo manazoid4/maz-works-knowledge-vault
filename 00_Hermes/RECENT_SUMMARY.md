@@ -15,7 +15,7 @@ Last updated: 2026-07-09
 - Set up Obsidian vault as Hermes long-term memory system
 - Created 00_Hermes/, 10_Projects/, 40_Decisions/, 50_Prompts/, 99_Inbox/ structure
 - Tuned Hermes compression: threshold 0.90, target_ratio 0.30, protect_first_n 5, protect_last_n 30
-- Merged desktop project/vault markdown into structured archives inside Obsidian Main Vault
+- Merged desktop project/vault markdown into structured archives inside Maz Works Knowledge Vault
 - Synced GitHub repos (`manazoid4/JobFilterV1`, `flowlens`, `zawiya-growth-hub`, etc) and imported `.md`/`.txt` files to `Archive/GitHub_<repo>/`
 - Created scan reports in `99_Inbox/vault_merge_reports/`
 - Enabled token streaming in Hermes config

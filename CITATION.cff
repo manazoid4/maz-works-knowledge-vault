@@ -1,20 +1,21 @@
 cff-version: 1.2.0
-title: claude-obsidian
+title: Maz Works Knowledge Vault
 message: >-
-  If you use this software, please cite it using the metadata from this file.
+  Cite the Maz Works repository for this adapted vault and retain the upstream
+  attribution documented in ATTRIBUTION.md and LICENSE.
 type: software
 authors:
-  - alias: AgriciDaniel
-repository-code: 'https://github.com/AgriciDaniel/claude-obsidian'
-url: 'https://github.com/AgriciDaniel/claude-obsidian'
+  - family-names: Hussain
+    given-names: Manazir
+repository-code: 'https://github.com/manazoid4/maz-works-knowledge-vault'
+url: 'https://github.com/manazoid4/maz-works-knowledge-vault'
 license: MIT
-version: 1.9.2
-date-released: '2026-05-28'
+version: 2.0.0
+date-released: '2026-08-13'
 keywords:
+  - maz-works
   - obsidian
-  - claude-code
   - knowledge-management
-  - second-brain
-  - pkm
+  - agent-skills
+  - cross-project-memory
   - llm-wiki
-  - rag

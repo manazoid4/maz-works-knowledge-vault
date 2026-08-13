@@ -27,7 +27,7 @@ Make Hermes faster, cleaner, better at memory, and easier to control — includi
 ## Technical Notes
 - Profile: maz-lite
 - Config: C:\Users\manaz\AppData\Local\hermes\profiles\maz-lite\config.yaml
-- Obsidian vault: C:\Users\manaz\Desktop\Obsidian Main Vault
+- Obsidian vault: C:\Users\manaz\Desktop\Maz Works Knowledge Vault
 - Installed: @askjo/camofox-browser (npm global)
 - Streaming: enabled
 
@@ -40,7 +40,7 @@ Make Hermes faster, cleaner, better at memory, and easier to control — includi
 
 ### 2026-07-09 — GitHub Sync
 - Pulled latest markdown/text files from cloud GitHub repos to ensure Obsidian has the cloud source of truth.
-- Repos synced: `claude-obsidian`, `mazos-ui`, `dfrostar/neuralmind`.
+- Repos synced: the then-named upstream vault fork (now `maz-works-knowledge-vault`), `mazos-ui`, and `dfrostar/neuralmind`.
 - Saved under `Archive/GitHub_<repo>/`.
 
 ### 2026-07-09 — Compression + Vault Merge

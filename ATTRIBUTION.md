@@ -1,48 +1,35 @@
-# Attributions
+# Attributions and provenance
 
-claude-obsidian is an original work. The following third-party patterns, tools, and creators informed its design.
+## Upstream knowledge-vault engine
 
----
+Maz Works Knowledge Vault began as a fork of the MIT-licensed [`AgriciDaniel/claude-obsidian`](https://github.com/AgriciDaniel/claude-obsidian) project by AgriciDaniel / AI Marketing Hub.
 
-## LLM Wiki Pattern
+That upstream provided the original Obsidian and agent-skills structure, including much of the ingestion, retrieval, locking, methodology, and Canvas tooling preserved in this repository. Its copyright notice remains intact in [`LICENSE`](LICENSE), and its Git history is retained. Maz Works maintains the adapted vault and its project-specific content under a distinct name; this rebrand does not claim original authorship of the upstream implementation.
 
-**Author:** Andrej Karpathy
-**Source:** https://github.com/karpathy
-**Use:** The core architecture of claude-obsidian — using an LLM to build and maintain a structured wiki from raw sources — is based on the LLM Wiki pattern Karpathy described publicly. claude-obsidian is an independent implementation; no code or content from Karpathy's repositories was copied.
+The `upstream` Git remote is retained for provenance and selective future updates.
 
----
+## LLM Wiki pattern
 
-## ITS CSS Snippets
+- **Originator:** Andrej Karpathy
+- **Source:** <https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f>
+- **Use:** The core pattern of using an LLM to build and maintain a structured wiki from source material.
 
-**Author:** SlRvb
-**Source:** https://github.com/SlRvb/Obsidian--ITS-Theme
-**License:** GPL-2.0
-**Files:**
-- `.obsidian/snippets/ITS-Dataview-Cards.css`
-- `.obsidian/snippets/ITS-Image-Adjustments.css`
+## ITS CSS snippets
 
-These snippets are distributed under the GPL-2.0 license. Per GPL-2.0 terms, any modifications to these files must also be released under GPL-2.0.
+- **Author:** SlRvb
+- **Source:** <https://github.com/SlRvb/Obsidian--ITS-Theme>
+- **License:** GPL-2.0
+- **Files:** `.obsidian/snippets/ITS-Dataview-Cards.css`, `.obsidian/snippets/ITS-Image-Adjustments.css`
 
----
+Those files remain subject to GPL-2.0, including modifications.
 
-## Obsidian Plugins (pre-installed)
-
-The following Obsidian community plugins ship with this vault as pre-installed binaries. They are the property of their respective authors and are distributed here solely to reduce setup friction. Users should verify license terms via each plugin's repository.
+## Bundled Obsidian community plugins
 
 | Plugin | Author | Repository |
-|--------|--------|-----------|
-| Calendar | Liam Cain | https://github.com/liamcain/obsidian-calendar-plugin |
-| Thino | Boninall (Quorafind) | https://github.com/Quorafind/Obsidian-Thino |
-| Obsidian Excalidraw | Zsolt Viczian | https://github.com/zsviczian/obsidian-excalidraw-plugin |
-| Obsidian Banners | Danny Hernandez | https://github.com/noatpad/obsidian-banners |
+|---|---|---|
+| Calendar | Liam Cain | <https://github.com/liamcain/obsidian-calendar-plugin> |
+| Thino | Boninall / Quorafind | <https://github.com/Quorafind/Obsidian-Thino> |
+| Obsidian Excalidraw | Zsolt Viczian | <https://github.com/zsviczian/obsidian-excalidraw-plugin> |
+| Obsidian Banners | Danny Hernandez | <https://github.com/noatpad/obsidian-banners> |
 
-`obsidian-excalidraw-plugin/main.js` is **not** included in this repository. It is downloaded automatically by `bin/setup-vault.sh` from the plugin's official GitHub releases.
-
----
-
-## claude-obsidian
-
-**Author:** AgriciDaniel / AI Marketing Hub
-**License:** MIT (see [LICENSE](LICENSE))
-**Repository (public canonical):** https://github.com/AgriciDaniel/claude-obsidian
-**Community early-access mirror (Pro):** https://github.com/AI-Marketing-Hub
+`obsidian-excalidraw-plugin/main.js` is not tracked and is downloaded from the plugin's official releases by `bin/setup-vault.sh`.

@@ -17,19 +17,20 @@ related:
 
 ## Last Updated
 
-2026-08-13. Maz Works Quiet Framework PR #9 is merged and live in production with main GitHub/Vercel checks and production browser verification passing. Documentation handoff PR #10 is open with green checks. The shared vault's canonical identity is Maz Works Knowledge Vault.
+2026-08-13. Maz Works Quiet Framework PR #9 is merged and live in production. The shared vault identity migration is now physical as well as semantic: the canonical folder, standalone GitHub repository, Obsidian registration, agent skill links, package metadata, and Local Knowledge integrations all use Maz Works Knowledge Vault.
 
 ## Key Recent Facts
 
-- Obsidian now registers only the unified Desktop vault.
+- Obsidian registers `C:\Users\manaz\Desktop\Maz Works Knowledge Vault` under the Maz Works identity.
 - The canonical cross-project identity is **Maz Works Knowledge Vault**. It covers all Maz Works software, products, experiments, client work, and operations.
+- The standalone repository is `manazoid4/maz-works-knowledge-vault`; it is not a GitHub fork. The original MIT foundation is retained only as the `upstream` remote and explicit attribution.
 - Claude, Codex, and OpenCode use the same vault and the same `local-knowledge` MCP server.
 - The former Documents vault is under `Personal/`.
 - The compounding agent wiki remains under `wiki/`.
 - SwarmVault ingestion, graph, retrieval, inbox, and digest live under `Local Knowledge/`.
 - Current JobFilter project material is under `Projects/JobFilter/`; JobFilter is one project inside Maz Works Knowledge Vault.
 - Legacy JobFilter vault material is preserved under `Archive/Legacy JobFilter Vault/`.
-- Compatibility junctions preserve old general-vault paths without duplicating physical knowledge.
+- Neutral junctions expose `C:\Users\manaz\MazWorksKnowledgeVault`, `C:\Users\manaz\LocalKnowledgeVault`, and the `maz-works-knowledge-vault` skill package without retaining the former live name.
 - Zawiya remains separate due its private spiritual-content boundary.
 - FlowLens is positioned as a Process Assurance Platform: evidence-linked Processes that can be reviewed, run, and improved, with current public UX clearly separating implemented, preview, and planned capabilities.
 - [[Full-Walkthrough-Workflow-for-AI-Coding]] was ingested with its original English automatic-caption transcript and source hash.

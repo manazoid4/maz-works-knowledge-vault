@@ -1,0 +1,24 @@
+---
+description: Maz Works Knowledge Vault — cross-project memory and Obsidian knowledge workflows.
+globs:
+  - "wiki/**/*.md"
+  - ".raw/**/*"
+  - "skills/**/SKILL.md"
+alwaysApply: true
+---
+
+# Maz Works Knowledge Vault
+
+This is Manazir Hussain's shared knowledge system for Maz Works projects, client work, research, experiments, and agent handoffs.
+
+## Work from shared truth
+
+- Read the relevant `wiki/projects/{project}/` context first.
+- Use `wiki/hot.md` for recent cross-project context.
+- Treat `.raw/` as immutable source material.
+- Use Obsidian wikilinks for internal knowledge links.
+- Keep `wiki/log.md` append-only and refresh `wiki/hot.md` at session end.
+- Read a selected skill's complete `skills/<name>/SKILL.md` before applying it.
+- Never store credentials, private client information, or private spiritual content.
+
+The canonical repository is <https://github.com/manazoid4/maz-works-knowledge-vault>. Upstream provenance is documented in `ATTRIBUTION.md`.

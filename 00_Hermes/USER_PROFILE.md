@@ -30,7 +30,7 @@
 - Shell: bash via git-bash/MSYS
 - Python: 3.11 (via uv)
 - Agent: Hermes (maz-lite profile) on Telegram
-- Obsidian vault: C:\Users\manaz\Desktop\Obsidian Main Vault
+- Obsidian vault: C:\Users\manaz\Desktop\Maz Works Knowledge Vault
 - GitHub: manazoid4
 
 ## Current Projects

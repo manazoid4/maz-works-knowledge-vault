@@ -63,4 +63,4 @@ Links: [[wiki/projects/INDEX]] · [[wiki/engineering/REPO-MAP]]
 | InkWeave | `C:\Users\manaz\Desktop\inkweave` |
 | OpenFlowKit | `C:\Users\manaz\Desktop\openflowkit` |
 | Zawiya | `C:\Users\manaz\Desktop\zawiya-growth-hub` |
-| Vault | `C:\Users\manaz\Desktop\Obsidian Main Vault` (also surfaced as `C:\Users\manaz\claude-obsidian`) |
+| Maz Works Knowledge Vault | `C:\Users\manaz\Desktop\Maz Works Knowledge Vault` (neutral junction: `C:\Users\manaz\MazWorksKnowledgeVault`) |

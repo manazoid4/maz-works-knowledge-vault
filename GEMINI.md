@@ -1,63 +1,30 @@
-# claude-obsidian: Gemini CLI Instructions
+# Maz Works Knowledge Vault — Gemini Instructions
 
-This repo is a knowledge base companion that builds persistent, compounding Obsidian wiki vaults using Andrej Karpathy's LLM Wiki pattern. The skills are written in the cross-platform Agent Skills format and work in Gemini CLI / Antigravity alongside Claude Code.
+This repository is the shared project memory for Maz Works. It uses plain Markdown and cross-platform Agent Skills so Gemini can work from the same truth as Claude, Codex, OpenCode, Cursor, and Windsurf.
 
-## Skills Discovery
+## Canonical location
 
-Skills live in `skills/<name>/SKILL.md`. To make them available to Gemini CLI:
+- Vault: `C:\Users\manaz\Desktop\Maz Works Knowledge Vault`
+- Repository: `https://github.com/manazoid4/maz-works-knowledge-vault`
+- Skills link: `~/.gemini/skills/maz-works-knowledge-vault`
 
-```bash
-ln -s "$(pwd)/skills" ~/.gemini/skills/claude-obsidian
-```
+Run `bash bin/setup-multi-agent.sh` to install the link.
 
-Or run the bundled installer:
+## Start order
 
-```bash
-bash bin/setup-multi-agent.sh
-```
+1. Read `AGENTS.md`.
+2. Read the relevant `wiki/projects/{project}/` notes.
+3. Read `wiki/hot.md` only when broader recent context is useful.
+4. Read the selected skill's complete `SKILL.md` before acting.
 
-## Skills
+## Core conventions
 
-| Skill | What it does |
-|---|---|
-| `wiki` | Scaffolds a new vault, manages hot cache, routes to sub-skills |
-| `wiki-ingest` | Reads sources (files, URLs, images) and creates 8-15 wiki pages each |
-| `wiki-query` | Answers questions from the wiki with three depth modes |
-| `wiki-lint` | Health checks: orphans, dead links, stale claims, gaps |
-| `save` | Files the current conversation as a wiki note |
-| `autoresearch` | Autonomous research loop: search → fetch → synthesize → file |
-| `canvas` | Creates and edits Obsidian canvas (.canvas) files |
-| `defuddle` | Cleans web pages before ingest (saves 40-60% tokens) |
-| `obsidian-markdown` | Obsidian Flavored Markdown syntax reference |
-| `obsidian-bases` | Obsidian Bases (.base files): native database views |
+- `.raw/` is immutable source material.
+- `wiki/` is maintained agent knowledge.
+- `wiki/log.md` is append-only.
+- `wiki/hot.md` is refreshed at session end.
+- Internal knowledge links use Obsidian wikilinks.
+- JobFilter is one project, not the vault identity.
+- Never store credentials, private client information, or private spiritual content.
 
-## Trigger Phrases (Examples)
-
-- "set up wiki" → `wiki`
-- "ingest this article" → `wiki-ingest`
-- "ingest https://example.com/article" → `wiki-ingest` (URL mode)
-- "what do you know about X" → `wiki-query`
-- "lint the wiki" → `wiki-lint`
-- "save this conversation" → `save`
-- "research [topic]" → `autoresearch`
-
-## Vault Conventions
-
-- `.raw/`: source documents, immutable (never modify)
-- `wiki/`: agent-generated knowledge (you own this)
-- `wiki/hot.md`: recent context cache (~500 tokens), read first at session start
-- `wiki/index.md`: master catalog
-- `.raw/.manifest.json`: delta tracking for ingest
-
-## Bootstrap
-
-On first session:
-1. Read this file + the project `CLAUDE.md`
-2. If `wiki/hot.md` exists, silently read it to restore recent context
-3. Wait for user to type `/wiki` or `ingest` or `query`
-
-## Project Links
-
-- Plugin (public canonical): https://github.com/AgriciDaniel/claude-obsidian
-- Community early-access mirror (Pro): https://github.com/AI-Marketing-Hub
-- Pattern: https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
+The active package name is `maz-works-knowledge-vault`; provenance is documented in `ATTRIBUTION.md`.

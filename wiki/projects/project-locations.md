@@ -2,7 +2,7 @@
 title: Project Locations
 type: index
 created: 2026-06-15
-updated: 2026-08-08
+updated: 2026-08-13
 tags: [projects, github, locations]
 ---
 
@@ -20,12 +20,12 @@ Clean map of active projects, local PC folders, and GitHub repositories.
 | khutba.io | `C:\Users\manaz\Desktop\khutba-io` | https://github.com/manazoid4/khutba-io |
 | Recall | `C:\Users\manaz\saved-brain` | https://github.com/manazoid4/recall |
 | Zawiya Growth Hub | `C:\Users\manaz\zawiya-growth-hub` | https://github.com/manazoid4/zawiya-growth-hub |
-| Vault | `C:\Users\manaz\claude-obsidian` junction to `C:\Users\manaz\Desktop\Obsidian Main Vault` | https://github.com/manazoid4/claude-obsidian |
+| Maz Works Knowledge Vault | `C:\Users\manaz\Desktop\Maz Works Knowledge Vault` (`C:\Users\manaz\MazWorksKnowledgeVault` junction) | https://github.com/manazoid4/maz-works-knowledge-vault |
 
 ## Agent Operating Memory
 
 - Codex should use both the local Obsidian vault and the online GitHub vault remote for durable project context.
-- Local vault commands may need the resolved path `C:\Users\manaz\Desktop\Obsidian Main Vault` because `git -C C:\Users\manaz\claude-obsidian` can fail on the junction.
+- Use the resolved path `C:\Users\manaz\Desktop\Maz Works Knowledge Vault` for Git commands. `C:\Users\manaz\MazWorksKnowledgeVault` is a neutral convenience junction.
 - Local Codex skills are installed under `C:\Users\manaz\.codex\skills`; 236 skill directories were present on 2026-08-08.
 - Before project work, pull the vault from `fork main`, read the relevant `wiki/projects/{project}/` files, use applicable local skills by reading their `SKILL.md`, and write a session note before pushing the vault.
 

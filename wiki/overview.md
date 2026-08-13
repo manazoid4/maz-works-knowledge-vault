@@ -1,8 +1,8 @@
 ---
 type: overview
-title: "Wiki Overview"
+title: "Maz Works Knowledge Overview"
 created: 2026-04-07
-updated: 2026-04-07
+updated: 2026-08-13
 tags:
   - meta
   - overview
@@ -16,7 +16,7 @@ related:
 sources:
 ---
 
-# Wiki Overview
+# Maz Works Knowledge Overview
 
 Navigation: [[index]] | [[hot]] | [[log]] | [[dashboard]]
 
@@ -24,9 +24,7 @@ Navigation: [[index]] | [[hot]] | [[log]] | [[dashboard]]
 
 ## Purpose
 
-This is the claude-obsidian demo vault. It demonstrates the [[LLM Wiki Pattern]] — a system for building persistent, compounding knowledge bases using Claude and Obsidian.
-
-Run `/wiki` to scaffold this vault for your own domain and replace this overview.
+This is the maintained cross-project knowledge layer for Maz Works. It uses the [[LLM Wiki Pattern]] to preserve decisions, sources, project status, client work, experiments, and reusable operating knowledge across agents and sessions.
 
 ---
 
@@ -41,8 +39,8 @@ Run `/wiki` to scaffold this vault for your own domain and replace this overview
 **Entities seeded:**
 - [[Andrej Karpathy]] — originated the pattern
 
-**Sources seeded:**
-- [[claude-obsidian-ecosystem-research]] — 16+ projects, 13 cherry-picks identified (2026-04-08)
+**Foundation sources:**
+- [[claude-obsidian-ecosystem-research]] — historical upstream ecosystem research retained as source material
 
 ---
 
@@ -50,13 +48,13 @@ Run `/wiki` to scaffold this vault for your own domain and replace this overview
 
 - Sources ingested: 2
 - Wiki pages: 26
-- Last activity: 2026-04-08 (v1.4.1 shipped, release session filed)
+- Current umbrella identity: Maz Works Knowledge Vault (2026-08-13)
 
 ---
 
 ## Canvases
 
-- [[claude-obsidian-presentation]] — Full presentation: hero, overview, skills, architecture, Wiki vs RAG, visual demos (2026-04-07)
+- [[claude-obsidian-presentation]] — historical upstream presentation retained for provenance
 - [[AI Marketing Hub Cover Images Canvas]] — Cover image library for AI Marketing Hub brand assets
 
 ---

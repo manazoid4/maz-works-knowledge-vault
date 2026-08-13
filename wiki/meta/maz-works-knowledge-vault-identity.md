@@ -28,11 +28,17 @@ The vault covers all Maz Works software, AI tools, automation, products, experim
 
 ## Legacy names
 
-`JobFilter-Obsidian-Vault` may remain as a historical GitHub repository or archive label. It records provenance only and must never be used to imply that the complete vault is a JobFilter vault. Historical prompts and session receipts may retain the old name when accuracy requires it; all active navigation, instructions, summaries, and handoffs use Maz Works Knowledge Vault.
+`JobFilter-Obsidian-Vault` may remain as a historical archive label. The former upstream-derived plugin and repository name may appear only in attribution, source captures, Git history, and immutable historical receipts. Neither is an active identity. All live navigation, paths, plugin metadata, instructions, summaries, and handoffs use **Maz Works Knowledge Vault**.
 
 ## Physical structure
 
-The durable physical path remains `C:\Users\manaz\Desktop\Obsidian Main Vault` because agents and integrations depend on it. The local junction `C:\Users\manaz\LocalKnowledgeVault` and the `claude-obsidian` plugin/repository identity are transport details, not the product scope. Active project knowledge remains organized under project folders, with Maz Works providing the umbrella identity.
+- Canonical path: `C:\Users\manaz\Desktop\Maz Works Knowledge Vault`
+- Repository: `https://github.com/manazoid4/maz-works-knowledge-vault`
+- Neutral command-line junction: `C:\Users\manaz\MazWorksKnowledgeVault`
+- Local ingestion junction: `C:\Users\manaz\LocalKnowledgeVault`
+- Agent skill package: `maz-works-knowledge-vault`
+
+Active project knowledge remains organized under project folders, with Maz Works providing the umbrella identity. The original upstream foundation is preserved through Git history, `LICENSE`, `ATTRIBUTION.md`, and the `upstream` remote rather than through the live product name.
 
 ## Operating rule
 

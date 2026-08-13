@@ -24,7 +24,7 @@ This is the canonical cross-project knowledge vault for Maz Works, used by Obsid
 ## Structure
 
 - `Personal/`: notes from the former Documents main vault.
-- `wiki/`: the Claude Obsidian compounding wiki.
+- `wiki/`: the shared compounding agent wiki.
 - `Local Knowledge/`: SwarmVault inbox, graph, retrieval, and generated digests.
 - `Projects/`: active Maz Works project knowledge, including JobFilter as one project.
 - `Archive/`: preserved legacy vault material.

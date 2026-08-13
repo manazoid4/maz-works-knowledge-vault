@@ -46,7 +46,7 @@ related:
 - Quiet Framework is the shipped direction: ivory/charcoal, thin dividers, large evidence, restrained signal yellow, and minimal motion.
 - Work precedes services and pricing; Manazir remains visibly one accountable builder.
 - JobFilter and Scrap Finance Partners remain flagships; weaker or prototype-only candidates stay hidden until evidence improves.
-- Maz Works Knowledge Vault is the canonical umbrella for all project knowledge. The physical Obsidian path and legacy repository names remain transport/provenance details.
+- Maz Works Knowledge Vault is the canonical umbrella for all project knowledge. The later same-day migration moved the physical path, standalone repository, and active package identity under Maz Works; legacy names now remain only in provenance and historical material.
 - The next agent performs a bounded independent review rather than reopening settled identity, hierarchy, or commercial choices.
 
 ## Next steps

@@ -27,7 +27,7 @@ You are the launch commander for JobFilter. Work autonomously for the full avail
 PROJECT
 - Repo: C:\Users\manaz\Desktop\jobfilter\jobfilterv1
 - Live site: https://jobfilter.uk
-- Squad vault: C:\Users\manaz\claude-obsidian
+- Squad vault: C:\Users\manaz\Desktop\Maz Works Knowledge Vault
 - Ops vault: C:\Users\manaz\JobFilter-Obsidian-Vault
 - Embedded repo vault: C:\Users\manaz\Desktop\jobfilter\jobfilterv1\Obsidian_Memory\Obsidian_Vault\JobFilter
 - Stack: Next.js, React, TypeScript, Supabase, Stripe, Tailwind, Vercel
@@ -55,12 +55,12 @@ Never implement an old recommendation without confirming it is still missing. Re
 
 SESSION START
 1. Run:
-   git -C "C:\Users\manaz\claude-obsidian" pull fork main
+   git -C "C:\Users\manaz\Desktop\Maz Works Knowledge Vault" pull fork main
    git fetch origin --prune
 2. Read:
    - repo AGENTS.md and CLAUDE.md if present
-   - C:\Users\manaz\claude-obsidian\.agent-context\AGENT_SYSTEM.md
-   - C:\Users\manaz\claude-obsidian\wiki\projects\jobfilter\
+   - C:\Users\manaz\Desktop\Maz Works Knowledge Vault\.agent-context\AGENT_SYSTEM.md
+   - C:\Users\manaz\Desktop\Maz Works Knowledge Vault\wiki\projects\jobfilter\
    - C:\Users\manaz\JobFilter-Obsidian-Vault\JobFilter\Daily Brief.md
    - newest relevant notes in both JobFilter vaults
    - current repo launch checklist, project status, recent changelogs, audits, and existing specs
@@ -285,7 +285,7 @@ Provide:
 
 SESSION END
 Write:
-C:\Users\manaz\claude-obsidian\wiki\sessions\YYYY-MM-DD-jobfilter-claude.md
+C:\Users\manaz\Desktop\Maz Works Knowledge Vault\wiki\sessions\YYYY-MM-DD-jobfilter-claude.md
 
 Use:
 ---
@@ -301,9 +301,9 @@ status: completed|blocked|in-progress
 ## Next steps
 
 Then run:
-git -C "C:\Users\manaz\claude-obsidian" add -A
-git -C "C:\Users\manaz\claude-obsidian" commit -m "session: jobfilter YYYY-MM-DD claude"
-git -C "C:\Users\manaz\claude-obsidian" push fork main
+git -C "C:\Users\manaz\Desktop\Maz Works Knowledge Vault" add -A
+git -C "C:\Users\manaz\Desktop\Maz Works Knowledge Vault" commit -m "session: jobfilter YYYY-MM-DD claude"
+git -C "C:\Users\manaz\Desktop\Maz Works Knowledge Vault" push fork main
 
 Start now. First establish current truth. Then run the role council and pre-mortem. Then execute the highest-ranked launch blocker. Keep looping.
 ```

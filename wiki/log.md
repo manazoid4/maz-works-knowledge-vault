@@ -1,5 +1,11 @@
 # Wiki Log
 
+## [2026-08-13] migrate | Maz Works Knowledge Vault identity
+
+- Type: identity migration
+- Location: `wiki/sessions/2026-08-13-maz-works-vault-migration-codex.md`
+- From: standalone GitHub repository creation, physical folder migration, Obsidian and agent integration rewiring, package rename, and explicit upstream attribution.
+
 ## [2026-08-13] save | Maz Works Quiet Framework Delivery
 
 - Type: session

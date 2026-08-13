@@ -1,78 +1,59 @@
-# claude-obsidian: Agent Instructions
+# Maz Works Knowledge Vault — Agent Instructions
 
-## Unified Vault
+## Canonical vault
 
-This is the single canonical local vault for every agent.
+This is the single shared knowledge vault for Maz Works and Manazir Hussain.
 
-- Canonical path: `C:\Users\manaz\Desktop\Obsidian Main Vault`
-- Main personal notes: `Personal/`
-- Compounding agent wiki: `wiki/`
-- Local ingestion system: `Local Knowledge/`
-- Project knowledge: `Projects/`
-- Historical material kept for reference: `Archive/`
+- Canonical path: `C:\Users\manaz\Desktop\Maz Works Knowledge Vault`
+- Repository: `https://github.com/manazoid4/maz-works-knowledge-vault`
+- Main dashboard: `HOME.md`
+- Current context: `wiki/hot.md`
+- Shared index: `wiki/index.md`
+- Project memory: `wiki/projects/`
+- Session handoffs: `wiki/sessions/`
+- Local ingestion: `Local Knowledge/`
+- Preserved history: `Archive/`
 
-Claude, Codex, OpenCode, and other local agents must use this root. Read `wiki/hot.md`, then `wiki/index.md`, before broad searches. For SwarmVault operations, change into `Local Knowledge/` or use the `local-knowledge` MCP server.
+JobFilter is one project inside the vault. Do not describe the complete vault as a JobFilter vault and do not create another general-purpose vault.
 
-Do not create additional general-purpose vaults. Project-specific repositories may retain source-note folders, but Obsidian and agent memory must point to this canonical vault.
+## Session protocol
 
-This repo is a Claude Code plugin **and** an Obsidian vault that builds persistent, compounding knowledge bases using Andrej Karpathy's LLM Wiki pattern. It works with **any AI coding agent** that supports the Agent Skills standard, including Codex CLI, OpenCode, and similar.
+Before project work:
 
-Originally built for Claude Code, the skills follow the cross-platform Agent Skills spec. Newer skills (`wiki-fold`, `wiki-ingest`, `wiki-lint`) use only `name` and `description` frontmatter (kepano convention). Some older skills still carry an optional `allowed-tools` field for Claude Code compatibility; cross-platform agents that do not recognize it should ignore it.
+1. Pull `main` from the `fork` remote.
+2. Read the relevant `wiki/projects/{project}/` context.
+3. Read `wiki/hot.md` only when cross-project context is useful.
+4. Read the complete `SKILL.md` for any selected skill before using it.
 
-## Skills Discovery
+At session end:
 
-All skills live in `skills/<name>/SKILL.md`. Codex / OpenCode / other Agent Skills compatible agents will auto-discover them when you symlink the directory:
+1. Update the relevant project status or handoff.
+2. Write `wiki/sessions/YYYY-MM-DD-{project}-{agent}.md`.
+3. Commit and push the vault to `fork main`.
 
-```bash
-# Codex CLI
-ln -s "$(pwd)/skills" ~/.codex/skills/claude-obsidian
+## Knowledge rules
 
-# OpenCode
-ln -s "$(pwd)/skills" ~/.opencode/skills/claude-obsidian
+- `.raw/` contains source material and is immutable.
+- `wiki/log.md` is append-only, newest entries first.
+- `wiki/hot.md` is refreshed rather than endlessly appended.
+- Use Obsidian wikilinks for internal knowledge links.
+- Preserve sources, confidence, dates, and truth boundaries.
+- Never commit credentials, private client data, confidential material, or private spiritual content.
+
+## Skills
+
+Skills live at `skills/<name>/SKILL.md`. Multi-agent discovery uses the neutral package path:
+
+```text
+~/.codex/skills/maz-works-knowledge-vault
+~/.opencode/skills/maz-works-knowledge-vault
+~/.gemini/skills/maz-works-knowledge-vault
 ```
 
-Or run the bundled installer:
+Run `bash bin/setup-multi-agent.sh` to install missing links.
 
-```bash
-bash bin/setup-multi-agent.sh
-```
+## Maintained toolset
 
-## Available Skills
+The repository includes Obsidian knowledge workflows, hybrid retrieval, methodology routing, per-file write locking, source ingestion, wiki health checks, session saving, research, and Canvas support. Run `make test` after changing scripts or skills.
 
-| Skill | Trigger phrases |
-|---|---|
-| `wiki` | `/wiki`, set up wiki, scaffold vault |
-| `wiki-ingest` | ingest, ingest this url, ingest this image, batch ingest |
-| `wiki-query` | query, what do you know about, query quick:, query deep: |
-| `wiki-lint` | lint the wiki, health check, find orphans |
-| `wiki-fold` | fold the log, run a fold, log rollup (DragonScale Mechanism 1, opt-in) |
-| `save` | /save, file this conversation |
-| `autoresearch` | autoresearch, autonomous research loop |
-| `canvas` | /canvas, add to canvas, create canvas |
-| `defuddle` | clean this url, defuddle |
-| `obsidian-markdown` | obsidian syntax, wikilink, callout |
-| `obsidian-bases` | obsidian bases, .base file, dynamic table |
-
-## Key Conventions
-
-- **Vault root**: the directory containing `wiki/` and `.raw/`
-- **Hot cache**: `wiki/hot.md` (read at session start, updated at session end)
-- **Source documents**: `.raw/` (immutable: agents never modify these)
-- **Generated knowledge**: `wiki/` (agent-owned, links to sources via wikilinks)
-- **Manifest**: `.raw/.manifest.json` tracks ingested sources (delta tracking)
-
-## Bootstrap
-
-When the user opens this project for the first time:
-
-1. Read this file (`AGENTS.md`) and the project `CLAUDE.md` for full context
-2. Read `skills/wiki/SKILL.md` for the orchestration pattern
-3. If `wiki/hot.md` exists, read it silently to restore recent context
-4. If the user types `/wiki` (or "set up wiki"), follow the wiki skill's scaffold workflow
-
-## Reference
-
-- Plugin homepage (public canonical): https://github.com/AgriciDaniel/claude-obsidian
-- Community early-access mirror (Pro): https://github.com/AI-Marketing-Hub
-- Pattern source: https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
-- Cross-reference: https://github.com/kepano/obsidian-skills (authoritative Obsidian-specific skills)
+The original MIT-licensed foundation is credited in `ATTRIBUTION.md`. Maz Works is the active identity and maintenance boundary.

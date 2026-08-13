@@ -14,9 +14,9 @@ related:
   - "[[Wiki Map]]"
 ---
 
-# Getting Started with claude-obsidian
+# Getting Started with Maz Works Knowledge Vault
 
-Welcome. This vault is your compounding knowledge base — a persistent second brain built with Claude and Obsidian.
+Welcome. This vault is the compounding cross-project knowledge system for Maz Works, built with plain Markdown and Obsidian and shared across compatible agents.
 
 Every source you add gets processed into 8–15 cross-referenced wiki pages. Every question you ask pulls from everything that's been ingested. Knowledge compounds like interest.
 

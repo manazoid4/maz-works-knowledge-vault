@@ -10,6 +10,6 @@
 4. Session summaries: serious sessions write `04-SESSIONS/YYYY-MM-DD-project-session.md`.
 5. Durable changes: append dated sections to `CURRENT_TASKS.md` / `DECISIONS.md` / project `CURRENT.md`.
 6. Backups: before overwriting important memory files, append instead or create `.bak-YYYYMMDD-HHMMSS`.
-7. Scope: Obsidian tooling should target only `C:/Users/manaz/Desktop/Obsidian Main Vault`, not whole `C:/`.
+7. Scope: Obsidian tooling should target only `C:/Users/manaz/Desktop/Maz Works Knowledge Vault`, not whole `C:/`.
 8. GitHub handoff: show direct repo URLs for touched repos.
 9. oh-my-hermes: use as reference for state-file/plugin patterns; verify before adopting.

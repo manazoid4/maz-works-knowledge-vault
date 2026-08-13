@@ -1,109 +1,46 @@
-# Maz Works Knowledge Vault — Claude + Obsidian
+# Maz Works Knowledge Vault — Claude Instructions
 
-## Canonical Location
+The unified Maz Works vault lives at `C:\Users\manaz\Desktop\Maz Works Knowledge Vault` and is mirrored at <https://github.com/manazoid4/maz-works-knowledge-vault>.
 
-The unified vault lives at `C:\Users\manaz\Desktop\Obsidian Main Vault`.
+It covers every Maz Works project, client engagement, experiment, research thread, reusable delivery pattern, and agent handoff. JobFilter is one project inside the system.
 
-Its canonical name is **Maz Works Knowledge Vault**. It is the umbrella knowledge system for all Maz Works software, products, experiments, clients, and operating work. JobFilter is one project within that system. The physical folder name, plugin name, and legacy `JobFilter-Obsidian-Vault` repository references do not narrow its scope.
+## Begin a session
 
-- `Personal/`: notes merged from the previous main Obsidian vault.
-- `wiki/`: shared compounding wiki and agent memory.
-- `Local Knowledge/`: SwarmVault ingestion, graph, retrieval, inbox, and generated digest.
-- `Projects/`: current Maz Works project material.
-- `Projects/JobFilter/`: the JobFilter project's material.
-- `Archive/Legacy JobFilter Vault/`: older JobFilter vault snapshot retained to avoid data loss.
+1. Read `AGENTS.md`.
+2. Read the relevant project folder under `wiki/projects/`.
+3. Read `wiki/hot.md` when recent cross-project context matters.
+4. Read a selected skill's complete `SKILL.md` before applying it.
 
-All agents must use this vault. Do not create another general vault.
+## Vault structure
 
-This folder is both a Claude Code plugin and an Obsidian vault.
+- `.raw/` — immutable source documents
+- `wiki/` — maintained cross-project knowledge
+- `wiki/projects/` — project-specific truth and status
+- `wiki/sessions/` — durable session receipts
+- `Local Knowledge/` — ingestion, graph, retrieval, and digest tools
+- `Personal/` — personal notes
+- `Archive/` — retained history, not current truth
 
-**Plugin name:** `claude-obsidian` (v1.7+ "Compound Vault" — see [docs/compound-vault-guide.md](docs/compound-vault-guide.md); v1.8+ adds methodology modes — see [docs/methodology-modes-guide.md](docs/methodology-modes-guide.md))
-**Skills:** `/wiki`, `/wiki-ingest`, `/wiki-query`, `/wiki-lint`, `/wiki-cli` (v1.7), `/wiki-retrieve` (v1.7, opt-in), `/wiki-mode` (v1.8)
-**Vault path:** This directory (open in Obsidian directly)
+## Available workflows
 
-## What This Vault Is For
+- `/wiki` — setup and vault routing
+- `/wiki-ingest` — source ingestion
+- `/wiki-query` — cited answers from vault material
+- `/wiki-lint` — health checks
+- `/wiki-cli` — Obsidian transport
+- `/wiki-retrieve` — hybrid retrieval
+- `/wiki-mode` — LYT, PARA, Zettelkasten, or Generic routing
+- `/save` — durable session note
+- `/autoresearch` — bounded research loop
+- `/canvas` — Obsidian Canvas work
+- `/think` — structured reasoning loop
 
-This vault demonstrates the LLM Wiki pattern — a persistent, compounding knowledge base for Claude + Obsidian. Drop any source, ask any question, and the wiki grows richer with every session.
+## Guardrails
 
-## Vault Structure
+- Use the canonical vault; do not create a competing general vault.
+- Keep historical or upstream names only where provenance requires them.
+- Never store credentials, private client information, or private spiritual content.
+- Use file locking for concurrent wiki writes.
+- Run `make test` after changing scripts or skills.
 
-```
-.raw/           source documents — immutable, Claude reads but never modifies
-wiki/           Claude-generated knowledge base
-_templates/     Obsidian Templater templates
-_attachments/   images and PDFs referenced by wiki pages
-```
-
-## How to Use
-
-Drop a source file into `.raw/`, then tell Claude: "ingest [filename]".
-
-Ask any question. Claude reads the index first, then drills into relevant pages.
-
-Run `/wiki` to scaffold a new vault or check setup status.
-
-Run "lint the wiki" every 10-15 ingests to catch orphans and gaps.
-
-## Cross-Project Access
-
-To reference this wiki from another Claude Code project, add to that project's CLAUDE.md:
-
-```markdown
-## Wiki Knowledge Base
-Path: /path/to/this/vault
-
-When you need context not already in this project:
-1. Read wiki/hot.md first (recent context, ~500 words)
-2. If not enough, read wiki/index.md
-3. If you need domain specifics, read wiki/<domain>/_index.md
-4. Only then read individual wiki pages
-
-Do NOT read the wiki for general coding questions or things already in this project.
-```
-
-## Plugin Skills
-
-| Skill | Trigger |
-|-------|---------|
-| `/wiki` | Setup, scaffold, route to sub-skills |
-| `ingest [source]` | Single or batch source ingestion |
-| `query: [question]` | Answer from wiki content |
-| `lint the wiki` | Health check |
-| `/save` | File the current conversation as a structured wiki note |
-| `/autoresearch [topic]` | Autonomous research loop: search, fetch, synthesize, file |
-| `/canvas` | Visual layer: add images, PDFs, notes to Obsidian canvas |
-| `/wiki-cli` (v1.7) | Obsidian CLI transport wrapper; default mutation path on desktop |
-| `/wiki-retrieve` (v1.7) | Hybrid contextual + BM25 + cosine-rerank retrieval (opt-in via `bash bin/setup-retrieve.sh`) |
-| `/wiki-mode` (v1.8) | Methodology modes (LYT / PARA / Zettelkasten / Generic). Set via `bash bin/setup-mode.sh`; consumed by wiki-ingest / save / autoresearch for routing new pages |
-| `/think` (v1.9) | The 10-principle thinking loop (OBSERVE-OBSERVE-LISTEN-THINK-CONNECT-CONNECT-FEEL-ACCEPT-CREATE-GROW) as an invocable workflow. Apply to architectural decisions, audits, post-mortems, ambiguous user requests. Every other skill has a "How to think" appendix mapping this framework to its specific work |
-
-## Transport (v1.7+)
-
-`scripts/detect-transport.sh` writes `.vault-meta/transport.json` on first run and refreshes weekly. Skills consult it before mutating the vault. Fallback chain: Obsidian CLI → mcp-obsidian → mcpvault → filesystem (always-available floor). Decision tree: [wiki/references/transport-fallback.md](wiki/references/transport-fallback.md).
-
-## Concurrency (v1.7+)
-
-`scripts/wiki-lock.sh` provides per-file advisory locks for safe multi-writer ingest. Every wiki page write should be guarded by `wiki-lock acquire`/`release`. Stale-after default is 60s; cross-process release allowed by design. The PostToolUse hook defers `git add` while locks are held. Closes the latent multi-writer corruption hole from v1.6.
-
-## Methodology Modes (v1.8+)
-
-Pick an organizational style for the vault via `bash bin/setup-mode.sh`. Four modes available: **generic** (v1.7 default — no opinion), **LYT** (Linking Your Thinking — MOCs + atomic notes), **PARA** (Projects/Areas/Resources/Archives), **Zettelkasten** (timestamped IDs, flat, dense linking). The mode is written to `.vault-meta/mode.json` (gitignored by default; `git add -f` to commit). `wiki-ingest`, `save`, and `autoresearch` consult `python3 scripts/wiki-mode.py route <type> "<name>"` before filing new pages — no special-casing needed in the consumer skills. Full guide: [docs/methodology-modes-guide.md](docs/methodology-modes-guide.md). Closes priority gap 5 from the May 2026 compass artifact.
-
-## Pre-commit verifier (v1.7.1+)
-
-After staging changes for a non-trivial workstream but BEFORE running `git commit`, dispatch the `verifier` agent (`agents/verifier.md`). It reads `git diff --cached`, applies the /best-practices six-cut + agent kernel, and returns findings in four tiers (BLOCKER / HIGH / MEDIUM / LOW) with file:line citations. The agent has read-only tools (Read, Grep, Glob, Bash) — it can inspect but never modify, so its output is purely advisory. This closes the loop the v1.7 audit revealed: code went worker → commit with no separate verifier pass, which is how BLOCKER B1 (data-egress consent gap) slipped through. See `docs/audits/v1.7.0-audit-2026-05-17.md` §10 for the retrospective.
-
-## MCP (Optional)
-
-If you configured the MCP server, Claude can read and write vault notes directly.
-See `skills/wiki/references/mcp-setup.md` for setup instructions.
-
-## Release Blog Post
-
-After cutting a new release (git tag + `gh release create`), run:
-
-```
-/release-blog
-```
-
-This generates a blog post on https://agricidaniel.com/blog/, handles cover image generation, SEO metadata, FAQ schema, internal linking, sitemap/llms.txt updates, Vercel deployment, and Google indexing.
+The active Claude Code package is `maz-works-knowledge-vault`. Upstream MIT attribution is in `ATTRIBUTION.md`.

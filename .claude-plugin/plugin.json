@@ -1,28 +1,24 @@
 {
-  "name": "claude-obsidian",
-  "version": "1.9.2",
-  "description": "Claude + Obsidian knowledge companion. Sets up a persistent, compounding wiki vault (Karpathy's LLM Wiki pattern). v1.7 \"Compound Vault\" + v1.8 methodology modes close 5 of 5 priority gaps from the May 2026 compass artifact. Ships: substrate alignment with kepano/obsidian-skills, default Obsidian CLI transport, hybrid retrieval (contextual prefix + BM25 + cosine rerank per Anthropic's Sept 2024 research), per-file advisory locking for multi-writer safety, pre-commit verifier agent, AND methodology modes (LYT / PARA / Zettelkasten / Generic) for first-class organizational support no other Claude+Obsidian competitor offers. v1.7.x audit closure: every BLOCKER + HIGH + MEDIUM + LOW finding from the v1.7.0 audit is CLOSED or DEFERRED-with-rationale. Optional DragonScale Memory extension (log folds, deterministic addresses, semantic tiling lint, boundary-first autoresearch).",
+  "name": "maz-works-knowledge-vault",
+  "version": "2.0.0",
+  "description": "Maz Works' shared Obsidian knowledge vault: cross-project memory, research, source ingestion, retrieval, handoffs, and reusable agent workflows.",
   "author": {
-    "name": "AgriciDaniel",
-    "url": "https://github.com/AgriciDaniel"
+    "name": "Manazir Hussain / Maz Works",
+    "url": "https://github.com/manazoid4"
   },
   "license": "MIT",
-  "homepage": "https://github.com/AgriciDaniel/claude-obsidian",
-  "repository": "https://github.com/AgriciDaniel/claude-obsidian",
+  "homepage": "https://github.com/manazoid4/maz-works-knowledge-vault",
+  "repository": "https://github.com/manazoid4/maz-works-knowledge-vault",
   "keywords": [
+    "maz-works",
     "obsidian",
     "knowledge-base",
     "wiki",
     "memory",
-    "notetaker",
-    "second-brain",
-    "vault",
-    "markdown",
+    "agent-skills",
     "cross-project",
-    "llm-wiki",
-    "karpathy",
-    "pkm",
-    "canvas",
-    "visual"
+    "research",
+    "handoff",
+    "retrieval"
   ]
 }

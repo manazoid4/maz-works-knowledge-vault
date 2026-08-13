@@ -1,6 +1,6 @@
-# claude-obsidian Hooks
+# Maz Works Knowledge Vault Hooks
 
-Plugin hooks for the claude-obsidian wiki vault. All hooks are defined in `hooks.json`.
+Lifecycle hooks for the Maz Works Knowledge Vault. All hooks are defined in `hooks.json`.
 
 ## Events
 
