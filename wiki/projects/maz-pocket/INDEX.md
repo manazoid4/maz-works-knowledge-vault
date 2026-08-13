@@ -1,7 +1,7 @@
 ---
 title: MAZ Pocket
 created: 2026-08-13
-updated: 2026-08-13
+updated: 2026-08-14
 type: project
 tags: [projects, maz-pocket, hardware, firmware, cardputer, esp32, voice, github]
 ---
@@ -43,22 +43,29 @@ Agent Nudge supplies deterministic assurance facts rather than guessed status.
 ## Current status
 
 - v0.2 preview is on `agents/maz-pocket-v0-2`, PR #1, release
-  `v0.2.0-hardware-preview.1`.
+  `v0.2.0-hardware-preview.2`.
 - Eight first-class surfaces: Talk, BrainDump, Inbox, Decision, Focus, Sprint,
   Nudge and Reminders. MAZ Host provides authenticated streamed WAV, STT,
   local/cloud routing, Agent Nudge proxying and bounded USB monitoring.
-- Build passes at 16.4% RAM and 40.0% flash; 11 MAZ Host tests pass.
-- A physical ADV was detected and an earlier v0.2 image booted, exposing SD and
-  partition-label issues. M5Launcher was restored. The corrected build has not
-  yet been installed or accepted on hardware.
-- Launcher installs are app-only. An OTA-launched MAZ Pocket build never formats
-  shared internal storage. Full-chip flashing is explicitly destructive.
+- Build passes at 16.4% RAM and 40.1% flash; 13 MAZ Host tests pass.
+- The final preview is installed on the physical ADV through official
+  M5Launcher 2.8.0. Boot, ADV keyboard initialization, isolated internal
+  storage, Wi-Fi reconnect, authenticated MAZ Host reachability and real Agent
+  Nudge fleet status are verified. Device status reported `ALL_SYNCED` across
+  eight agent records.
+- Laptop speech proof transcribed a generated voice sample and returned a local
+  model answer. Warm total latency was 1.85 seconds (906 ms STT, 929 ms model).
+- `scripts/install.ps1` is the supported one-command installer. It preserves
+  Launcher, provisions `mazdata`, replaces the prior MAZ slot, flashes through
+  Launcher's official serial tool and verifies the physical boot banner.
+- `Ctrl+L` and Tools hand back to M5Launcher using its TEST-partition fallback
+  contract; this was exercised on hardware without a crash.
 
 ## Next
 
-1. Install the preview through M5Launcher WUI or FAT32 SD manager without
-   replacing Launcher.
-2. Run the physical acceptance flows and record latency/photos: Talk,
+1. Confirm the screen visually and exercise every Home shortcut.
+2. Run the remaining physical acceptance flows and record photos: Talk using
+   the device mic/speaker,
    BrainDump, Sprint, Reminder and Agent Nudge acknowledgement.
 3. Add MAZ Works showcase material only after those flows are demonstrated.
 4. Keep the seven-day carry test as the product continuation gate.
