@@ -2,29 +2,45 @@
 date: 2026-08-13
 project: maz-pocket
 agent: codex
-status: completed
+status: in-progress
 ---
 ## What I did
 
-- Synced the Maz Works Knowledge Vault and reviewed the MAZ Pocket project index and v0.1 build record.
-- Cross-checked the vault against the live repository, README, verification checklist, recent commit history, and current working tree.
-- Identified untracked v0.2 work: `docs/V0.2_PLAN.md`, a partial FastAPI host foundation under `host/`, and browser-flashing assets under `flash/`.
-- Ran the available host unit tests; all 3 passed.
+- Removed Probity completely: global package, Codex hook/config entry and local state directory.
+- Built the v0.2 physical-assistant slice around Talk, BrainDump, Inbox,
+  Decision, Focus, Sprint, Nudge and ordinary reminders.
+- Added authenticated MAZ Host STT/model routing and a Launcher-safe app-only
+  release path. Added bounded serial reconnect/status/logging based on the useful
+  operational lesson from terminal_mcp without copying its source.
+- Added Agent Nudge's provider-neutral assurance protocol, configurable
+  three-day policy, evidence, dormant-session handling and idempotent explicit
+  nudge API.
+- Pushed MAZ Pocket PR #1 and Agent Nudge PR #34. Published the MAZ Pocket
+  `v0.2.0-hardware-preview.1` app-only binary.
 
 ## Files changed
 
-- Vault: `wiki/sessions/2026-08-13-maz-pocket-codex.md`
-- MAZ Pocket repository: none.
+- MAZ Pocket: firmware apps, storage/network/audio integration, MAZ Host,
+  packaging, CI, verification and licence notes.
+- Agent Nudge: assurance core, database/API routes and tests; removed old
+  developer-specific paths.
+- Vault: this session note and `wiki/projects/maz-pocket/INDEX.md`.
 
 ## Decisions made
 
-- Treat v0.1 as the only committed/shipped state.
-- Treat the v0.2 plan, host code, and flashing assets as work in progress until reviewed, completed, branched, committed, and verified.
-- Preserve the hardware verification checklist as the immediate product gate; no Cardputer ADV runtime result is recorded yet.
+- M5Launcher is preserved; all normal device installs are app-only through its
+  WUI or SD manager. The full web image is clearly destructive.
+- MAZ Pocket owns interaction, capture and visible state; MAZ Host owns expensive
+  STT/model work; Agent Nudge owns deterministic assurance facts.
+- terminal_mcp was not imported because its repository has conflicting licence
+  declarations and excessive scope. The required reconnect/logging behaviour is
+  an original narrow implementation.
+- Do not publish a MAZ Works case study until real device flows, timings and
+  photos exist.
 
 ## Next steps
 
-1. Run the eight-device hardware checklist, keyboard first.
-2. Review and protect the untracked v0.2 files before further development.
-3. Complete the MAZ Host acceptance path and network `voice::Sink` only after hardware basics pass.
-4. Use the seven-day carry test to decide whether the product earns continued investment.
+1. Open M5Launcher WUI and install the app-only preview.
+2. Configure MAZ Host and run the five physical acceptance flows with timings.
+3. Fix only observed hardware failures; keep unverified flows labelled honestly.
+4. Merge PRs after checks/review, then decide on showcase material.
