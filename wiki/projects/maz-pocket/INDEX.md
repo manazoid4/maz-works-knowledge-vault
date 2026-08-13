@@ -43,7 +43,7 @@ Agent Nudge supplies deterministic assurance facts rather than guessed status.
 ## Current status
 
 - v0.2 preview is on `agents/maz-pocket-v0-2`, PR #1, release
-  `v0.2.0-hardware-preview.2`.
+  `v0.2.0-hardware-preview.3` at commit `1766e39`.
 - Eight first-class surfaces: Talk, BrainDump, Inbox, Decision, Focus, Sprint,
   Nudge and Reminders. MAZ Host provides authenticated streamed WAV, STT,
   local/cloud routing, Agent Nudge proxying and bounded USB monitoring.
@@ -58,6 +58,10 @@ Agent Nudge supplies deterministic assurance facts rather than guessed status.
 - `scripts/install.ps1` is the supported one-command installer. It preserves
   Launcher, provisions `mazdata`, replaces the prior MAZ slot, flashes through
   Launcher's official serial tool and verifies the physical boot banner.
+- Offline Talk and BrainDump records are now dispatched when MAZ Host returns;
+  record updates no longer truncate older entries, relative reminders survive
+  NTP clock jumps, Sprint exposes its promised debrief key, and `host/run.ps1`
+  honors the configured bind address and port.
 - `Ctrl+L` and Tools hand back to M5Launcher using its TEST-partition fallback
   contract; this was exercised on hardware without a crash.
 
