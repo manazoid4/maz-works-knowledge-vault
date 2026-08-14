@@ -43,11 +43,15 @@ Agent Nudge supplies deterministic assurance facts rather than guessed status.
 ## Current status
 
 - v0.2 preview is on `agents/maz-pocket-v0-2`, PR #1, release
-  `v0.2.0-hardware-preview.3` at commit `1766e39`.
+  `v0.2.0-hardware-preview.4` at commit `2285c39`.
 - Eight first-class surfaces: Talk, BrainDump, Inbox, Decision, Focus, Sprint,
   Nudge and Reminders. MAZ Host provides authenticated streamed WAV, STT,
   local/cloud routing, Agent Nudge proxying and bounded USB monitoring.
-- Build passes at 16.4% RAM and 40.1% flash; 13 MAZ Host tests pass.
+- Build passes at 38.7% RAM and 48.5% flash; 13 MAZ Host tests pass.
+- The Home surface now uses pinned LVGL 9.5.0 over the existing M5Canvas
+  framebuffer. It retains the proven ADV keyboard/navigation path and uses an
+  aligned 6,720-byte partial RGB565 buffer rather than adding a second input
+  system or migrating every screen.
 - The final preview is installed on the physical ADV through official
   M5Launcher 2.8.0. Boot, ADV keyboard initialization, isolated internal
   storage, Wi-Fi reconnect, authenticated MAZ Host reachability and real Agent
@@ -64,10 +68,13 @@ Agent Nudge supplies deterministic assurance facts rather than guessed status.
   honors the configured bind address and port.
 - `Ctrl+L` and Tools hand back to M5Launcher using its TEST-partition fallback
   contract; this was exercised on hardware without a crash.
+- Physical boot verified the LVGL core, display, partial buffer and widget tree.
+  The first attempt exposed LVGL's 4-byte draw-buffer alignment requirement;
+  the aligned build now reaches READY and live `ALL_SYNCED` status.
 
 ## Next
 
-1. Confirm the screen visually and exercise every Home shortcut.
+1. Confirm the LVGL Home screen visually and exercise every Home shortcut.
 2. Run the remaining physical acceptance flows and record photos: Talk using
    the device mic/speaker,
    BrainDump, Sprint, Reminder and Agent Nudge acknowledgement.

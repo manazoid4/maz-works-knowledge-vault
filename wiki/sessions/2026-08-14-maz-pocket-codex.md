@@ -22,12 +22,22 @@ status: in-progress
 - Rebuilt and installed the corrected app through M5Launcher, then observed
   `MAZSTATUS wifi=online host=online nudge=ALL_SYNCED agents=8` on hardware.
 - Published hardware preview 3 from commit `1766e39`.
+- Integrated pinned LVGL 9.5.0 as the real Home renderer, retained the existing
+  ADV keyboard/navigation contract, and saved the official sources and MIT
+  notice in the repository.
+- Diagnosed the physical LVGL boot halt to a 2-byte-linked partial framebuffer
+  violating LVGL's 4-byte alignment assertion. The aligned build initialized
+  the LVGL core, display, buffer and widget tree on the Cardputer and reached
+  live `wifi=online host=online nudge=ALL_SYNCED agents=8`.
+- Published hardware preview 4 from commit `2285c39`.
 
 ## Files changed
 - MAZ Pocket firmware networking, storage, boot diagnostics and Launcher hand-back.
 - MAZ Host pairing, STT, Agent Nudge authentication and tests.
 - Launcher-only packaging/install scripts, README and verification record.
 - Shared record/reminder service, offline dispatcher, Sprint flow and host launcher.
+- LVGL Home adapter, dependency pin, licence/source record and updated physical
+  verification evidence.
 
 ## Decisions made
 - M5Launcher is the sole normal installation route; full-chip MAZ installers are removed.
@@ -35,9 +45,11 @@ status: in-progress
 - Public MAZ Works claims remain blocked until the interactive device flows have real photos and manual acceptance.
 - Offline audio remains the durable source of truth; Talk deletes its raw file
   only after a retried answer is recorded, while BrainDump keeps the source.
+- LVGL is introduced as a narrow Home-screen vertical slice over M5Canvas; the
+  remaining proven screens stay unchanged until physical use justifies a move.
 
 ## Next steps
-- Visually confirm the home screen and exercise all eight shortcuts.
+- Visually confirm the LVGL Home screen and exercise all eight shortcuts.
 - Prove device-mic Talk, BrainDump highlights, Sprint debrief, reminder actions,
   and a deliberately stale Agent Nudge nudge/acknowledgement flow.
 - Reformat or replace the inserted card as FAT32/MBR; internal storage is working.
