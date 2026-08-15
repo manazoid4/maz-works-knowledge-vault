@@ -42,8 +42,9 @@ Do not call a release complete if either full half is missing. This rule is also
 
 CI green proves source/tests/package integrity only. Keep the previous known release available as rollback until the physical Cardputer acceptance gate passes: soak, repeated COMM/Context Ask, Wi-Fi/Core loss and recovery, SD faults, audio cycles, phone staging and M5Launcher rollback.
 
-## Current work
+## Current release
 
-- Shipped rollback release: **v0.6**.
-- Current candidate: **v0.7 FIELD** via `manazoid4/maz-pocket` PR #16.
-- v0.7 is not hardware-proven until its physical field gate is completed.
+- **v0.7 FIELD is released** from `manazoid4/maz-pocket` main commit `70598867e300b4f6394c9a4b9c5bff3ecc78c954`.
+- The exact-head PR validation and the merged-main release publisher both passed, including Cardputer ADV compile, image validation and split-package checks.
+- **v0.6 remains the rollback release** until v0.7 completes its physical Cardputer field gate.
+- v0.7 is software/release-pipeline proven, but **not yet hardware-proven** by a real-device soak in this record.
