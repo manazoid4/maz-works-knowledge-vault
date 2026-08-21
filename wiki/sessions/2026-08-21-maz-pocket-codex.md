@@ -15,12 +15,19 @@ status: completed
   release workflow and current v0.8 code boundaries.
 - Produced the complete v0.9.0 WORK implementation prompt, including
   transactional one-click MCP validation, repair and activation.
+- Ran two independent app audits and a third release-slice selection pass.
+- Organized every registered feature into keep, move, hide, defer and
+  compatibility decisions, then wrote the controlling v0.9 architecture and
+  ten vertical implementation tasks.
 
 ## Files changed
 
 - `maz-pocket/docs/research/work-telemetry-landscape.md`
 - `maz-pocket/docs/ideas/maz-work.md`
 - `maz-pocket/docs/V090-MAZ-WORK-BUILD-PROMPT.md`
+- `maz-pocket/docs/V090-FEATURE-ARCHITECTURE.md`
+- `maz-pocket/tasks/plan.md`
+- `maz-pocket/tasks/todo.md`
 - `wiki/projects/maz-pocket/INDEX.md`
 - `wiki/sessions/2026-08-21-maz-pocket-codex.md`
 
@@ -33,10 +40,15 @@ status: completed
 - Confirmed the name **MAZ Work**.
 - Proposed Cardputer home metrics: Focus, Agents, Model, Tokens, Value and Done.
 - Target the next release as **v0.9.0 — WORK**, with MCP Ready inside CONTROL.
+- Keep the exact six Home tiles and stable IDs; visible `flow` becomes WORK.
+- Ship two complete loops: glanceable WORK and authenticated MCP check/fix.
+- Hide duplicate navigation in v0.9 without merging/deleting implementations.
+- Defer broad menu wrappers, full portal redesign, OpenCode/Hermes telemetry
+  and deep analytics until v0.9.x or later.
 
 ## Next steps
 
-- Define the normalized event/session schema and exact v1 metric semantics.
-- Execute `docs/V090-MAZ-WORK-BUILD-PROMPT.md` on an `agents/` implementation branch.
+- Review the locked schemas in Task 1, then execute `tasks/todo.md` in order on
+  an `agents/` implementation branch.
 - Validate Work and MCP Ready on disposable client homes and the physical ADV
   before publishing v0.9.0.

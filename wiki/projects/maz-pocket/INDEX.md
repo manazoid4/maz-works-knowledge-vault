@@ -1,7 +1,7 @@
 ---
 title: MAZ Pocket
 created: 2026-08-13
-updated: 2026-08-14
+updated: 2026-08-21
 type: project
 tags: [projects, maz-pocket, hardware, firmware, cardputer, esp32, voice, github]
 ---
@@ -29,6 +29,19 @@ workspace approval visibly awaiting the human rather than claiming success.
 
 Full implementation prompt:
 `maz-pocket/docs/V090-MAZ-WORK-BUILD-PROMPT.md`.
+
+The three-agent feature audit fixed the release information architecture:
+
+- Home remains six tiles: CALL / CAPTURE / AGENTS / CONTROL / MEMORY / WORK.
+- The stable `flow` ID is retained while its visible label becomes WORK.
+- WORK opens directly to six metrics; existing focus tools move behind its menu.
+- CONTROL opens to readiness and shows MCP read-only; authenticated phone UI
+  owns MCP repair in `WORK | MCP | AUTHORITY` tabs.
+- v0.9 hides duplicate navigation paths but does not merge/delete apps or
+  rename stable IDs. Broader wrappers and portal redesign are v0.9.x work.
+
+Controlling architecture and execution files:
+`docs/V090-FEATURE-ARCHITECTURE.md`, `tasks/plan.md`, `tasks/todo.md`.
 
 ## Locations
 
