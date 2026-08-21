@@ -13,6 +13,14 @@ M5Launcher alongside other firmware. It is the physical capture and control
 surface for MAZ Host and Agent Nudge: the device handles keys, audio, status,
 queues and reminders while the laptop handles STT and model compute.
 
+## MAZ Work
+
+**MAZ Work** is the confirmed name for MAZ Pocket's private work-and-agent
+telemetry surface. MAZ Pocket remains the device and firmware name. MAZ Work
+will show owner-controlled focus time, active agents, models, tokens,
+API-equivalent value and completed outcomes in a six-tile Cardputer interface.
+It must not treat token volume or agent uptime as a productivity score.
+
 ## Locations
 
 - Local repo: `%USERPROFILE%\maz-pocket`
