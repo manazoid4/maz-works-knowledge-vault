@@ -21,6 +21,15 @@ will show owner-controlled focus time, active agents, models, tokens,
 API-equivalent value and completed outcomes in a six-tile Cardputer interface.
 It must not treat token volume or agent uptime as a productivity score.
 
+The planned next release is **v0.9.0 — WORK**. It also adds **MCP Ready** under
+CONTROL: a frictionless scan across Codex, Claude Code, OpenCode and Hermes,
+plus an authenticated one-click repair/activation action that backs up,
+mutates transactionally, verifies the persisted result and leaves OAuth or
+workspace approval visibly awaiting the human rather than claiming success.
+
+Full implementation prompt:
+`maz-pocket/docs/V090-MAZ-WORK-BUILD-PROMPT.md`.
+
 ## Locations
 
 - Local repo: `%USERPROFILE%\maz-pocket`
@@ -49,6 +58,9 @@ Agent Nudge supplies deterministic assurance facts rather than guessed status.
   `board_M5CardputerADV`. Pinned exactly; floating it silently breaks audio.
 
 ## Current status
+
+- GitHub's latest release is v0.8.0 — CONTROL. Draft PR #31 contains the MAZ
+  Work research, product definition and v0.9 build prompt.
 
 - v0.2 preview is on `agents/maz-pocket-v0-2`, PR #1, release
   `v0.2.0-hardware-preview.4` at commit `2285c39`.

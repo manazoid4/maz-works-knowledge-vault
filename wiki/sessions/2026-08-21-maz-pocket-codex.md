@@ -11,11 +11,16 @@ status: completed
 - Extracted the recurring data, UI patterns, accuracy caveats and Cardputer-sized information architecture.
 - Proposed separating human focus time, AI consumption, productive output and efficiency/health.
 - Confirmed **MAZ Work** as the telemetry surface name while retaining MAZ Pocket for the physical device and firmware.
+- Inspected the live GitHub repository, v0.8 release, PRs, issues, Actions,
+  release workflow and current v0.8 code boundaries.
+- Produced the complete v0.9.0 WORK implementation prompt, including
+  transactional one-click MCP validation, repair and activation.
 
 ## Files changed
 
 - `maz-pocket/docs/research/work-telemetry-landscape.md`
 - `maz-pocket/docs/ideas/maz-work.md`
+- `maz-pocket/docs/V090-MAZ-WORK-BUILD-PROMPT.md`
 - `wiki/projects/maz-pocket/INDEX.md`
 - `wiki/sessions/2026-08-21-maz-pocket-codex.md`
 
@@ -27,9 +32,11 @@ status: completed
 - API-priced token totals must be labelled estimated API value, not actual spend.
 - Confirmed the name **MAZ Work**.
 - Proposed Cardputer home metrics: Focus, Agents, Model, Tokens, Value and Done.
+- Target the next release as **v0.9.0 — WORK**, with MCP Ready inside CONTROL.
 
 ## Next steps
 
 - Define the normalized event/session schema and exact v1 metric semantics.
-- Prototype the six-tile layout at 240x135 before firmware implementation.
-- Integrate host-side collectors, verify on hardware, then prepare a release.
+- Execute `docs/V090-MAZ-WORK-BUILD-PROMPT.md` on an `agents/` implementation branch.
+- Validate Work and MCP Ready on disposable client homes and the physical ADV
+  before publishing v0.9.0.
