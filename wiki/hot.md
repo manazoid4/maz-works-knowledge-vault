@@ -17,10 +17,15 @@ related:
 
 ## Last Updated
 
-2026-08-23. The Ox Alpha benchmark now includes a focused nine-project audit-to-build system. Five paste blocks establish GitHub/vault/local evidence, audit three bounded project batches, generate a standalone build prompt per project, and produce a final 30-day build queue.
+2026-08-23. [[wiki/projects/maz-works/CALL-DESK]] is delivered on MazOS PR #57 as a local-first Windows client-acquisition workstation with bounded website evidence, live-call compliance gates, practical scripts, outcomes and follow-ups.
 
 ## Key Recent Facts
 
+- [[wiki/projects/maz-works/CALL-DESK]] is the canonical Maz Works client-acquisition implementation. It is not JobFilter AI call screening.
+- MazOS PR #57 contains the Call Desk UI, local persistence, safe homepage checker, TPS/CTPS/internal suppression gate, scripts, idempotent outcomes, tests and Windows desktop configuration.
+- Call Desk unlocks calls only after a public source, website evidence and current clear screening are recorded. A consent override requires an evidence note; do-not-call immediately suppresses the prospect.
+- The first paid offer is a fixed £150 Website Rescue Sprint after a useful evidence note or 15-minute screen-share.
+- Final local unsigned installers were produced: NSIS SHA-256 `12A1DC6DBDE7EE62A055D032EA42E8EF91D82CC919A75ED106C6044ACF73A3D8`; MSI SHA-256 `BB17FE29318A31EAF0CB87D56DBB49CB2FF4514B529E327F3D8B9F7BB1C2F7B4`.
 - [[wiki/questions/ox-alpha-hermes-portfolio-audit-build-prompt]] is the canonical five-paste system for JobFilter, Maz Works, Scrap Finance Partners, Agent Nudge, FlowLens, VoxPane, Maz Pocket, OmniScribe, and InkWeave.
 - Repository stars do not currently provide a meaningful popularity ranking. Owner-visible 14-day traffic showed Agent Nudge with the strongest human-looking attention; JobFilter and Maz Works clone counts are high but likely automation-heavy and must not be treated as demand.
 - Commercial batching is: immediate leverage (JobFilter, Maz Works, Scrap Finance Partners), next wedges (Agent Nudge, FlowLens, VoxPane), then proof-before-investment (Maz Pocket, OmniScribe, archived InkWeave).
@@ -49,6 +54,7 @@ related:
 
 ## Recent Changes
 
+- Delivered and packaged the Maz Works Call Desk on MazOS PR #57; TypeScript, 10 unit tests, the full browser call flow, Rust, desktop build/smoke/audit and both Windows bundle formats pass.
 - Added a source-locked Ox Alpha portfolio audit runner that creates per-project evidence ledgers, audits, market-readiness decisions, and fresh-agent build prompts.
 - Added the Ox Alpha Hermes 30-test benchmark across service design, UX/accessibility, product, sales, engineering, security/privacy, analytics, operations, customer research/support, and executive/financial judgment.
 - Ingested [[uk-tech-ecosystem-opportunities-2026]] analyzing the UK freelancer day rates, pricing strategies, construction procurement TAM sizing (£39/mo SaaS model), multi-agent context collision solutions (Agent Nudge wedge), and target startup hiring profiles (Omnea, PostHog, Healthtech-1).
@@ -60,6 +66,8 @@ related:
 
 ## Active Threads
 
+- Review and merge MazOS PR #57, install the resulting artifact, complete the graphical acceptance matrix and configure code signing before public installer distribution.
+- Obtain a registered TPS/CTPS screening service before beginning a live outbound call session; Call Desk records screening evidence but does not query the registers.
 - Maz Works needs one independent post-merge multi-perspective review of current `main` and production; a follow-up branch is justified only for a reproducible P0/P1 issue.
 - Email digest delivery still needs one-time recipient and SMTP credential configuration from the Local Knowledge Agent menu.
 - Historical orphan pages and metadata gaps are recorded in the lint report for gradual review.

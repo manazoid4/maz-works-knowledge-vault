@@ -1,5 +1,17 @@
 # Wiki Log
 
+## [2026-08-23] save | Maz Works Call Desk
+
+- Type: decision
+- Location: `wiki/projects/maz-works/CALL-DESK.md`
+- From: recovered client-acquisition sources converted into a local-first Windows call workstation, compliance gate, website evidence checker and bounded £150 offer on MazOS PR #57.
+
+## [2026-08-23] save | Maz Works Call Desk Delivery Session
+
+- Type: session
+- Location: `wiki/sessions/2026-08-23-maz-works-codex.md`
+- From: acquisition-system recovery, implementation, browser verification, security hardening, Windows packaging and PR delivery.
+
 ## [2026-08-23] save | Ox Alpha Hermes Portfolio Audit-to-Build Batches
 
 - Type: synthesis

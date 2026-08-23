@@ -4,6 +4,8 @@
 
 ## Projects
 
+- [[wiki/projects/maz-works/CALL-DESK]] — local-first Windows prospect research, compliance gate, evidence-led live call script, outcomes and £150 rescue-sprint workflow; MazOS PR #57.
+- [[2026-08-23-maz-works-codex]] — recovered Maz Works acquisition sources and delivered the Windows Call Desk on MazOS PR #57.
 - [[2026-08-13-maz-works-codex]] — Quiet Framework delivery, peer benchmark, browser evidence, PR #9, and canonical Maz Works Knowledge Vault identity.
 - [[wiki/projects/maz-works/STATUS]] — Maz Works umbrella identity, portfolio delivery state, and current review gate.
 - [[wiki/meta/maz-works-knowledge-vault-identity]] — canonical vault identity and scope; JobFilter is one project inside it.
