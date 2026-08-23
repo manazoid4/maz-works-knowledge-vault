@@ -1,5 +1,11 @@
 # Wiki Log
 
+## [2026-08-23] fix | Maz Works Call Desk Local-Only Boundary
+
+- Type: decision update
+- Location: `wiki/projects/maz-works/CALL-DESK.md`
+- From: post-merge hosted-surface review, explicit Vercel/API denial, regenerated Windows installers and MazOS PR #58.
+
 ## [2026-08-23] save | Maz Works Call Desk
 
 - Type: decision
