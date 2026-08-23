@@ -1,5 +1,17 @@
 # Wiki Log
 
+## [2026-08-23] save | Ox Alpha Hermes 30-Test Benchmark
+
+- Type: synthesis
+- Location: `wiki/questions/ox-alpha-hermes-30-test-benchmark.md`
+- From: cross-project Hermes benchmark design for Ox Alpha through the local 9router and OpenRouter route, centred on reducing customer and founder friction.
+
+## [2026-08-23] save | Ox Alpha Benchmark Session
+
+- Type: session
+- Location: `wiki/sessions/2026-08-23-ox-alpha-benchmark-codex.md`
+- From: benchmark planning, implementation, Hermes knowledge installation, verification, and delivery.
+
 ## [2026-08-13] migrate | Maz Works Knowledge Vault identity
 
 - Type: identity migration

@@ -2,7 +2,7 @@
 type: meta
 title: "Hot Cache"
 created: 2026-04-23
-updated: 2026-08-13
+updated: 2026-08-23
 tags:
   - meta
   - hot-cache
@@ -17,10 +17,12 @@ related:
 
 ## Last Updated
 
-2026-08-13. Maz Works Quiet Framework PR #9 is merged and live in production. The shared vault identity migration is now physical as well as semantic: the canonical folder, standalone GitHub repository, Obsidian registration, agent skill links, package metadata, and Local Knowledge integrations all use Maz Works Knowledge Vault.
+2026-08-23. A 30-test Ox Alpha benchmark is installed for Hermes and the vault. It covers 10 cross-functional perspectives and evaluates outputs through evidence discipline, friction reduction, prioritisation, actionability, safety, and clarity.
 
 ## Key Recent Facts
 
+- [[wiki/questions/ox-alpha-hermes-30-test-benchmark]] contains the canonical copy-paste test pack; `C:\Users\manaz\.hermes\knowledge\ox-alpha-hermes-30-test-benchmark.md` is the local Hermes convenience copy.
+- The configured Hermes alias is `MazLatest` at `http://127.0.0.1:20128/v1`; benchmark runs should record the model/route actually reported because the free router may fail over.
 - Obsidian registers `C:\Users\manaz\Desktop\Maz Works Knowledge Vault` under the Maz Works identity.
 - The canonical cross-project identity is **Maz Works Knowledge Vault**. It covers all Maz Works software, products, experiments, client work, and operations.
 - The standalone repository is `manazoid4/maz-works-knowledge-vault`; it is not a GitHub fork. The original MIT foundation is retained only as the `upstream` remote and explicit attribution.
@@ -44,6 +46,7 @@ related:
 
 ## Recent Changes
 
+- Added the Ox Alpha Hermes 30-test benchmark across service design, UX/accessibility, product, sales, engineering, security/privacy, analytics, operations, customer research/support, and executive/financial judgment.
 - Ingested [[uk-tech-ecosystem-opportunities-2026]] analyzing the UK freelancer day rates, pricing strategies, construction procurement TAM sizing (£39/mo SaaS model), multi-agent context collision solutions (Agent Nudge wedge), and target startup hiring profiles (Omnea, PostHog, Healthtech-1).
 - Created [[HOME]] as the human entry point.
 - Created [[Wiki Map]] and [[How the LLM Wiki Pattern Works]].

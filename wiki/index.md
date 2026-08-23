@@ -24,6 +24,7 @@
 
 ## AI engineering workflow
 
+- [[wiki/questions/ox-alpha-hermes-30-test-benchmark]] — 30 copy-paste Hermes tests across 10 perspectives, scored for evidence, usefulness, safety, and friction reduction.
 - [[Full-Walkthrough-Workflow-for-AI-Coding]] — Matt Pocock workshop source summary and timestamped claims.
 - [[AI Engineering Delivery Loop]] — alignment, vertical slices, feedback loops, review, and parallel-agent coordination.
 - [[Matt Pocock]] — source entity page.
