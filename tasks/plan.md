@@ -1,67 +1,72 @@
-# Implementation Plan: Ox Alpha Hermes 30-Test Benchmark
+# Implementation Plan: Ox Alpha Portfolio Audit-to-Build Batches
 
 ## Overview
 
-Create a copy-paste benchmark for Ox Alpha running in Hermes through the local `MazLatest` custom endpoint (`127.0.0.1:20128`), which routes through 9router and OpenRouter. The benchmark will contain 30 useful tests across 10 business and product perspectives. Every test must produce an actionable artifact for JobFilter, InkWeave, OpenFlowKit, Zawiya, or the wider Maz Works portfolio, with friction reduction as the common evaluation lens.
+Replace the broad 30-test sampler with a focused audit system for nine priority repositories: JobFilter, Maz Works, Scrap Finance Partners, Agent Nudge, FlowLens, VoxPane, Maz Pocket, OmniScribe, and InkWeave. Hermes/Ox Alpha will work in bounded batches, treat GitHub default-branch commits as code truth, reconcile the GitHub-backed knowledge vault and local worktrees without silently mixing them, and finish every project with a complete build-agent prompt for one evidence-producing tranche.
 
 ## Architecture Decisions
 
-- Use 10 sectors with three tests per sector so breadth is deliberate rather than random.
-- Make every prompt self-contained, project-specific, and safe to paste into Hermes without requiring hidden context.
-- Separate model-quality scoring from business usefulness: a fluent answer can still fail if it lacks evidence, prioritisation, or a lower-friction next action.
-- Require assumptions and evidence labels so Ox Alpha is tested for honesty rather than rewarded for confident invention.
-- Keep Zawiya prompts strictly public-safe and explicitly exclude private spiritual content.
-- Store the canonical pack in the vault and a convenience copy in `.hermes/knowledge`.
+- Separate observed popularity from commercial potential. Current stars are nearly flat; 14-day GitHub traffic is useful but noisy, especially clone counts.
+- Use three batches of three projects to prevent context contamination and weak cross-project claims.
+- Give each Hermes run a dedicated audit workspace; source repositories remain read-only.
+- Require claim-level source labels tied to repository/vault commit SHAs and exact paths.
+- Make GitHub default branch the shipped-code authority, the vault the decision/context authority, and local worktrees explicitly local-only evidence.
+- End every audit with a standalone build prompt scoped to one vertical slice, with branch, tests, acceptance criteria, non-goals, safety gates, and stop conditions.
+- Use a final synthesis pass only after all three batches exist.
+
+## Batch Order
+
+1. **Immediate commercial leverage:** JobFilter, Maz Works, Scrap Finance Partners.
+2. **Strong next wedges:** Agent Nudge, FlowLens, VoxPane.
+3. **Proof before investment:** Maz Pocket, OmniScribe, InkWeave.
 
 ## Task List
 
-### Phase 1: Foundation
+### Phase 1: Evidence foundation
 
-- [x] Task 1: Verify Hermes routing structure without reading or exposing secrets.
-- [x] Task 2: Read current context for JobFilter, InkWeave, OpenFlowKit, and Zawiya.
-- [x] Task 3: Define the 10-sector coverage map, friction taxonomy, and common scoring rubric.
+- [x] Pull the Maz Works Knowledge Vault from `fork main`.
+- [x] Verify GitHub repository names, visibility, archive state, branches, pushes, stars, and descriptions.
+- [x] Query owner-visible 14-day views and clones for all nine repos.
+- [x] Resolve known local repository paths and identify absent local clones.
+- [x] Read current vault context and selected GitHub READMEs.
 
 ### Checkpoint: Foundation
 
-- [x] The pack reflects the local Hermes custom endpoint and current project realities.
-- [x] Exactly 10 distinct perspectives are represented.
-- [x] Privacy and hallucination guardrails are explicit.
+- [x] Popularity claims are labelled as observed metrics, not broad market demand.
+- [x] Batch order balances attention, revenue proximity, readiness, risk, and speed to proof.
+- [x] Source precedence and hallucination controls are explicit.
 
-### Phase 2: Core Benchmark
+### Phase 2: Prompt system
 
-- [x] Task 4: Write 30 numbered, copy-paste prompts with three tests per sector.
-- [x] Task 5: Add expected artifacts, pass signals, and failure signals for each test.
-- [x] Task 6: Add a repeatable run protocol and results table for comparing runs or models.
+- [x] Write one bootstrap prompt that establishes workspace, manifests, source snapshots, citations, and safe operating rules.
+- [x] Write three independent batch prompts with project-specific audit questions.
+- [x] Write a final synthesis prompt that ranks tranches without losing project evidence.
+- [x] Define the required audit and build-prompt schemas.
 
-### Checkpoint: Core Benchmark
+### Checkpoint: Prompt quality
 
-- [x] All 30 prompts are independently runnable.
-- [x] Each prompt reduces or measures a specific form of friction.
-- [x] Outputs are useful even when the model performs imperfectly.
+- [x] Every project produces `audit.md`, `market-readiness.md`, and `build-prompt.md`.
+- [x] Every build prompt is executable by a fresh build agent without the audit conversation.
+- [x] Unknown, unavailable, archived, private, or locally divergent state cannot be silently converted into fact.
 
 ### Phase 3: Delivery
 
-- [x] Task 7: Save the canonical benchmark in the vault and a Hermes knowledge copy.
-- [x] Task 8: Update vault index, log, hot cache, and session note.
-- [x] Task 9: Verify counts, coverage, links, Git diff, then commit and push to `fork main`.
-
-### Checkpoint: Complete
-
-- [x] Exactly 30 tests and 10 sectors are present.
-- [x] No secrets or private Zawiya material are included.
-- [x] Vault and Hermes copies match.
-- [x] Vault changes are committed and pushed.
+- [x] Save the canonical guide in the vault and an identical Hermes knowledge copy.
+- [x] Update vault index, log, hot cache, and session note.
+- [x] Verify project count, batch count, paste-block count, source labels, copy hashes, and secret scan.
+- [x] Commit and push the vault to `fork main`.
 
 ## Risks and Mitigations
 
 | Risk | Impact | Mitigation |
 |---|---|---|
-| Prompts reward verbosity instead of usefulness | High | Enforce concise output contracts, prioritised actions, and decision-ready artifacts. |
-| Ox Alpha invents repo facts it cannot inspect | High | Require evidence labels, assumptions, and `NOT VERIFIED` markers. |
-| Tests become coding-heavy | Medium | Allocate exactly three prompts to each of 10 non-overlapping sectors. |
-| Free routing varies between runs | Medium | Record route, latency, tool use, and score per run; repeat key tests. |
-| Zawiya privacy boundary is crossed | High | Use only public-safe operational inputs and explicit exclusions in every Zawiya prompt. |
+| One long run cross-contaminates project facts | High | Three bounded batches; one project evidence ledger at a time. |
+| Local work differs from GitHub | High | Never merge silently; label `LOCAL-ONLY` and audit GitHub SHA separately. |
+| Traffic is mistaken for demand | High | Report window and noise; combine with readiness and revenue evidence. |
+| Audit produces an oversized roadmap | High | One vertical tranche and one standalone build prompt per project. |
+| Model claims tool use it did not perform | High | Source manifest, exact citations, command evidence, and automatic-fail rules. |
+| Legal/compliance claims become advice | High | Treat as risks requiring qualified verification; no trading/deployment actions. |
 
 ## Open Questions
 
-- None required for v1. Results from the first run will determine which prompts become recurring audits or automated Hermes loops.
+- None required for v1. Actual audit evidence may reorder the projects; the final synthesis prompt is required to show reversal conditions.

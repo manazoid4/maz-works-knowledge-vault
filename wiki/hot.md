@@ -17,10 +17,13 @@ related:
 
 ## Last Updated
 
-2026-08-23. A 30-test Ox Alpha benchmark is installed for Hermes and the vault. It covers 10 cross-functional perspectives and evaluates outputs through evidence discipline, friction reduction, prioritisation, actionability, safety, and clarity.
+2026-08-23. The Ox Alpha benchmark now includes a focused nine-project audit-to-build system. Five paste blocks establish GitHub/vault/local evidence, audit three bounded project batches, generate a standalone build prompt per project, and produce a final 30-day build queue.
 
 ## Key Recent Facts
 
+- [[wiki/questions/ox-alpha-hermes-portfolio-audit-build-prompt]] is the canonical five-paste system for JobFilter, Maz Works, Scrap Finance Partners, Agent Nudge, FlowLens, VoxPane, Maz Pocket, OmniScribe, and InkWeave.
+- Repository stars do not currently provide a meaningful popularity ranking. Owner-visible 14-day traffic showed Agent Nudge with the strongest human-looking attention; JobFilter and Maz Works clone counts are high but likely automation-heavy and must not be treated as demand.
+- Commercial batching is: immediate leverage (JobFilter, Maz Works, Scrap Finance Partners), next wedges (Agent Nudge, FlowLens, VoxPane), then proof-before-investment (Maz Pocket, OmniScribe, archived InkWeave).
 - [[wiki/questions/ox-alpha-hermes-30-test-benchmark]] contains the canonical copy-paste test pack; `C:\Users\manaz\.hermes\knowledge\ox-alpha-hermes-30-test-benchmark.md` is the local Hermes convenience copy.
 - The configured Hermes alias is `MazLatest` at `http://127.0.0.1:20128/v1`; benchmark runs should record the model/route actually reported because the free router may fail over.
 - Obsidian registers `C:\Users\manaz\Desktop\Maz Works Knowledge Vault` under the Maz Works identity.
@@ -46,6 +49,7 @@ related:
 
 ## Recent Changes
 
+- Added a source-locked Ox Alpha portfolio audit runner that creates per-project evidence ledgers, audits, market-readiness decisions, and fresh-agent build prompts.
 - Added the Ox Alpha Hermes 30-test benchmark across service design, UX/accessibility, product, sales, engineering, security/privacy, analytics, operations, customer research/support, and executive/financial judgment.
 - Ingested [[uk-tech-ecosystem-opportunities-2026]] analyzing the UK freelancer day rates, pricing strategies, construction procurement TAM sizing (£39/mo SaaS model), multi-agent context collision solutions (Agent Nudge wedge), and target startup hiring profiles (Omnea, PostHog, Healthtech-1).
 - Created [[HOME]] as the human entry point.

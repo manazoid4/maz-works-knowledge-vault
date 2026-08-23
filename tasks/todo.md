@@ -1,17 +1,17 @@
-# Ox Alpha Hermes 30-Test Benchmark — Checklist
+# Ox Alpha Portfolio Audit-to-Build — Checklist
 
-- [x] Pull vault from `fork main`.
-- [x] Inspect Hermes model routing structure safely.
-- [x] Read current project context.
-- [x] Define 10 sectors and shared friction lens.
-- [x] Write tests 01–30.
-- [x] Add scoring rubric and run log.
-- [x] Add expected/pass/fail guidance for every test.
-- [x] Save canonical vault note.
-- [x] Save `.hermes/knowledge` convenience copy.
-- [x] Update `wiki/index.md`, `wiki/log.md`, and `wiki/hot.md`.
-- [x] Write session note.
-- [x] Verify test and sector counts.
-- [x] Compare canonical and Hermes copies.
-- [x] Review Git diff for secrets and unrelated changes.
+- [x] Pull vault.
+- [x] Verify GitHub repositories and traffic.
+- [x] Resolve local and vault locations.
+- [x] Define evidence hierarchy and batching.
+- [x] Create bootstrap paste block.
+- [x] Create Batch 1 paste block.
+- [x] Create Batch 2 paste block.
+- [x] Create Batch 3 paste block.
+- [x] Create final synthesis paste block.
+- [x] Require a full build-agent prompt per project.
+- [x] Save canonical vault guide.
+- [x] Save identical Hermes knowledge copy.
+- [x] Update vault metadata and session note.
+- [x] Verify structure, hashes, and secrets.
 - [x] Commit and push to `fork main`.

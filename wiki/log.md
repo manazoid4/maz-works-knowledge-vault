@@ -1,5 +1,17 @@
 # Wiki Log
 
+## [2026-08-23] save | Ox Alpha Hermes Portfolio Audit-to-Build Batches
+
+- Type: synthesis
+- Location: `wiki/questions/ox-alpha-hermes-portfolio-audit-build-prompt.md`
+- From: evidence-safe batching of nine priority repositories into audit runs that each produce a standalone build-agent prompt.
+
+## [2026-08-23] save | Ox Alpha Portfolio Batches Session
+
+- Type: session
+- Location: `wiki/sessions/2026-08-23-ox-alpha-portfolio-batches-codex.md`
+- From: GitHub popularity/readiness verification, project batching, Hermes prompt implementation, and vault delivery.
+
 ## [2026-08-23] save | Ox Alpha Hermes 30-Test Benchmark
 
 - Type: synthesis
