@@ -82,13 +82,13 @@ This note is an operating control, not legal advice. Re-check ICO guidance befor
 - Repository: `manazoid4/mazos-ui`
 - Branch: `agents/maz-works-call-desk`
 - Primary pull request: `https://github.com/manazoid4/mazos-ui/pull/57` (merged).
-- Local-only follow-up: `https://github.com/manazoid4/mazos-ui/pull/58`, commit `c2f3526`.
-- Verification: TypeScript clean; 11 unit tests pass; full Playwright call flow passes; production/static desktop builds pass; authenticated backend smoke returns 200, unauthenticated returns 401 and preflight returns 204; Rust check passes; strict desktop audit has zero blockers; npm audit reports zero vulnerabilities.
-- Hosted safety: Vercel/non-loopback requests receive a local-only gate and the prospect/site-check APIs return 403. Localhost development and the authenticated packaged desktop sidecar remain enabled.
+- Local-only follow-up: `https://github.com/manazoid4/mazos-ui/pull/58`, commit `c2f3526` (merged).
+- Verification: TypeScript clean; 11 unit tests pass; full Playwright call flow passes; production/static desktop builds pass; authenticated backend smoke returns 200, unauthenticated returns 401 and preflight returns 204; Rust check passes; strict desktop audit has zero blockers; npm audit reports zero vulnerabilities. GitHub Windows verification and installer packaging also passed after merge.
+- Hosted safety: Vercel/non-loopback requests receive a local-only gate and the prospect/site-check APIs return 403. The production deployment was checked after merge. Localhost development and the authenticated packaged desktop sidecar remain enabled.
 - NSIS installer: `MazOS_1.0.0_x64-setup.exe`, 30,422,473 bytes, SHA-256 `FCC0813BEE63F44F091FB8B5F4E1BCD99EDD642DC8E9765139FEDE3E81F4A104`.
 - MSI installer: `MazOS_1.0.0_x64_en-US.msi`, 45,540,194 bytes, SHA-256 `510B1A6C740ACD325248AC0387793E1AF2BD62EE82AA671EA47663E7AF25CA1F`.
 - Both local development installers are unsigned. Windows may show SmartScreen warnings until code signing is configured.
 
 ## Release gate
 
-PR #57 is merged. PR #58 must merge to preserve the local-only boundary before treating `main` as the canonical Call Desk build. The locally built installers are usable test artifacts but should not be publicly released under version `1.0.0` without code signing and the existing installed-application acceptance matrix.
+PRs #57 and #58 are merged and `main` is the canonical local-only Call Desk build. The locally built installers are usable test artifacts but should not be publicly released under version `1.0.0` without code signing and the existing installed-application acceptance matrix.

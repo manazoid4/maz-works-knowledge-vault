@@ -16,6 +16,7 @@ status: completed
 - Upgraded vulnerable dependencies to versions producing zero npm audit findings and fixed dynamic Hermes file tracing that was inflating the Windows package.
 - Built and verified final unsigned NSIS and MSI installers, pushed `agents/maz-works-call-desk`, and opened `manazoid4/mazos-ui` PR #57.
 - Observed that PR #57 auto-merged into a repo with a Vercel deployment, added an explicit hosted UI/API denial so prospect operations and the website checker remain local-only, rebuilt both installers, and opened follow-up PR #58.
+- Confirmed PR #58 merged, the complete GitHub Windows verification and packaging workflow passed, the production hosted page renders the local-only gate, and the production site-check API returns 403.
 - Used the vault save skill. Its `wiki-lock.sh` has CRLF line endings that fail under Bash on Windows; locks were acquired and released through a CRLF-normalized process-substitution invocation.
 
 ## Files changed
@@ -36,12 +37,11 @@ status: completed
 - Keep the system local-first and human-operated: no automated dialling, call recording, AI voice screening, cloud CRM sync or automatic registry lookup.
 - Require bounded website evidence, a recorded public source, current TPS and CTPS checks, a clear internal suppression result and an evidence note for any specific-consent override before the call script unlocks.
 - Use the fixed £150 Website Rescue Sprint as the first paid bounded offer after a free evidence note or 15-minute screen-share.
-- Treat PR #57 and review as the canonical code path; locally built installers are unsigned test artifacts, not a public release.
+- Treat merged PRs #57 and #58 as the canonical code path; locally built installers are unsigned test artifacts, not a public release.
 - Require PR #58's local-only boundary on hosted MazOS: Vercel/non-loopback requests cannot access prospect persistence or use the server-side site checker.
 
 ## Next steps
 
-- Review and merge MazOS PR #58; PR #57 is already merged.
 - Install the PR/CI artifact or local installer and complete the existing graphical installed-application acceptance matrix before public release.
 - Configure code signing before distributing the installer beyond controlled testing.
 - Obtain access to a registered TPS/CTPS screening service; the application records results but deliberately does not pretend to query the registers.
