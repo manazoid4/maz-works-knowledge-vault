@@ -56,3 +56,36 @@ status: completed
 - Implemented the LeadFinder automatic-discovery slice on branch `agents/leadfinder-slice-1`, commit `77b4967`: Ollama health detection, Maz Fast JSON query planning, CSV fallback import, five-pass verification display, and Maz Smart evidence-only review.
 - Rebuilt and reinstalled the LeadFinder NSIS package; installed window is responding.
 - Added the official Gosom Windows scraper release as the packaged `gosom.exe` sidecar, wired automatic query execution into `AUTO-FIND LEADS`, and verified the installed bundle contains the sidecar. GitHub warned the 58 MB binary exceeds its recommended 50 MB size; future release work should move it to Git LFS or download it during setup.
+
+## LeadFinder V1 audit addendum
+
+### What I did
+
+- Commissioned two independent product/technical audits, a separate GUI audit, and an independent judge review.
+- Used the local `code-review-graph` installation to inspect architecture, flows, test gaps, dead-code signals, and change concentration; supplemented it with installed runtime tests because Tauri IPC/macro edges are incomplete in the graph.
+- Ran production build, Rust tests, dependency audit, `aislop`, Impeccable, Gosom, SQLite, and both local Ollama model checks.
+- Researched lead discovery, audit, crawl, evidence, and workbench patterns from Leadgen, Pitch Doctor, Tardigrade, Open SEO Checker, OpenTechAlyzer, Twenty, changedetection.io, rust-csv, Gosom, Playwright, Impeccable, and the supplied anti-slop sources.
+- Reclassified the current package as a prototype and documented the smallest ordered route to a working, evidence-backed, fail-closed V1.
+- Added the full audit, release gates, executable task plan, and compact checklist to LeadFinder and pushed commit `cfe7b6b` to `agents/leadfinder-slice-1`.
+
+### Files changed
+
+- `leadfinder/docs/V1_AUDIT_AND_PLAN.md`
+- `leadfinder/docs/IMPLEMENTATION_PLAN.md`
+- `leadfinder/tasks/plan.md`
+- `leadfinder/tasks/todo.md`
+- `wiki/projects/leadfinder/STATUS.md`
+- `wiki/sessions/2026-08-24-maz-works-leadfinder-codex.md`
+
+### Decisions made
+
+- Judge verdict: NO-GO for V1. Passing builds and an installer are not evidence that the acquisition workflow works.
+- First repair order: SQLite/migrations/test fixtures -> correct Gosom/CSV ingestion -> normalize/dedupe/jobs -> five persisted deterministic evidence passes -> TPS/CTPS/suppression eligibility -> Save + Next/callbacks -> GUI rebuild -> validation/UAT.
+- Do not use the present executable for live cold calling.
+- Maz Fast remains optional bounded query planning with deterministic fallback. Maz Smart remains asynchronous advisory metadata and cannot complete pass 5, change eligibility, or select an opener.
+- Do not add providers, CRM, cloud sync, softphone, autonomous agents, or additional AI before V1 release gates pass.
+
+### Next steps
+
+- Begin Task 1 in `leadfinder/tasks/plan.md`: replace ad-hoc SQLite setup with tested migrations, remove the fail-open seed, and expose measured health.
+- Then prove one real Derby Gosom discovery and CSV fallback through header-safe normalization/deduplication before continuing to probe or UI work.
