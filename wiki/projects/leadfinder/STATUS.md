@@ -19,9 +19,10 @@ LeadFinder is the standalone Maz Works local-first lead discovery, qualification
 
 - Repository: `https://github.com/manazoid4/leadfinder`
 - Feature branch: `agents/leadfinder-slice-1`
-- Commit: `35148b0`
+- Commits: `35148b0`, `f9d99b5`
 - Slice 1: local Tauri shell, Rust-owned SQLite, seeded lead, deterministic eligibility/opener, Call View and outcome persistence.
-- Verification: `npm run build`, `npm run lint`, and `cargo check --manifest-path src-tauri/Cargo.toml` pass. Oxlint reports one non-blocking React effect warning.
+- Verification: `npm run build`, `npm run lint`, `cargo check --manifest-path src-tauri/Cargo.toml`, and `npx tauri build` pass. Oxlint reports one non-blocking React effect warning.
+- Local package: `C:\Users\manaz\leadfinder\src-tauri\target\release\bundle\nsis\LeadFinder_0.1.0_x64-setup.exe` and MSI equivalent. Installed locally to `C:\Users\manaz\AppData\Local\LeadFinder\app.exe`; launched and responsive with window title `LeadFinder`.
 - GitHub note: the empty repository was created with the feature branch as its initial default because no `main` ref existed. Do not push directly to `main`; establish the protected integration branch through the normal repository workflow before merging later slices.
 
 ## Authoritative context

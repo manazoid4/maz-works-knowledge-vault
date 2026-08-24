@@ -12,7 +12,8 @@ status: in-progress
 - Implemented Slice 1: Rust-owned SQLite, seeded test lead, deterministic eligibility/opener, Call View, outcome buttons and restart persistence.
 - Added the concise vertical-slice plan and Hermes handoff context to the new project.
 - Created `manazoid4/leadfinder` and pushed `agents/leadfinder-slice-1`.
-- Improved the Maz Works public site client path on `mazos-site` PR #21 with an evidence-note → screen-share → Website Rescue Sprint sequence.
+- Improved the Maz Works public site client path on `mazos-site` PR #21 with an evidence-note → free demo → screen-share → Website Rescue Sprint sequence; PR #21 merged as `b499fd6`.
+- Set a unique LeadFinder bundle identifier, built EXE/MSI installers, installed the EXE locally, and launched a responsive `LeadFinder` window.
 
 ## Files changed
 
