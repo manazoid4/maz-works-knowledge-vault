@@ -46,3 +46,9 @@ status: completed
 - Add conservative probe evidence and gap classification as Slice 3.
 - Continue LeadFinder with Slice 2 (CSV import + Gosom sidecar), then probe/TPS/validation/9router/package slices.
 - Bootstrap a protected `main` branch for the new `manazoid4/leadfinder` repository before opening its first PR; the feature branch is already pushed.
+
+## Launch verification
+
+- Started the installed MazOS desktop app; window title `MazOS · Maz Works`, responding.
+- Started the installed LeadFinder desktop app; window title `LeadFinder`, responding.
+- No relevant open project PRs required merging. MazOS PRs #55 and #56 are unrelated harness/planning work and were left untouched.
