@@ -15,11 +15,15 @@ status: completed
 - Audited 20 relevant GitHub repositories across missed-call recovery, omnichannel inboxes, CRM, quotes/invoices, payments, scheduling, field service and tender-data processing.
 - Classified each repository as permissive, mixed-licence or clean-room reference and recorded exact reuse boundaries in [[wiki/projects/jobfilter/2026-08-24-v2-github-pattern-research]].
 - Amended the execution plan after finding a directly comparable missed-call product whose author abandoned the generic wedge following customer and competitor discovery.
+- Commissioned two independent audits of free-tier architecture and external-service costs, including numeric 5/20/100-customer scenarios and hard upgrade triggers.
+- Revised the funding sequence to keep pre-client validation at £0 and fund all live production upgrades from the first cleared setup payment.
 
 ## Files changed
 
 - `wiki/projects/jobfilter/2026-08-24-jobfilter-v2-execution-plan.md`
 - `wiki/projects/jobfilter/2026-08-24-v2-github-pattern-research.md`
+- `wiki/projects/jobfilter/2026-08-24-v2-free-tier-architecture-audit.md`
+- `wiki/projects/jobfilter/2026-08-24-v2-external-services-cost-audit.md`
 - `wiki/sessions/2026-08-24-jobfilter-v2-codex.md`
 
 ## Decisions made
@@ -29,6 +33,7 @@ status: completed
 - Proposed SMS-first messaging, a real telephony feasibility gate, bounded telecom economics, and staged commercial gates before job-management replacement.
 - Generic missed-call text-back is an acquisition trigger, not sufficient differentiation; Gate 1 now tests the complete qualification-to-quote and attributable-revenue workflow against what prospects already own.
 - Open-source adaptation requires a per-file source manifest and licence/provenance review; AGPL, GPL, ELv2 and ambiguous source remains clean-room reference only.
+- Vercel Hobby is limited to pre-client non-commercial validation. The first £149 setup payment funds Vercel Pro, live telecom acceptance and then production database reliability; no capacity is pre-purchased.
 - No JobFilter repository files were changed; implementation awaits founder approval.
 
 ## Next steps

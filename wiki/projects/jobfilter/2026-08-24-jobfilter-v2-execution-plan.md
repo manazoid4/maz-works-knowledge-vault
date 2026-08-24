@@ -194,6 +194,8 @@ Do not open at £19–29. ServiceM8 already offers a far broader £25/month pack
 
 The operating-cost sequence is strict: **£0 before the first client → setup fee collected → production hosting/database and one live number provisioned → client acceptance test → monthly pilot begins**. Upgrade services only as measured usage or reliability triggers require; do not pre-buy capacity.
 
+The independent cost audits estimate a responsible five-client production baseline at roughly **$69–73/month plus Stripe fees**, with costs driven mainly by one number and bounded SMS usage per tenant. A single-client acceptance pilot can temporarily defer Supabase Pro and cost roughly **$25/month**, but that explicitly accepts the Free plan's backup/reliability risk and must not become the steady-state design.
+
 ## Testing and release gates
 
 Automated coverage must include:
@@ -251,6 +253,8 @@ On approval, execution begins with Phase 0 only and ends in a pushed `agents/job
 - ServiceM8 Phone: https://www.servicem8.com/uk/phone
 - JobFilter V2 GitHub pattern research: [[2026-08-24-v2-github-pattern-research]]
 - Plumber missed-call demo and commercial post-mortem: https://github.com/kgorle1111/plumber-missed-call-demo
+- Free-tier architecture audit: [[2026-08-24-v2-free-tier-architecture-audit]]
+- External-services cost audit: [[2026-08-24-v2-external-services-cost-audit]]
 - Twilio Call resource/status callbacks: https://www.twilio.com/docs/voice/api/call-resource
 - ICO electronic marketing guidance: https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/electronic-and-telephone-marketing/electronic-mail-marketing/
 - ICO service-message distinction: https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/direct-marketing-guidance/identify-direct-marketing/
