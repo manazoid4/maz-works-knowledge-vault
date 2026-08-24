@@ -55,3 +55,4 @@ status: completed
 - Confirmed local model roles from the desktop: Maz Fast is `phi4-mini:latest`; Maz Smart is `lfm2.5-8b:latest`.
 - Implemented the LeadFinder automatic-discovery slice on branch `agents/leadfinder-slice-1`, commit `77b4967`: Ollama health detection, Maz Fast JSON query planning, CSV fallback import, five-pass verification display, and Maz Smart evidence-only review.
 - Rebuilt and reinstalled the LeadFinder NSIS package; installed window is responding.
+- Added the official Gosom Windows scraper release as the packaged `gosom.exe` sidecar, wired automatic query execution into `AUTO-FIND LEADS`, and verified the installed bundle contains the sidecar. GitHub warned the 58 MB binary exceeds its recommended 50 MB size; future release work should move it to Git LFS or download it during setup.
