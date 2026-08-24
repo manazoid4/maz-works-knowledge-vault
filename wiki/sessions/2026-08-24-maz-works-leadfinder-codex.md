@@ -2,7 +2,7 @@
 date: 2026-08-24
 project: maz-works
 agent: codex
-status: in-progress
+status: completed
 ---
 
 ## What I did
@@ -14,6 +14,9 @@ status: in-progress
 - Created `manazoid4/leadfinder` and pushed `agents/leadfinder-slice-1`.
 - Improved the Maz Works public site client path on `mazos-site` PR #21 with an evidence-note → free demo → screen-share → Website Rescue Sprint sequence; PR #21 merged as `b499fd6`.
 - Set a unique LeadFinder bundle identifier, built EXE/MSI installers, installed the EXE locally, and launched a responsive `LeadFinder` window.
+- Merged MazOS Call Desk shell PR #60 (`a01dc93`): the desktop root now opens Call Desk and the old Loop Cockpit/Hermes return path is removed.
+- Fixed the remaining packaged-backend chunk regression in PR #61 (`1d47bb9`): standalone runtime chunks are preserved instead of excluded by tracing.
+- Rebuilt MazOS desktop assets, ran the packaged backend smoke test (`authenticatedStatus=200`, unauthenticated `401`, preflight `204`), completed the NSIS build, cleanly reinstalled it, and verified 49 installed runtime chunks.
 
 ## Files changed
 
@@ -25,6 +28,10 @@ status: in-progress
 - `leadfinder/docs/HERMES_HANDOFF_CONTEXT.md`
 - `mazos-site/app/page.tsx`
 - `mazos-site/app/globals.css`
+- `mazos-ui/scripts/build-desktop.mjs`
+- `mazos-ui/next.config.server.mjs`
+- `mazos-ui/src/app/page.tsx`
+- `mazos-ui/src/app/call-desk/page.tsx`
 
 ## Decisions made
 
@@ -37,4 +44,5 @@ status: in-progress
 - Establish the LeadFinder integration-branch workflow without pushing directly to `main`.
 - Add CSV import and Gosom sidecar discovery as Slice 2.
 - Add conservative probe evidence and gap classification as Slice 3.
-- Review and merge Maz Works site PR #21 after checks.
+- Continue LeadFinder with Slice 2 (CSV import + Gosom sidecar), then probe/TPS/validation/9router/package slices.
+- Bootstrap a protected `main` branch for the new `manazoid4/leadfinder` repository before opening its first PR; the feature branch is already pushed.

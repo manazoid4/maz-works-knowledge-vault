@@ -39,6 +39,7 @@ Full job-management replacement is a later outcome earned through revenue and re
 6. AI is assistive, not structural. Qualification, state transitions, idempotency, permissions, pricing, and compliance are deterministic.
 7. The physical database grows by vertical slice. The complete domain model is designed first, but speculative Stage 3 tables are not migrated early.
 8. Automated tests cannot mark real phone, SMS, WhatsApp, Stripe, or email delivery complete. Those require a dated manual acceptance record.
+9. Pre-client fixed cost is £0. Do not buy infrastructure, numbers, messaging credit, AI credit, or SaaS subscriptions before a signed pilot and cleared setup payment. Free/test tiers may support discovery and demos only; their unproven production behaviours stay labelled UNVERIFIED.
 
 ## Product boundary
 
@@ -94,9 +95,15 @@ Plumbing, heating, and electrical firms may pilot enquiry recovery, but are not 
 
 ### Phase 1 — Fail-fast feasibility spikes
 
+#### Funding order
+
+Run interviews, workflow prototypes, local/test-mode demos, incumbent-gap analysis and the unit-economics model at £0. Use Stripe-hosted test mode for demonstrations and a Stripe Payment Link or manual invoice for the first setup payment so accepting the customer does not require a new paid application deployment.
+
+The first signed pilot pays the £149 setup fee before live telecom provisioning. That cash triggers the minimum production upgrades and a real-carrier acceptance test. If the live test fails, refund the setup fee or offer an explicitly agreed manual concierge pilot. Do not represent test credentials, simulated webhooks or free-tier demos as live delivery.
+
 #### Telephony
 
-Use a JobFilter-controlled UK number and Twilio-style status callbacks for the proof. Test two onboarding paths:
+After the first setup payment, use a JobFilter-controlled UK number and Twilio-style status callbacks for the live proof. Before payment, validate the workflow with provider test credentials and recorded/simulated events only. Test two onboarding paths:
 
 - conditional no-answer/busy forwarding from the customer's existing number to the JobFilter number;
 - a new dedicated JobFilter business number when forwarding is unsupported.
@@ -113,9 +120,15 @@ Model number rental, inbound/forwarded voice minutes, SMS segments, failed-messa
 
 #### Demand
 
-Interview at least 10 target firms and obtain five signed pilot commitments or deposits before the full Stage 1 build. Test willingness to pay while they retain their current job software.
+Interview at least 10 target firms, including the office manager or daily software operator wherever one exists. Do not ask only what hurts. Record what their current job-management, CRM and phone products already solve, what still lives in spreadsheets/manual follow-up, and what they pay today.
 
-**Gate 1:** the missed-call event works on real UK handsets; SMS delivery and opt-out work; unit economics meet the margin floor; five firms commit to a paid pilot. If any fail, narrow or kill the feature before building the platform around it.
+Pre-sell the complete **enquiry → qualification → quote → follow-up → attributable recovered-revenue** workflow, not generic missed-call text-back. Obtain five signed pilot commitments or deposits before the full Stage 1 build, while each customer retains their current job software.
+
+**Gate 1A — £0 validation:** at least 10 discovery interviews are complete; the differentiated workflow is demonstrable in test mode; the cost model is reviewed; and at least one firm signs and pays the setup fee. No paid infrastructure is purchased before this point.
+
+**Gate 1B — funded live proof:** the first setup payment has funded the minimum production services; the missed-call event works on real UK handsets; SMS delivery and opt-out work; unit economics meet the margin floor; and five firms commit to pay specifically for the end-to-end recovery workflow. Each must name a material gap its incumbent does not already solve. If any condition fails, narrow or kill the wedge before building the platform around it.
+
+Generic missed-call text-back is not sufficient differentiation. A directly comparable 2026 open-source plumber demo was commercially abandoned after discovery found the feature already bundled by Podium, GoHighLevel and leading field-service platforms. JobFilter's testable advantage must be trade-specific qualification, quote action and credible revenue attribution.
 
 ### Phase 2 — Stage 1 vertical slices
 
@@ -131,6 +144,17 @@ Each slice includes schema, RLS, service/API, UI, audit events, tests, observabi
 8. **Public surface:** rebuild only the primary sales journey after the product flow works. Public navigation becomes Product, Opportunities, Pricing, Trust, Login. App navigation becomes Inbox, Customers, Quotes, Opportunities, Account. Apply the tested redirect map.
 
 **Gate 2:** five paying firms complete 30 days; at least 80% activate the phone/enquiry path; at least three obtain a verifiable recovered or progressed opportunity; no tenant leak, double-send, or silent telecom failure; at least four intend to continue paying.
+
+### Source adaptation protocol
+
+The GitHub pattern audit is a design input, not permission to fork a product wholesale.
+
+1. Before adapting source, record repository, exact commit, file path, licence and destination module in a source manifest.
+2. Prefer small official or permissive patterns and their tests: Twilio webhook/status handling, deterministic message safety, financial state invariants and Stripe webhook reconciliation.
+3. Port concepts into the existing Next.js/Supabase architecture; do not introduce a second platform stack merely to inherit one feature.
+4. Retain notices for MIT/Apache/BSD material and review transitive dependencies.
+5. Keep AGPL, GPL, ELv2 and ambiguous code out of implementation context. Use those repositories only to derive independently written requirements and journeys.
+6. Require provenance review in every implementation PR.
 
 ### Phase 3 — Own the money edge
 
@@ -168,6 +192,8 @@ Start full-replacement pilots with roofers, builders, landscapers, and property-
 
 Do not open at £19–29. ServiceM8 already offers a far broader £25/month package with unlimited paid-plan users and included SMS. JobFilter must prove recovered revenue, not win a commodity feature checklist on price.
 
+The operating-cost sequence is strict: **£0 before the first client → setup fee collected → production hosting/database and one live number provisioned → client acceptance test → monthly pilot begins**. Upgrade services only as measured usage or reliability triggers require; do not pre-buy capacity.
+
 ## Testing and release gates
 
 Automated coverage must include:
@@ -195,6 +221,9 @@ Every implementation checkpoint requires focused tests, `npm run lint`, `npm run
 - Unlimited telecom usage inside a low flat price.
 - Porting customer phone numbers during the first pilot.
 - AI voice agent before deterministic missed-call rescue works.
+- Selling generic missed-call text-back as the complete differentiator.
+- Forking an entire CRM, ERP, invoicing, scheduling or telephony platform.
+- Copying AGPL, GPL, ELv2, enterprise-only or ambiguously licensed source into JobFilter.
 - Physical full-scope schema before its vertical slice exists.
 - Scheduling, staff, timesheets, subcontractors, job costing, certificates, or broad marketing generation before the revenue gates.
 - Breaking public microsite URLs.
@@ -203,13 +232,15 @@ Every implementation checkpoint requires focused tests, `npm run lint`, `npm run
 
 ## Approval requested
 
-Approve or amend these five decisions before implementation:
+Approve or amend these seven decisions before implementation:
 
 1. Stage 1 is Revenue Rescue alongside existing job software, not immediate replacement.
 2. Initial ICP is 1–10-person roofing/building/landscaping/property-maintenance firms.
 3. SMS launches first; WhatsApp follows approval and compliance proof.
 4. Pilot price is £39/month plus bounded messaging, with £149 setup.
 5. Implementation stops at every commercial gate for founder review.
+6. Open-source work is adapted only through the recorded licence/provenance protocol; copyleft and source-available products remain clean-room references.
+7. Pre-client operation remains at £0; the first cleared setup payment funds the minimum production upgrades and live telecom acceptance test.
 
 On approval, execution begins with Phase 0 only and ends in a pushed `agents/jobfilter-v2-foundation` branch plus GitHub PR. Nothing is pushed directly to `main`.
 
@@ -218,6 +249,8 @@ On approval, execution begins with Phase 0 only and ends in a pushed `agents/job
 - Tradify UK pricing: https://www.tradifyhq.com/uk/pricing
 - ServiceM8 UK pricing: https://www.servicem8.com/uk/pricing
 - ServiceM8 Phone: https://www.servicem8.com/uk/phone
+- JobFilter V2 GitHub pattern research: [[2026-08-24-v2-github-pattern-research]]
+- Plumber missed-call demo and commercial post-mortem: https://github.com/kgorle1111/plumber-missed-call-demo
 - Twilio Call resource/status callbacks: https://www.twilio.com/docs/voice/api/call-resource
 - ICO electronic marketing guidance: https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guide-to-pecr/electronic-and-telephone-marketing/electronic-mail-marketing/
 - ICO service-message distinction: https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/direct-marketing-guidance/identify-direct-marketing/
