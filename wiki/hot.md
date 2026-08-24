@@ -23,6 +23,7 @@ related:
 
 - [[wiki/projects/maz-works/CALL-DESK]] is the canonical Maz Works client-acquisition implementation. It is not JobFilter AI call screening.
 - MazOS PRs #57 and #58 are merged. The required local-only hosted boundary is live: Vercel/non-loopback users see a local Windows gate and prospect/site-check APIs return 403.
+- MazOS PR #59 is merged. It fixes the packaged Windows backend startup crash by passing `server.js` relative to the validated server directory; the corrected installer was installed locally and reached backend `Ready`.
 - Call Desk unlocks calls only after a public source, website evidence and current clear screening are recorded. A consent override requires an evidence note; do-not-call immediately suppresses the prospect.
 - The first paid offer is a fixed £150 Website Rescue Sprint after a useful evidence note or 15-minute screen-share.
 - Final local-only unsigned installers were produced: NSIS SHA-256 `FCC0813BEE63F44F091FB8B5F4E1BCD99EDD642DC8E9765139FEDE3E81F4A104`; MSI SHA-256 `510B1A6C740ACD325248AC0387793E1AF2BD62EE82AA671EA47663E7AF25CA1F`.
@@ -66,7 +67,7 @@ related:
 
 ## Active Threads
 
-- Install the resulting artifact, complete the graphical acceptance matrix and configure code signing before public installer distribution.
+- Complete the graphical acceptance matrix and configure code signing before public installer distribution.
 - Obtain a registered TPS/CTPS screening service before beginning a live outbound call session; Call Desk records screening evidence but does not query the registers.
 - Maz Works needs one independent post-merge multi-perspective review of current `main` and production; a follow-up branch is justified only for a reproducible P0/P1 issue.
 - Email digest delivery still needs one-time recipient and SMTP credential configuration from the Local Knowledge Agent menu.
