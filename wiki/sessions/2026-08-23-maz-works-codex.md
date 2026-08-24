@@ -17,6 +17,7 @@ status: completed
 - Built and verified final unsigned NSIS and MSI installers, pushed `agents/maz-works-call-desk`, and opened `manazoid4/mazos-ui` PR #57.
 - Observed that PR #57 auto-merged into a repo with a Vercel deployment, added an explicit hosted UI/API denial so prospect operations and the website checker remain local-only, rebuilt both installers, and opened follow-up PR #58.
 - Confirmed PR #58 merged, the complete GitHub Windows verification and packaging workflow passed, the production hosted page renders the local-only gate, and the production site-check API returns 403.
+- Installed the fresh NSIS build locally to `C:\Users\manaz\AppData\Local\MazOS` and launched it successfully; the responsive window title is `MazOS · Maz Works`.
 - Used the vault save skill. Its `wiki-lock.sh` has CRLF line endings that fail under Bash on Windows; locks were acquired and released through a CRLF-normalized process-substitution invocation.
 
 ## Files changed
@@ -43,6 +44,7 @@ status: completed
 ## Next steps
 
 - Install the PR/CI artifact or local installer and complete the existing graphical installed-application acceptance matrix before public release.
+- Complete the existing graphical installed-application acceptance matrix before public release.
 - Configure code signing before distributing the installer beyond controlled testing.
 - Obtain access to a registered TPS/CTPS screening service; the application records results but deliberately does not pretend to query the registers.
 - Start with a small researched list, call only screen-cleared prospects, measure conversations/bookings/paid sprints, and refine scripts from recorded objections rather than adding automation prematurely.
