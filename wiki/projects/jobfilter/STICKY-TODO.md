@@ -1,9 +1,26 @@
 # JobFilter STICKY-TODO — Manual Founder Actions
-**Last updated:** 2026-06-11 (Batch B session)
+**Last updated:** 2026-08-24 (JobFilter V2 foundation)
 
 ---
 
-## 🔴 NEW 2026-06-11 — activate Batch B (PR #252)
+## 🔴 CURRENT — V2 Gate 0 founder actions
+
+- [ ] **Do not enable inbound WhatsApp yet.** PR #507 made the webhook disabled by default. It still needs a durable inbox/outbox and provider-event idempotency before `WHATSAPP_INBOUND_ENABLED=true` is safe.
+- [ ] Provide approved Stripe aggregate access or export: products/prices, subscriber count by status, MRR and churn. Do not include customer PII in the vault.
+- [ ] Link a non-production Supabase branch and run the two-user RLS isolation suite against the applied schema.
+- [ ] Decide how any existing £39 tender subscribers are treated before pricing or positioning changes.
+- [ ] Identify and pause the external process creating `nightly/*` copy-polish PRs. It is not a workflow in the JobFilter repository.
+- [ ] Confirm the current Vercel and Supabase billing plans and Supabase backup/restore capability.
+- [ ] Use the live, synthetic walkthrough at `https://jobfilter.uk/demo/revenue-rescue` for discovery. It sends nothing and writes no production data.
+- [ ] Complete 10 discovery interviews and obtain the first signed, paid £149 setup before any live telecom purchase or production V2 schema.
+
+The V2 execution source of truth is [[2026-08-24-jobfilter-v2-execution-plan]]. PR #507 merged to `main` as `5b51d984` on 24 August 2026; production and main CI were verified green.
+
+The June sections below are retained for history. **Do not execute their WhatsApp activation instructions** unless they are reconciled with the V2 Gate 0 requirements above.
+
+---
+
+## HISTORICAL 2026-06-11 — Batch B (do not execute unchanged)
 
 - [ ] **Run migration** `supabase/migrations/20260611_intake_and_profile_metadata.sql` in Supabase SQL editor (creates `intake_submissions`, adds `profiles.whatsapp_number`, fixes signup metadata trigger)
 - [ ] **Set `CRON_SECRET`** in Vercel (any long random string) — enables the 7am daily-scan cron
@@ -15,7 +32,7 @@ These are tasks that ONLY the founder can complete — they require login access
 
 ---
 
-## 🔴 URGENT — Intake Engine (unblocks GOLD lead WhatsApp notifications)
+## HISTORICAL — Intake Engine activation notes (superseded for WhatsApp)
 
 - [ ] **Set WhatsApp env vars** — Add to Vercel/hosting environment:
   - `WHATSAPP_PHONE_NUMBER_ID` — from Meta Business Suite → WhatsApp → Phone Numbers

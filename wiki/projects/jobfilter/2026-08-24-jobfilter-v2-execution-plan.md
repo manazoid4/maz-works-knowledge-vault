@@ -232,9 +232,19 @@ Every implementation checkpoint requires focused tests, `npm run lint`, `npm run
 - Absorbing nightly copy PRs into the V2 foundation without individual review.
 - Claiming real delivery from mocked or automated-only tests.
 
-## Approval requested
+## Execution status — 24 August 2026
 
-Approve or amend these seven decisions before implementation:
+- Founder approved execution and the £0-before-clients funding sequence.
+- Phase 0 foundation shipped through [JobFilter PR #507](https://github.com/manazoid4/JobFilterV1/pull/507), squash-merged to `main` as `5b51d98427252823b04872d394b4e28bd0b8ac8b`.
+- Main CI passed, Vercel production reached Ready, and `https://jobfilter.uk/demo/revenue-rescue` returned 200 with `noindex` and the simulation disclosure.
+- The first £0-safe implementation is a synthetic Revenue Rescue walkthrough. It sends no messages, takes no payment and writes no production data.
+- Inbound WhatsApp is now disabled by default and fails closed on missing configuration or invalid signatures. Durable inbox/outbox idempotency remains mandatory before enablement.
+- No production schema, pricing, subscriber or telecom configuration changed.
+- Gate 0 remains partially open: Stripe aggregate state, applied Supabase schema/RLS proof, existing-customer treatment, external nightly automation ownership and hosting/backup plans remain unverified.
+
+## Approved decisions
+
+The founder approved these seven decisions before implementation:
 
 1. Stage 1 is Revenue Rescue alongside existing job software, not immediate replacement.
 2. Initial ICP is 1–10-person roofing/building/landscaping/property-maintenance firms.
@@ -244,7 +254,7 @@ Approve or amend these seven decisions before implementation:
 6. Open-source work is adapted only through the recorded licence/provenance protocol; copyleft and source-available products remain clean-room references.
 7. Pre-client operation remains at £0; the first cleared setup payment funds the minimum production upgrades and live telecom acceptance test.
 
-On approval, execution begins with Phase 0 only and ends in a pushed `agents/jobfilter-v2-foundation` branch plus GitHub PR. Nothing is pushed directly to `main`.
+Execution began with Phase 0 on `agents/jobfilter-v2-foundation` and merged through PR #507. Nothing was pushed directly to `main`. Further production/data work remains gated as described above.
 
 ## Primary current sources
 

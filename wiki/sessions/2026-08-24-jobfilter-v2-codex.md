@@ -17,6 +17,11 @@ status: completed
 - Amended the execution plan after finding a directly comparable missed-call product whose author abandoned the generic wedge following customer and competitor discovery.
 - Commissioned two independent audits of free-tier architecture and external-service costs, including numeric 5/20/100-customer scenarios and hard upgrade triggers.
 - Revised the funding sequence to keep pre-client validation at £0 and fund all live production upgrades from the first cleared setup payment.
+- Created an isolated JobFilter worktree and `agents/jobfilter-v2-foundation` branch from fresh `origin/main`, preserving the dirty July worktree.
+- Completed and committed the Phase 0 access/security audit, route migration matrix, design contract and source manifest.
+- Built a synthetic, no-send Revenue Rescue walkthrough at `/demo/revenue-rescue` for £0 customer discovery.
+- Made inbound WhatsApp disabled by default, added constant-time Meta signature validation, removed message-body logs and contained retry-after-side-effect behaviour.
+- Opened PR #507, addressed its webhook review finding, passed CI/Vercel/Meticulous, squash-merged as `5b51d984`, and verified the production route and disabled webhook.
 
 ## Files changed
 
@@ -24,6 +29,7 @@ status: completed
 - `wiki/projects/jobfilter/2026-08-24-v2-github-pattern-research.md`
 - `wiki/projects/jobfilter/2026-08-24-v2-free-tier-architecture-audit.md`
 - `wiki/projects/jobfilter/2026-08-24-v2-external-services-cost-audit.md`
+- `wiki/projects/jobfilter/STICKY-TODO.md`
 - `wiki/sessions/2026-08-24-jobfilter-v2-codex.md`
 
 ## Decisions made
@@ -34,9 +40,12 @@ status: completed
 - Generic missed-call text-back is an acquisition trigger, not sufficient differentiation; Gate 1 now tests the complete qualification-to-quote and attributable-revenue workflow against what prospects already own.
 - Open-source adaptation requires a per-file source manifest and licence/provenance review; AGPL, GPL, ELv2 and ambiguous source remains clean-room reference only.
 - Vercel Hobby is limited to pre-client non-commercial validation. The first £149 setup payment funds Vercel Pro, live telecom acceptance and then production database reliability; no capacity is pre-purchased.
-- No JobFilter repository files were changed; implementation awaits founder approval.
+- Phase 0 code was merged through PR #507; no direct push to project `main` occurred.
+- Production schema, pricing, subscribers, paid infrastructure and live telecom remain unchanged pending Gate 0/1 evidence.
 
 ## Next steps
 
-- Founder approves or amends the six decisions in the revised V2 plan.
-- On approval, create an isolated `agents/jobfilter-v2-foundation` branch from fresh `origin/main`, execute Phase 0, verify, push, and open a PR.
+- Founder uses the synthetic walkthrough for 10 incumbent-gap interviews and obtains the first signed £149 setup payment.
+- Provide Stripe aggregate state and a non-production Supabase branch for applied-schema/two-user RLS verification.
+- Identify the external nightly PR generator and confirm Vercel/Supabase plan and backup state.
+- Only after those gates: implement the organisation/enquiry vertical slice; do not enable WhatsApp or buy telecom before its funded acceptance test.
