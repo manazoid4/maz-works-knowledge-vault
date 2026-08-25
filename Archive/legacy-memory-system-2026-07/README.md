@@ -1,6 +1,6 @@
 # Archived legacy memory system
 
-This directory preserves the pre-cutover root namespaces that were superseded by the current Maz Works Knowledge Vault structure.
+This directory preserves pre-cutover root namespaces superseded by the current Maz Works Knowledge Vault structure.
 
 Archived on: 2026-08-25
 
@@ -17,10 +17,16 @@ Archived on: 2026-08-25
 
 ## Why these moved
 
-The archived namespaces describe earlier July-era memory and session protocols. Several files point at paths that no longer exist or contain dated task state. The August identity migration established `wiki/projects/`, `wiki/sessions/`, `wiki/hot.md`, the neutral junctions, and `.agent-context/AGENT_SYSTEM.md` as the active operating layer.
+The archived namespaces describe earlier July-era memory and session protocols. Several files point at paths that no longer exist or contain dated task state. The August identity migration established `wiki/projects/`, `wiki/sessions/`, `wiki/hot.md`, neutral junctions, and `.agent-context/AGENT_SYSTEM.md` as the active operating layer.
 
 Nothing in this archive should be treated as current operational truth unless it is re-verified against the live vault and environment.
 
-## Not moved in this pass
+## Project namespace cleanup
 
-`02-PROJECTS/` and `10_Projects/` remain at the root temporarily because they contain newer or unique project material; `10_Projects/` also contains a tracked gitlink. They require content-aware migration before removal.
+The old `02-PROJECTS/` and `10_Projects/` roots were also removed from the active root in the same cleanup series, but their useful material was not discarded:
+
+- project-specific content moved under `wiki/projects/<project>/legacy-imports/`;
+- the legacy Zawiyah summary moved under `Archive/legacy-project-summaries/` rather than into active shared project memory;
+- the Scrap Finance Partners gitlink moved to `external/scrap-finance-partners` with `.gitmodules` updated atomically.
+
+Historical paths remain recoverable through Git history.

@@ -52,42 +52,57 @@ Keep these as active sources of truth:
 - COG's separate PM/content/design skill catalog should be adopted only task-by-task when it solves a real gap.
 - Do not import COG's full root taxonomy, personal CRM structure, iCloud assumptions, or duplicate agent manifests by default.
 
-## Cleanup classification
+## Cleanup completed in this audit
 
-### Safe to archive now
+### Legacy memory/session namespaces
 
-The following root namespaces are legacy operating structures and are superseded by the current wiki/agent system:
+Moved intact under `Archive/legacy-memory-system-2026-07/`:
 
 - `00_Hermes/`
 - `_Hermes/`
 - `03-MEMORY/`
 - `04-SESSIONS/`
 - `06-SYSTEM/`
-- `99_Inbox/` (currently historical vault-merge material)
+- `99_Inbox/`
 
-They are moved intact to `Archive/legacy-memory-system-2026-07/` so history remains available without presenting stale files as live truth.
+These remain available as history but no longer compete with current paths for agent attention.
 
-### Needs content-aware migration before removal
+### Legacy project namespaces
 
-- `02-PROJECTS/` — contains later project artifacts, including MAZ Pocket field/interface work from August.
-- `10_Projects/` — contains unique recovered project material and a tracked gitlink/submodule.
+Removed the old `02-PROJECTS/` root by relocating each project subtree intact:
 
-Do not bulk-delete either directory. Migrate project-by-project into `wiki/projects/<project>/` and only then remove the old namespace.
+- Agent Nudge → `wiki/projects/agent-nudge/legacy-imports/02-PROJECTS/`
+- Hermes → `wiki/projects/hermes/legacy-imports/02-PROJECTS/`
+- JobFilter → `wiki/projects/jobfilter/legacy-imports/02-PROJECTS/`
+- MAZ Pocket → `wiki/projects/maz-pocket/legacy-imports/02-PROJECTS/`
+- MazOS → `wiki/projects/mazos/legacy-imports/02-PROJECTS/`
+- Recall → `wiki/projects/recall/legacy-imports/02-PROJECTS/`
 
-## Recommended next migration pass
+Removed the old `10_Projects/` root by relocating its unique summaries to the matching project `legacy-imports/` folders. The legacy Zawiyah summary moved into Archive to preserve the private-boundary rule. The Scrap Finance Partners gitlink moved to `external/scrap-finance-partners`, with `.gitmodules` changed in the same commit.
 
-1. Create canonical `wiki/projects/agent-nudge/`, `wiki/projects/hermes/` and any other missing active project hubs.
-2. Move unique `02-PROJECTS/<project>/` material into the matching canonical project hub, preserving dates and filenames where useful.
-3. Reconcile `10_Projects/*.md` against canonical project hubs; migrate unique facts, archive superseded summaries.
-4. Decide a stable location for the Scrap Finance Partners gitlink before removing `10_Projects/`; update `.gitmodules` atomically if it moves.
-5. Run link/lint/retrieval tests after migration.
-6. Only then remove the empty legacy namespaces.
+## Remaining cleanup candidates
+
+Do not delete these automatically; audit individually first:
+
+- root `Ralph_Execution_Log*.md` files;
+- old historical references inside archived notes;
+- legacy repository aliases outside this repository;
+- duplicate project summaries inside `legacy-imports/` after their useful facts are distilled into current project hubs.
 
 ## Machine integration direction
 
 The neutral machine-wide contract should remain the existing Maz Works vault/junction model. Agent-specific adapters should point into this one knowledge system rather than cloning COG per agent.
 
 A future integration should expose adapted skills through the existing multi-agent skill package and keep one canonical knowledge graph. MAZ Pocket can consume compact project/hot summaries from this same source rather than own a separate durable brain.
+
+## Recommended implementation sequence
+
+1. Add a Maz Works-native `memory-hygiene` skill first.
+2. Add closed-loop evidence/acceptance patterns to the existing verifier rather than importing COG's whole harness.
+3. Add harvest/retro as propose-first updates to durable knowledge.
+4. Add durable multi-session goal state only where it improves current build-agent workflows.
+5. Add a lightweight weekly operator review after the Work/consistency data model stabilizes.
+6. Keep braindump ingestion routed through existing Capture / Local Knowledge paths.
 
 ## Guardrails
 
