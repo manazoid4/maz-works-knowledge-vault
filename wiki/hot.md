@@ -2,7 +2,7 @@
 type: meta
 title: "Hot Cache"
 created: 2026-04-23
-updated: 2026-08-23
+updated: 2026-08-26
 tags:
   - meta
   - hot-cache
@@ -17,9 +17,28 @@ related:
 
 ## Last Updated
 
-2026-08-23. [[wiki/projects/maz-works/CALL-DESK]] is delivered on MazOS PR #57 as a local-first Windows client-acquisition workstation with bounded website evidence, live-call compliance gates, practical scripts, outcomes and follow-ups.
+2026-08-26. MAZ Pocket's portal is reachable but every live AI route is broken;
+the active route is CLOUD rather than MAZLATEST. The cross-agent unified-memory
+repository now has a GSD-structured recovery roadmap and indexed project/topic/
+dated-evidence layout, but harness wiring remains unimplemented.
 
 ## Key Recent Facts
+
+- [[wiki/outputs/2026-08-26-maz-pocket-unified-memory-audit]] is the current
+  MAZ Pocket/Core/9router/pairing/unified-memory truth and recovery plan.
+- The active installed pairing credential works; the checked-out repo token is
+  stale. The 43-character credential should remain strong but be bootstrapped
+  with a short-lived human pairing code.
+- MAZLATEST points to two retired 9router models; CLOUD/AUTO expose unhandled
+  upstream errors as HTTP 500; LOCAL is unavailable. Passing host tests do not
+  cover this live integration matrix.
+- LeadFinder's SQLite crash is fixed and its build passes, but five audited P0
+  product slices remain. It is still a NO-GO for live cold calling.
+- The unified-memory repo is now navigable by index, project status, topic,
+  plan, and dated ledger. Context adapters, automated indexing, staleness, and
+  secret scans remain to build.
+- GSD Core v1.11.0 was installed for Codex; its Discuss -> Plan -> Execute ->
+  Verify -> Ship phase pattern structured the recovery roadmap.
 
 - [[wiki/projects/maz-works/CALL-DESK]] is the canonical Maz Works client-acquisition implementation. It is not JobFilter AI call screening.
 - MazOS PRs #57 and #58 are merged. The required local-only hosted boundary is live: Vercel/non-loopback users see a local Windows gate and prospect/site-check APIs return 403.
@@ -66,6 +85,13 @@ related:
 - Added source, entity, concept, and project-application notes for Matt Pocock's AI coding workflow workshop.
 
 ## Active Threads
+
+- Restore one correct MAZLATEST route and one independent fallback, add typed
+  route diagnostics, then repair short-code pairing and portal durability.
+- Wire the first agent harness to selective unified-memory loading and prove a
+  cross-agent write/read handoff without loading the legacy ledger.
+- Execute LeadFinder's remaining P0s in dependency order before making any
+  production-readiness marketing claim.
 
 - Complete the graphical acceptance matrix and configure code signing before public installer distribution.
 - Obtain a registered TPS/CTPS screening service before beginning a live outbound call session; Call Desk records screening evidence but does not query the registers.

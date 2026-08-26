@@ -2,7 +2,7 @@
 type: project
 title: "LeadFinder"
 created: 2026-08-24
-updated: 2026-08-24
+updated: 2026-08-26
 tags:
   - maz-works
   - leadfinder
@@ -19,10 +19,15 @@ LeadFinder is the standalone Maz Works local-first lead discovery, qualification
 
 - Repository: `https://github.com/manazoid4/leadfinder`
 - Feature branch: `agents/leadfinder-slice-1`
-- Latest audit-plan commit: `cfe7b6b`.
+- Latest implemented P0 fix: `4d74db6`.
 - Independent product, technical, GUI, and judge audits returned **NO-GO for V1**. The installed build is a prototype and must not be used for live cold calling.
-- P0 runtime failures: SQLite seed SQL prevents database-backed commands; installed Gosom is resolved from the wrong resource path; Gosom CSV fields are mapped positionally and incorrectly; five-pass evidence and TPS/CTPS eligibility do not exist; the call loop and responsive GUI are incomplete.
-- Build status: `npm run build` passes. `cargo test` compiles but runs zero tests, which is a blocking test gap rather than validation.
+- The SQLite apostrophe crash was repaired with a parameterized write. Five P0
+  slices remain: safe header-mapped Gosom/CSV ingestion; five persisted evidence
+  passes; fail-closed TPS/CTPS and suppression eligibility; evidence-derived
+  opener plus 50-site validation gate; restart-safe calling loop with callbacks
+  and Save + Next.
+- Build status rechecked 2026-08-26: `npm run build` passes. This does not alter
+  the NO-GO verdict or replace installed-app/Rust/product acceptance evidence.
 - Authoritative audit/repair plan: `leadfinder/docs/V1_AUDIT_AND_PLAN.md`, `leadfinder/tasks/plan.md`, and `leadfinder/tasks/todo.md`.
 - Local package remains at `C:\Users\manaz\leadfinder\src-tauri\target\release\bundle\nsis\LeadFinder_0.1.0_x64-setup.exe`; do not treat its presence as release readiness.
 - GitHub note: the empty repository was created with the feature branch as its initial default because no `main` ref existed. Do not push directly to `main`; establish the protected integration branch through the normal repository workflow before merging later slices.

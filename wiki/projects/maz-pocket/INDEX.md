@@ -1,7 +1,7 @@
 ---
 title: MAZ Pocket
 created: 2026-08-13
-updated: 2026-08-21
+updated: 2026-08-26
 type: project
 tags: [projects, maz-pocket, hardware, firmware, cardputer, esp32, voice, github]
 ---
@@ -72,6 +72,26 @@ Agent Nudge supplies deterministic assurance facts rather than guessed status.
 
 ## Current status
 
+### Live reliability audit — 2026-08-26
+
+- The physical v1.0.0 device and `mazpocket.local` portal are reachable over
+  Wi-Fi. Desktop/mobile UI and protected screen access work with the token in
+  the installed MAZ Core configuration.
+- The token in the checked-out host `.env` is stale. Only fingerprints were
+  compared; no secret was stored in the vault. The active credential is 43
+  characters, so it must be replaced as a human interaction by a short-lived
+  pairing code exchanged for a strong underlying credential.
+- The device's saved route is CLOUD (`2`), not MAZLATEST (`3`). All live AI
+  routes currently fail: MAZLATEST 503, CLOUD 500, LOCAL 503, AUTO 500.
+- MAZLATEST's 9router combo contains two retired model IDs. CLOUD/AUTO let an
+  upstream `httpx.HTTPStatusError` escape as ASGI HTTP 500. The local llama.cpp
+  endpoint is unavailable, and current direct router authentication tests are
+  rejected with 401.
+- The host automated regression suite passes, proving the failure is a live
+  integration/configuration gap not covered by the mocked/unit boundary.
+- Canonical audit and GSD-structured roadmap:
+  [[wiki/outputs/2026-08-26-maz-pocket-unified-memory-audit]].
+
 - GitHub's latest release is v0.8.0 — CONTROL. Draft PR #31 contains the MAZ
   Work research, product definition and v0.9 build prompt.
 
@@ -107,9 +127,15 @@ Agent Nudge supplies deterministic assurance facts rather than guessed status.
 
 ## Next
 
-1. Confirm the LVGL Home screen visually and exercise every Home shortcut.
-2. Run the remaining physical acceptance flows and record photos: Talk using
+1. Repair typed upstream error handling, effective-route diagnostics, Core to
+   9router authentication, the retired MazLatest combo, and one independent
+   fallback before adding features.
+2. Replace raw-token entry with short-code pairing while retaining a strong
+   device credential; soak-test hostname/direct-IP portal reconnect behavior.
+3. When the expected ADV reappears on a COM port, run guarded physical ping,
+   route, pair, reboot/reconnect, and raw-turn tests and save redacted results.
+4. Run the remaining physical acceptance flows and record photos: Talk using
    the device mic/speaker,
    BrainDump, Sprint, Reminder and Agent Nudge acknowledgement.
-3. Add MAZ Works showcase material only after those flows are demonstrated.
-4. Keep the seven-day carry test as the product continuation gate.
+5. Add MAZ Works showcase material only after those flows are demonstrated.
+6. Keep the seven-day carry test as the product continuation gate.

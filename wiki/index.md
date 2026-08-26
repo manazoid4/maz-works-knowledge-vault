@@ -1,9 +1,17 @@
 # Wiki Index
 
-> Project and engineering knowledge index for the Maz Works Knowledge Vault. Last updated: 2026-08-13.
+> Project and engineering knowledge index for the Maz Works Knowledge Vault. Last updated: 2026-08-26.
 
 ## Projects
 
+- [[wiki/projects/maz-pocket/INDEX]] — physical capture/control device; live AI
+  route and pairing recovery is the current priority.
+- [[wiki/projects/leadfinder/STATUS]] — standalone lead acquisition prototype;
+  SQLite fixed, five P0 slices remain before live use.
+- [[wiki/projects/unified-memory/INDEX]] — cross-agent operational memory
+  control plane and GSD delivery roadmap.
+- [[wiki/outputs/2026-08-26-maz-pocket-unified-memory-audit]] — comprehensive
+  Pocket/Core/9router/browser/token/LeadFinder/memory audit.
 - [[wiki/projects/maz-works/CALL-DESK]] — local-first Windows prospect research, compliance gate, evidence-led live call script, outcomes and £150 rescue-sprint workflow; MazOS PR #57.
 - [[2026-08-23-maz-works-codex]] — recovered Maz Works acquisition sources and delivered the Windows Call Desk on MazOS PR #57.
 - [[2026-08-13-maz-works-codex]] — Quiet Framework delivery, peer benchmark, browser evidence, PR #9, and canonical Maz Works Knowledge Vault identity.
