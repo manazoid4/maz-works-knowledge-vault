@@ -37,8 +37,8 @@ dated-evidence layout, but harness wiring remains unimplemented.
 - The unified-memory repo is now navigable by index, project status, topic,
   plan, and dated ledger. Context adapters, automated indexing, staleness, and
   secret scans remain to build.
-- GSD Core v1.11.0 was installed for Codex; its Discuss -> Plan -> Execute ->
-  Verify -> Ship phase pattern structured the recovery roadmap.
+- GSD Core v1.11.0 was installed for Codex and Claude Code; its Discuss -> Plan
+  -> Execute -> Verify -> Ship phase pattern structured the recovery roadmap.
 
 - [[wiki/projects/maz-works/CALL-DESK]] is the canonical Maz Works client-acquisition implementation. It is not JobFilter AI call screening.
 - MazOS PRs #57 and #58 are merged. The required local-only hosted boundary is live: Vercel/non-loopback users see a local Windows gate and prospect/site-check APIs return 403.

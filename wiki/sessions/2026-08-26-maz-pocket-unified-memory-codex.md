@@ -19,9 +19,11 @@ status: completed
   and wrote a GSD-structured reliability and memory roadmap.
 - Rechecked LeadFinder's production frontend build and restated the five
   remaining P0s and truthful marketing boundary.
-- Installed GSD Core v1.11.0 for Codex. The originally supplied repository was
-  archived and pointed to the maintained Open GSD distribution; no GSD command
-  was allowed to silently choose product decisions.
+- Installed GSD Core v1.11.0 for Codex. A later non-interactive `--version`
+  probe was interpreted by the package as an install command and also installed
+  the same release for Claude Code. The originally supplied repository was
+  archived and pointed to the maintained Open GSD distribution; no GSD workflow
+  command was allowed to silently choose product decisions.
 
 ## Files changed
 
@@ -32,8 +34,8 @@ status: completed
 - `wiki/projects/unified-memory/INDEX.md`
 - `wiki/outputs/2026-08-26-maz-pocket-unified-memory-audit.md`
 - `wiki/hot.md`, `wiki/index.md`, and this session note.
-- Codex global GSD skills/agents/hooks installed by the official current npm
-  package.
+- Codex and Claude Code global GSD skills/agents/hooks installed by the official
+  current npm package.
 
 ## Decisions made
 
@@ -56,4 +58,3 @@ status: completed
 4. Run guarded COM tests when the expected ADV port is present.
 5. Wire one harness to unified memory and prove cross-agent handoff.
 6. Execute LeadFinder's remaining P0 slices in dependency order.
-
