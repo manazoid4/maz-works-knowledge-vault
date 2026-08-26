@@ -13,6 +13,7 @@ status: completed
 - Removed zero-use `caveman`, `test-android-apps`, and `coderabbit` plugins.
 - Retained codebase-memory, Local Knowledge, Supabase, Context7, OpenAI developer docs, browser tooling, and standing-order skill packs.
 - Removed one duplicated codebase-memory SessionStart instruction while retaining the trusted active copy.
+- Terminated the two orphaned code-review-graph server processes and uninstalled its standalone `uv` tool executables; the copy bundled inside Hermes remains an internal Hermes dependency, not a configured Codex MCP.
 - Verified Codex doctor: 22 OK, 0 failures; 7 configured MCP servers, including one deliberately disabled Notion connection.
 
 ## Files changed
