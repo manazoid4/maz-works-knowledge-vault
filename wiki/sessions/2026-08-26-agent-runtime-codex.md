@@ -36,6 +36,13 @@ status: completed
 - Removed plugins report `not installed`.
 - Backup SHA-256: config `049A942F94248BF76E03BA7EF75F7AE5176AA91DB46FB05FCC7983247857AC29`; hooks `E4D6FDD3AFAE36F8C92ED0AC254C3666E523D8AA3562FCF69A52557560011335`; hook script `07B70378CE742489E9C0FE9BA506DF4187BF1E8D6DDDE02C9FB5CC6A1A8E46FF`.
 
+## Live-session hook diagnosis
+
+- The continuing `PostToolUse hook (failed)` banner belongs to the already-running Codex process, which loaded the removed hook at session start.
+- Rechecked the active Codex files: `C:\Users\manaz\.codex\hooks.json` is `{ "hooks": {} }`, and active Codex configuration contains no `PostToolUse` or `code-review-graph` reference.
+- A new Codex session is required once to unload the stale in-memory hook registration. No further on-disk Codex hook removal is pending.
+- Separately, Claude Code's enabled ECC plugin had a Windows-incompatible `post:observe` shell hook. Added scoped `ECC_DISABLED_HOOKS=post:observe` to `C:\Users\manaz\.claude\settings.json`; JSON parsing and ECC's disabled-hook decision both passed. Rollback copy: `C:\Users\manaz\.claude\backups\2026-08-26-posttooluse-fix\settings.json.before` (SHA-256 `9CD525C1686A33C2EA1EEEDB9F9FFE6961FC69B803AE3B006B2073BF61A904B1`).
+
 ## Next steps
 
 - Resume MAZ Pocket closure from its staged release branch state.
