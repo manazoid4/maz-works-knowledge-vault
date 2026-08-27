@@ -1,5 +1,11 @@
 # Wiki Log
 
+## [2026-08-27] save | MAZ Pocket v1 Release-Gap Closure
+
+- Type: session update
+- Location: `wiki/sessions/2026-08-27-maz-pocket-codex.md`
+- From: single-workstream MAZ Pocket execution, independent-review fixes, full local verification, PR evidence, and postmortem.
+
 ## [2026-08-23] fix | Maz Works Call Desk Local-Only Boundary
 
 - Type: decision update

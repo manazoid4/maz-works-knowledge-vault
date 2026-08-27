@@ -1,9 +1,11 @@
 # Wiki Index
 
-> Project and engineering knowledge index for the Maz Works Knowledge Vault. Last updated: 2026-08-26.
+> Project and engineering knowledge index for the Maz Works Knowledge Vault. Last updated: 2026-08-27.
 
 ## Projects
 
+- [[2026-08-27-maz-pocket-codex]] — MAZ Pocket v1 release-gap closure,
+  verification evidence, remaining physical/CI gates, and postmortem.
 - [[wiki/projects/maz-pocket/INDEX]] — physical capture/control device; live AI
   route and pairing recovery is the current priority.
 - [[wiki/projects/leadfinder/STATUS]] — standalone lead acquisition prototype;

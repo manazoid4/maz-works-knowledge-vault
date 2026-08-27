@@ -2,7 +2,7 @@
 type: meta
 title: "Hot Cache"
 created: 2026-04-23
-updated: 2026-08-26
+updated: 2026-08-27
 tags:
   - meta
   - hot-cache
@@ -17,13 +17,22 @@ related:
 
 ## Last Updated
 
-2026-08-26. MAZ Pocket's portal is reachable but every live AI route is broken;
-the active route is CLOUD rather than MAZLATEST. The cross-agent unified-memory
-repository now has a GSD-structured recovery roadmap and indexed project/topic/
-dated-evidence layout, but harness wiring remains unimplemented.
+2026-08-27. MAZ Pocket v1 code is locally release-candidate ready on PR #35 at
+`0d1872f`: 158 host/browser tests pass, firmware builds under the M5Launcher
+slot ceiling, artifacts/checksums validate, and live Core/Cardputer polling is
+healthy. Release remains blocked only by GitHub billing preventing CI from
+starting and the honest physical Cardputer/M5Launcher acceptance gate.
 
 ## Key Recent Facts
 
+- [[2026-08-27-maz-pocket-codex]] records the v1 release-gap fixes, evidence,
+  remaining blockers, and postmortem. Only MAZ Pocket was active; other
+  workstreams remain paused.
+- JobFinder is removed from the active MAZ Pocket product surface. Historical
+  data remains dormant; the V2 JOB HUNT consistency track remains supported.
+- Cardputer WORK writes are non-blocking, pairing claims are concurrency-safe,
+  Manage Tracks is complete, release packages exclude private `.env*` files,
+  and M5Launcher is again the sole firmware installer.
 - [[wiki/outputs/2026-08-26-maz-pocket-unified-memory-audit]] is the current
   MAZ Pocket/Core/9router/pairing/unified-memory truth and recovery plan.
 - The active installed pairing credential works; the checked-out repo token is
