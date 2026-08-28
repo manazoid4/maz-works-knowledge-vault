@@ -15,6 +15,11 @@ related:
 
 # Recent Context
 
+## Unified Memory Push Closure
+
+- [[2026-08-28-unified-memory-push-codex]] records the final safe-push audit.
+- Unified-memory and video-production work is pushed. The untracked `10_Projects/` archive remains local pending privacy, size, nested-repository, and Zawiyah-content review.
+
 ## Durable Agent Memory Rule
 
 - [[wiki/meta/unified-memory-always-save]] is active: every agent session ends

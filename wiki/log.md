@@ -1,5 +1,11 @@
 # Wiki Log
 
+## [2026-08-28] save | Unified Memory Push Closure
+
+- Type: session
+- Location: `wiki/sessions/2026-08-28-unified-memory-push-codex.md`
+- From: final safe-push audit for unified memory and the Maz Works Knowledge Vault.
+
 ## [2026-08-28] decision update | Planning-agent harness contract
 
 - Type: decision update

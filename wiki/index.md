@@ -4,6 +4,7 @@
 
 ## Projects
 
+- [[2026-08-28-unified-memory-push-codex]] — final safe-push audit, bounded memory receipt, and exclusions for oversized/private untracked archives.
 - [[2026-08-27-maz-pocket-codex]] — MAZ Pocket v1 release-gap closure,
   verification evidence, remaining physical/CI gates, and postmortem.
 - [[wiki/projects/maz-pocket/INDEX]] — physical capture/control device; live AI
