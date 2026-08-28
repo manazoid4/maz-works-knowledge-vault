@@ -2,7 +2,7 @@
 date: 2026-08-28
 project: viral-video-pack
 agent: codex
-status: in-progress
+status: blocked
 ---
 ## What I did
 
@@ -24,8 +24,9 @@ status: in-progress
 - Use Cap + Subtitle Edit as the low-friction base; keep Remotion optional; do not depend on ClipForge.
 - Automate organization and reusable overlays, but retain human claim, voice, caption, pacing, and publish review.
 - Do not fabricate the final scripts or inspiration mapping without the original artifact text.
+- Queried unified memory session `mem_20260828t154747_3d33756f`; the bounded `maz-pocket` sources contained no video brief or Claude artifact context.
 
 ## Next steps
 
-- Obtain the Claude artifact as Markdown, PDF, or pasted text.
+- Obtain the correct project slug/path or the Claude artifact as Markdown, PDF, or pasted text.
 - Complete the original-plan audit, final brief, four subject-specific video folders, production validator, and full post-mortem.
