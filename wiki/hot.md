@@ -2,7 +2,7 @@
 type: meta
 title: "Hot Cache"
 created: 2026-04-23
-updated: 2026-08-27
+updated: 2026-08-28
 tags:
   - meta
   - hot-cache
@@ -14,6 +14,13 @@ related:
 ---
 
 # Recent Context
+
+## Durable Agent Memory Rule
+
+- [[wiki/meta/unified-memory-always-save]] is active: every agent session ends
+  with a bounded `memory.py end` record containing session ID, result,
+  evidence, and next action. Long-form context goes in the vault session note,
+  which is committed and pushed to `fork main`.
 
 ## Last Updated
 

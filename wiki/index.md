@@ -30,6 +30,8 @@
 
 ## Engineering
 
+- [[wiki/meta/unified-memory-always-save]] — active rule to persist every agent
+  outcome to unified memory and mirror the long-form vault session note.
 - [[2026-07-21-github-hygiene-codex]] — history-first repository cleanup, branch policy, and preserved backlog decisions.
 - [[wiki/engineering/REPO-MAP]] — cross-repo stack/auth/payments/AI/deploy map.
 - [[wiki/engineering/AGENT-HANDOFF]] — repo warnings and future-agent rules.

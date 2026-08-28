@@ -1,5 +1,11 @@
 # Wiki Log
 
+## [2026-08-28] save | Always Save Agent Outcomes to Unified Memory
+
+- Type: decision
+- Location: `wiki/meta/unified-memory-always-save.md`
+- From: explicit user operating preference for durable cross-agent memory and vault handoff.
+
 ## [2026-08-27] save | MAZ Pocket v1 Release-Gap Closure
 
 - Type: session update

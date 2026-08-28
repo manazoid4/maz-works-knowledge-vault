@@ -1,7 +1,7 @@
 ---
 title: Unified Memory Database
 created: 2026-08-26
-updated: 2026-08-26
+updated: 2026-08-28
 type: project
 status: active
 tags: [projects, unified-memory, agents, context, gsd]
@@ -33,6 +33,13 @@ current, provenanced project status, decisions, plans, and execution pointers.
   vault provenance checks.
 - Demonstrated write/read handoff across different agents.
 
+## Operating contract
+
+Every agent session saves a bounded outcome to unified memory before ending:
+session ID, concise result, concrete evidence, and next action. The long-form
+summary and changed-file list are mirrored in the Maz Works Knowledge Vault
+session note, which is committed and pushed to `fork main`. If no indexed
+project matches, the agent records the lookup and blocker instead of guessing.
+
 Canonical audit and roadmap:
 [[wiki/outputs/2026-08-26-maz-pocket-unified-memory-audit]].
-
