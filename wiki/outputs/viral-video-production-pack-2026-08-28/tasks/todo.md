@@ -7,10 +7,13 @@
 - [x] Run multi-perspective research.
 - [x] Install and smoke-test Reddit MCP Buddy.
 - [x] Install and smoke-test Rhei locally with source upload disabled.
-- [ ] Obtain the Claude artifact as Markdown, PDF, or pasted text.
-- [ ] Complete the line-by-line original-plan audit.
-- [ ] Map inspiration techniques to low-effort edits.
-- [ ] Write the master brief.
-- [ ] Write all four video packets.
-- [ ] Add the production validator and run it.
-- [ ] Complete the pre-publish post-mortem baseline.
+- [x] Ingest the pasted Claude artifact.
+- [x] Complete the original-plan audit.
+- [x] Map inspiration mechanics to low-effort edits.
+- [x] Write the master brief and four video packets.
+- [x] Add the production validators.
+- [x] Complete the adversarial post-mortem.
+- [ ] Capture a fresh JobFilter scan and clean-browser proof.
+- [ ] Obtain Scrap Finance written permission.
+- [ ] Complete the parking field/artefact gate or use quoting fallback.
+- [ ] Export and approve the first vertical master.

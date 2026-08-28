@@ -1,0 +1,8 @@
+start,end,visual,audio,caption,source
+0,7,clock and duplicate records,room tone plus speech,THE JOB ENDS AT FIVE.,synthetic demo
+7,15,three records highlighted,speech,3 places. Same job.,synthetic demo
+15,24,spreadsheet fairness frame,speech,A spreadsheet can be right.,none
+24,36,intake to draft quote,speech,One record. Reviewable draft.,prototype
+36,47,human review and disabled send,speech,HUMAN CHECK. HUMAN SEND.,prototype
+47,56,grey limitation card then face,speech,THE WORKFLOW CANNOT INSPECT THE JOB.,none
+56,60,fixed end card,speech,It's on the site. The code's there too.,none

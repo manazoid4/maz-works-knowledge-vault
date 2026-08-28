@@ -1,4 +1,6 @@
-# Execution Plan
+# Execution Plan — Research Complete
+
+The research and production-folder tasks are complete. Physical capture now follows [[../production/seven-day-sprint]].
 
 ## Outcome
 

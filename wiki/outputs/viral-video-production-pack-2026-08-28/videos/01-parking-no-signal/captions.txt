@@ -1,0 +1,12 @@
+This car park asks for an app.
+Down here, my phone has [measured result].
+Public Derby pages only. No account. No scraping.
+73% reported a parking-app problem.
+Of those people, 70% cited unreliable signal.
+Cashless parking can be convenient.
+The failure is making connectivity the only obvious path.
+I made an unofficial offline reference.
+It keeps the code, source and alternatives readable.
+It cannot take payment offline.
+That is the bit I couldn't fix.
+It's on the site. The code's there too.

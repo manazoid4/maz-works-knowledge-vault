@@ -1,0 +1,13 @@
+A finance firm asked for a website.
+The site could collect an enquiry.
+It could not make a person own the next action.
+Dummy records only.
+One enquiry creates one question: who acts next?
+An inbox can be enough.
+It fails when ownership exists only in someone's head.
+The site is shipped.
+The workspace is coded, not live.
+Sending stays disabled.
+I have no verified revenue outcome.
+I will not invent one.
+It's on the site. The code's there too.
