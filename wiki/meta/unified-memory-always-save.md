@@ -27,3 +27,19 @@ session also writes a dated vault note with the decisions and changed files,
 then commits and pushes the vault to `fork main`. If the task has no matching
 indexed project, record that lookup and the blocker rather than fabricating
 project context.
+
+## General planning-agent harness rules
+
+- Read requested video transcripts during research and record the transcript
+  method; never imply a video was watched when it was not.
+- Keep a source ledger and distinguish fact, source claim, inference, and
+  recommendation.
+- Route DeepSeek to cheap, non-sensitive extraction and backend-heavy work;
+  route creative/visual judgement to Claude and execution/verification to
+  Codex. Keep secrets, customer data, regulated data, and sensitive IP out of
+  untrusted model contexts.
+- Refresh time-sensitive paths, URLs, repository state, tools, and claims.
+  Record `last_verified`, provenance, confidence, and refresh/expiry conditions.
+- Use COG as a pattern donor only: memory hygiene, independent evidence,
+  explicit acceptance gates, bounded checkpoints, and propose-first harvest /
+  retros. Do not create a second vault or load whole transcripts by default.

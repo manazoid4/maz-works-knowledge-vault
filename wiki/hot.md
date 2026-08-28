@@ -21,6 +21,9 @@ related:
   with a bounded `memory.py end` record containing session ID, result,
   evidence, and next action. Long-form context goes in the vault session note,
   which is committed and pushed to `fork main`.
+- Planning agents must read requested video transcripts, keep a source ledger,
+  refresh stale facts, route DeepSeek/Claude/Codex by role, use COG-derived
+  evidence gates and propose-first retros, and avoid whole-context loading.
 
 ## Last Updated
 

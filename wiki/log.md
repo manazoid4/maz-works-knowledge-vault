@@ -1,5 +1,11 @@
 # Wiki Log
 
+## [2026-08-28] decision update | Planning-agent harness contract
+
+- Type: decision update
+- Location: `wiki/meta/unified-memory-always-save.md` and unified-memory `topics/planning-agent-harness.md`
+- From: user instruction to generalize transcript reading, DeepSeek harness roles, refresh discipline, and COG rules to every planning agent.
+
 ## [2026-08-28] save | Always Save Agent Outcomes to Unified Memory
 
 - Type: decision

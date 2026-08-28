@@ -41,5 +41,7 @@ summary and changed-file list are mirrored in the Maz Works Knowledge Vault
 session note, which is committed and pushed to `fork main`. If no indexed
 project matches, the agent records the lookup and blocker instead of guessing.
 
+Planning agents also follow `C:\Users\manaz\unified-memory-database\topics\planning-agent-harness.md`: transcript-first source research, DeepSeek role boundaries, refresh/re-verification, COG-derived evidence gates, bounded context, and propose-first retros.
+
 Canonical audit and roadmap:
 [[wiki/outputs/2026-08-26-maz-pocket-unified-memory-audit]].
