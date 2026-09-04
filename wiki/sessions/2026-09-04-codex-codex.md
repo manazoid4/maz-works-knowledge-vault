@@ -6,7 +6,7 @@ status: completed
 ---
 ## What I did
 
-Checked the installed Codex CLI and Windows app versions against the official OpenAI Codex changelog.
+Checked the installed Codex CLI and Windows app versions against the official OpenAI Codex changelog, then upgraded the global Codex CLI from 0.150.1 to 0.153.2.
 
 ## Files changed
 
@@ -14,9 +14,10 @@ Checked the installed Codex CLI and Windows app versions against the official Op
 
 ## Decisions made
 
-- Reported the available CLI update without installing it because the request was an update check.
+- Installed the exact current release listed in the official changelog with npm.
+- Verified both `codex --version` and the global npm package report version 0.153.2.
 - Left the unrelated untracked `10_Projects/` vault folder untouched.
 
 ## Next steps
 
-- Upgrade the Codex CLI from 0.150.1 to 0.153.2 if requested.
+- Restart any open terminal-based Codex sessions if they need to load the new executable.
