@@ -1,5 +1,17 @@
 # Wiki Log
 
+## [2026-09-06] save | MAZ Pocket element14 Batch A
+
+- Type: session
+- Location: `wiki/sessions/2026-09-06-maz-pocket-codex.md`
+- From: rules, CI repair, physical evidence and Astra handoff.
+
+## [2026-09-06] decision | Competition and Crowdfunding Launch Template
+
+- Type: decision and reusable prompt
+- Location: `wiki/prompts/competition-and-crowdfunding-launch-template.md`
+- From: MAZ Pocket element14 delivery, future competition reuse, client positioning and Kickstarter preparation.
+
 ## [2026-09-05] decision | Personal AI Model Routing Workflow
 
 - Type: question and session

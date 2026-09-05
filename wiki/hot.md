@@ -15,6 +15,15 @@ related:
 
 # Recent Context
 
+## MAZ Pocket element14 Batch A
+
+- [[2026-09-06-maz-pocket-codex]] records PR #36, successful firmware build, physical CALL/PLAN/Nudge failures and the Astra decision boundary.
+
+## Competition and crowdfunding workflow
+
+- [[wiki/prompts/competition-and-crowdfunding-launch-template]] routes routine evidence and implementation to Sol, architecture/security and final review to Astra, and legal/commercial submissions to the founder.
+- The MAZ Pocket element14 build is the first instantiation. Reusable assets support later competitions, client case studies and Kickstarter preparation without expanding the current firmware scope.
+
 ## Unified Memory Push Closure
 
 - [[2026-08-28-unified-memory-push-codex]] records the final safe-push audit.

@@ -4,6 +4,7 @@
 
 ## Projects
 
+- [[2026-09-06-maz-pocket-codex]] — element14 Batch A, PR #36, physical findings and Astra handoff.
 - [[2026-08-28-unified-memory-push-codex]] — final safe-push audit, bounded memory receipt, and exclusions for oversized/private untracked archives.
 - [[2026-08-27-maz-pocket-codex]] — MAZ Pocket v1 release-gap closure,
   verification evidence, remaining physical/CI gates, and postmortem.
@@ -42,6 +43,7 @@
 
 ## AI engineering workflow
 
+- [[wiki/prompts/competition-and-crowdfunding-launch-template]] — reusable Sol/Astra/human workflow and asset pack for competitions, client proof, funding and Kickstarter readiness.
 - [[wiki/questions/personal-ai-model-routing-workflow]] — personal A-B-C routing: align and build with Sol, check bottlenecks with Astra, then return to Sol; grounded in current Plus usage.
 - [[wiki/questions/ox-alpha-hermes-portfolio-audit-build-prompt]] — five-paste, nine-project Ox Alpha audit system that snapshots GitHub evidence and produces standalone build-agent prompts.
 - [[wiki/questions/ox-alpha-hermes-30-test-benchmark]] — 30 copy-paste Hermes tests across 10 perspectives, scored for evidence, usefulness, safety, and friction reduction.
