@@ -1,5 +1,11 @@
 # Wiki Log
 
+## [2026-09-05] decision | Personal AI Model Routing Workflow
+
+- Type: question and session
+- Location: `wiki/questions/personal-ai-model-routing-workflow.md`
+- From: OpenRouter/OpenAI comparison plus bounded local Codex usage and live Plus-limit telemetry.
+
 ## [2026-08-28] save | Unified Memory Push Closure
 
 - Type: session
