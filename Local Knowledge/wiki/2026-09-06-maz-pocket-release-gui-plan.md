@@ -8,7 +8,17 @@ Execution model: GPT-5.6 Sol or another lower-cost coding model. Use the accepte
 
 Deliver a reliable Cardputer ADV connected to one understandable MAZ Core Windows client, a separately versioned Project14 edition, and an evidence-backed Mazwrks showcase. Preserve existing working features and device/user data. Keep CALL, CAPTURE, AGENTS and CONTROL as the competition Home. PLAN never executes. Only confirmed fixed-homepage YouTube and fresh Notepad-note actions belong in this release.
 
-Order: recover and identify baseline; make installation safe; restore pairing and truthful health; add the minimal Core GUI; freeze and prove the exact candidate; publish reviewed changes and release; finish competition media/submission pack and Mazwrks showcase. Work on one implementation slice at a time. Independent read-only reviews may run in parallel.
+Order: recover and identify baseline; make installation safe; restore pairing and truthful health; prove a real dictated PC note and returned Cardputer receipt immediately; complete competition acceptance and submission assets; deliver the minimal Core GUI without holding the competition build hostage; publish reviewed release and Mazwrks showcase. Work on one implementation slice at a time. Independent read-only reviews may run in parallel. Task numbers identify work packages, not a requirement to delay task 8 until GUI polish is complete.
+
+## Full prior-session audit — controlling corrections
+
+The original session is 01a07315-2925-77e0-9b18-e75266c5bc28 (5–6 September). See docs/element14/SESSION-REQUIREMENTS-AUDIT.md for timestamped requirement coverage and historical evidence. Read the existing BATCH-A-HANDOFF.md, BATCH-B-ASTRA-VERDICT.md and PHYSICAL-EVIDENCE-2026-09-05.md once when implementing the relevant slice. Do not restart completed batches or treat old evidence as a current pass.
+
+- Target entrant submission on 12 September, with 13 September 2026 at 23:59 UK as the recorded hard deadline. The actual published entry URL/timestamp remains part of completion, not merely a drafted article.
+- First hardware milestone is a real dictated follow-up note: physical Cardputer microphone, cloud interpretation, concrete preview, ENTER confirmation, fresh Notepad file on this PC, and a receipt back on Cardputer. Test typed input separately. Ordinary CALL and PLAN must not acquire execution powers.
+- Tkinter is a new implementation recommendation for the later requested GUI, not a historical user-selected toolkit. Keep it isolated in the host client; no firmware GUI framework migration. Competition evidence can be completed before tasks 6–7. If GUI changes affect Core behavior, rerun affected acceptance on the released combination.
+- Keep Teach Demo, spoken replies, CREW and RETRO optional unless already reliable and physically evidenced. No new radios, sensors, PCB, inference/agent framework, WORK or telemetry expansion. Preserve existing features and stable app IDs under deeper menus.
+- Use stronger-model review for unresolved architectural/security decisions and one skeptical release review, with routine execution on the cheaper model. Do not repeat completed Batch A/B or block routine work on model-label checks.
 
 ## Verified planning snapshot
 
@@ -39,6 +49,7 @@ Files: tasks/plan.md, tasks/todo.md, docs/element14/FINAL-STATUS.md.
 Record git status, staged/unstaged diff, HEAD, remote PR heads, installed Core process/port/version and read-only USB identity. Review the two unpushed commits and session-binding edits together. Classify each untracked item without printing secrets. Do not reset, stash blindly or commit other people's work.
 Acceptance: every pending source/doc change has an explicit keep/review decision; remote and local evidence are distinct; previous plans remain preserved.
 Verify: git diff --check; scoped diffs; current PR/CI query. Dependency: none.
+Also audit controlled repository presentation: README/docs, PR title/body and release notes. Remove irrelevant promotional/session metadata such as generated-with banners and private session links; preserve required licence and author attribution. Do not rewrite Git history just to remove old promotional metadata. Record the checked surfaces and edits; secret scanning is a separate gate.
 
 ### 2. Make Launcher inspection and preparation fail safely (medium)
 
@@ -67,6 +78,7 @@ Files: host/pair.ps1, src/net/control.cpp, relevant network configuration code, 
 Reuse MAZCOREPAIR. Replace first-interface/first-device assumptions with the identified device and actual Core LAN endpoint/port; wait for serial readiness instead of relying on 300ms startup. Handle stale tokens and firmware mismatch visibly without changing Wi-Fi. Suppress raw token output, including any reused setup.ps1 output.
 Acceptance: first-time and stale-credential pairing work without long-token entry; invalid/ambiguous device selection writes nothing; restart/reconnect retains pairing and existing user data.
 Verify: focused malformed/wrong-device/timeout tests, physical pair and protected health request, restart/reconnect. Dependencies: 3, 4.
+Release the existing serial monitor before pairing/flashing and reacquire it afterward; close serial handles in finally. Check actual tab/newline framing before diagnosing rejected CLI commands as token or firmware failure. An attached USB interface does not prove an authenticated LAN connection. Keep a direct-IP recovery path if mDNS fails.
 
 ### 6. Deliver the minimal Core connection GUI (medium, split if over five files)
 
@@ -86,7 +98,17 @@ Files: docs/element14/FINAL-ACCEPTANCE.md, FINAL-STATUS.md and scoped fixes only
 Review PC proposal session ownership, expiry, atomic consumption, cancel and replay behavior. A session's existence alone must not be mistaken for per-client ownership. Run focused tests, full host suite, final firmware build once code stabilizes; commit source and rebuild from that exact commit; record hash and reflash through safe path.
 Run three consecutive physical trials of real human CALL, Brain Dump, responsive online/offline PLAN, live or truthfully unavailable STATUS, confirmed YouTube and fresh Notepad note with device receipt, cancellation/replay, reconnect/reboot/Launcher return. Record provider and result for the same turn. Preserve captures and existing files.
 Acceptance: final matrix has actual evidence for every claimed behavior; no synthetic speech is presented as human voice; no CLI success is presented as observed PC window or heard audio.
-Verify: FINAL-ACCEPTANCE.md plus physical observation/media. scripts/accept-device.py is supplementary: it targets older screens and synthesized PC speech. Dependencies: 6, 7.
+Verify: FINAL-ACCEPTANCE.md plus physical observation/media. scripts/accept-device.py is supplementary: it targets older screens and synthesized PC speech. Dependencies: 4, 5 and required reliability fixes; tasks 6–7 are not prerequisites for early competition proof. Rerun affected gates after GUI/lifecycle changes if bundled in the final release.
+
+Required focused checks carried forward from Astra:
+- PC actions: typed and dictated requests; fixed https://www.youtube.com/ only; plain note text 1–4000 characters, no NUL; no model-supplied path, executable or shell; reject extra fields and unsupported/ambiguous requests without effects. Show normalized preview and allow cancellation/rephrase.
+- Proposal security: authenticated endpoints; real session ownership; 120-second expiry; atomic single consumption; repeated confirm returns the existing receipt; cross-session, unknown, expired and post-restart proposals cannot execute. Interrupted/unknown completion must not auto-retry. Dedicated uniquely named notes use exclusive creation; unsafe/reparse destinations rejected; file creation and application launch reported separately.
+- PLAN: no synchronous discovery prerequisite on open; ESC stays responsive offline. Malicious model JSON cannot override server-owned ok/kind/provider/authority or invoke an executor. STATUS must name current source/time or say unavailable.
+- Routing: preserve symbolic and legacy numeric saved routes. Prove the existing selected cloud route and independent local fallback with actual replies; report actual provider, not only configured route. Exercise provider unavailable, timeout, invalid credential/model and malformed response without unhandled 500s or false success. No new backend. Do not silently label local/deterministic actions as cloud-interpreted.
+- CONTROL: expose existing/cheap truthful Wi-Fi state, RSSI, Core reachability, measured request latency, selected/effective route, local/cloud readiness, agent availability and pairing state. Unknown or stale values stay labelled; no new telemetry expansion.
+- Physical failure/recovery: actual Wi-Fi interruption, Core restart and reconnection; no data loss. Preserve the pre-existing raw Brain Dump capture created by the prior surface test. Opening Brain Dump itself can start recording, so it is not a read-only probe.
+- Audio diagnosis: active CALL maps through CommApp/comm.cpp and host_worker, not the legacy CallApp. Check beginTake, worker state, voice::start and real key transition before changing audio. Acknowledged injected keys do not prove recording. Record observed recording, saved audio, transcript, provider and displayed result for the same turn.
+- Historic boot output reported internal storage and an SD FAT mount error. Do not format SD or claim SD works; document actual storage mode and preserve contents. Serial open caused USB reset in prior attempts, so keep discovery read-only and serial testing deliberate.
 
 ### 9. Push reviewed project work and clear public release gates (medium)
 
@@ -106,6 +128,7 @@ Verify: open rendered assets/links, inspect media for secrets, check official pa
 
 Repository: C:/Users/manaz/mazos-site. Read local instructions and bounded wiki/projects/maz-works/STATUS.md first; identify existing case-study route/component before editing. Branch agents/maz-pocket-showcase. Reuse app/projects.ts and app/work/[slug]/page.tsx, public/maz-pocket-*.webp, app/sitemap.ts and tests/static-export.test.mjs. Target /work/maz-pocket. Use Lab/prototype positioning until stronger product evidence exists; preserve JobFilter/Scrap Finance flagship hierarchy.
 Show what Pocket solves, how the physical connection works, actual device/PC photos/video, demonstrated features, honest limitations, repository/release link and a relevant contact/demo CTA. Do not invent clients, testimonials, speed measurements, sales or production readiness.
+Deliver one recognizable sanitized client scenario and pilot proposition: dictate a fictional customer follow-up, review the bounded action, create a new PC note, and show the useful output. Explain intended user, problem, supported workflow, setup/support boundaries and demo/pilot next step. Do not imply completed CRM integration, paying customers or measured ROI. Site publication follows the competition handoff/submission when possible; independent drafting must not delay the hardware/blog deadline.
 Acceptance: complete case-study page discoverable from existing work listing, responsive accessible media, working links and truthful claims; deployed production URL verified.
 Verify: npm run verify (includes typecheck, production build, tests and smoke); browser desktop/mobile checks; PR/CI and production page after authorized deployment. Dependency: 8; published release links from 9.
 
@@ -113,6 +136,9 @@ Verify: npm run verify (includes typecheck, production build, tests and smoke); 
 
 Files: docs/element14/FUNDING-AND-REUSE.md; relevant unified-memory plan/status/ledger; Obsidian project/session notes and Local Knowledge mirror.
 Store sanitized assets and a reusable competition-entry template. Record Kickstarter readiness gaps: offer, costs/BOM, supply, fulfillment/support, campaign audience, risks and evidence. No reward, price, delivery or campaign launch promises without a concrete later decision.
+Canonical reusable template: C:/Users/manaz/unified-memory-database/plans/competition-and-crowdfunding-launch-template.md. Extend it with entry fields for official sources, eligibility, deadline/timezone, judging, format/media, source/IP requirements, submission owner, evidence threshold and confirmed submission URL/time. Create an owned follow-on register for other competitions and Kickstarter, with next action and evidence owner per item. Research specific new competitions when selected; do not turn this release into an unbounded worldwide search or silently submit additional entries.
+Create a concrete funding-readiness brief covering the pilot offer, prototype BOM/cost evidence, supply/fulfilment/support assumptions, audience/prelaunch work, risks and next validation experiment. Campaign launch remains a later decision. Assign factual collection/asset tasks to the execution model and legal, pricing, delivery and entrant decisions to the human.
+Mandatory closeout after every session: memory.py end with evidence and next action; explicitly stage only relevant unified-memory files; commit and push its agents/ branch to GitHub; verify the remote branch contains the new commit and record its URL. A local memory.py end or Obsidian push alone is not completion. Also mirror and push the knowledge vault to fork main. Preserve unrelated dirty files.
 Acceptance: another model can resume from one bounded handoff; all remote commits/PRs and outstanding human steps recorded; both vault stores and unified memory updated without unrelated changes.
 Verify: saved links and git push results. Dependencies: 9–11, but write incremental handoffs whenever blocked.
 
@@ -139,4 +165,3 @@ The executor should update tasks/todo.md and FINAL-STATUS.md after each checkpoi
 Hardware review found partition mutation before capacity validation. Product/GUI review found stale graph entries, missing short-code pairing on this branch, and diagnostics contract mismatch. Release review found an existing v0.8.0 tag and outdated status evidence. These are first-class tasks, not optional cleanup.
 No implementation, device mutation, application launch, project release or competition submission occurred during planning.
 Stop only a dependent unsafe operation; continue authorized independent work. Human handling/filming and entrant-only submission remain explicit evidence dependencies, not fabricated automation successes.
-
