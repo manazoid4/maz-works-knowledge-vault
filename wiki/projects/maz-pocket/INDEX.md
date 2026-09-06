@@ -149,3 +149,8 @@ Agent Nudge supplies deterministic assurance facts rather than guessed status.
    BrainDump, Sprint, Reminder and Agent Nudge acknowledgement.
 5. Add MAZ Works showcase material only after those flows are demonstrated.
 6. Keep the seven-day carry test as the product continuation gate.
+
+## Latest execution plan — 6 September 2026
+
+See [[2026-09-06-release-gui-execution-plan]] for the reviewed recovery, minimal Core GUI, Project14 release and Mazwrks showcase sequence. Planning verified USB enumeration only; final candidate acceptance remains outstanding.
+
