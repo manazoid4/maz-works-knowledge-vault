@@ -8,6 +8,16 @@ tags: [projects, maz-pocket, hardware, firmware, cardputer, esp32, voice, github
 
 # MAZ Pocket
 
+## Current priority — 6 September 2026
+
+The element14 competition scope supersedes the historical WORK/v1 plan below.
+Home: CALL / CAPTURE / AGENTS / CONTROL; retain secondary features in deeper menus.
+PR #36 is the competition baseline; its CI passed at ad062fa. PR #35 is a selective reliability donor, not approved for wholesale merge.
+Follow `maz-pocket/docs/element14/BATCH-B-ASTRA-VERDICT.md` and [[2026-09-06-maz-pocket-astra-codex]].
+Sol Batch C owns bounded implementation and physical acceptance. CALL audio, candidate firmware, PLAN responsiveness and PC actions remain unverified; full public-release scan remains open.
+The two requested PC actions use cloud proposals validated by Core and confirmed on Cardputer; PLAN never executes.
+Kickstarter and other competitions reuse [[wiki/prompts/competition-and-crowdfunding-launch-template]]. No campaign or submission is complete.
+
 Standalone firmware for the **M5Stack Cardputer ADV**, installable through
 M5Launcher alongside other firmware. It is the physical capture and control
 surface for MAZ Host and Agent Nudge: the device handles keys, audio, status,
