@@ -1,7 +1,7 @@
 ---
 title: Codex skill context cleanup plan
 date: 2026-09-05
-status: proposed
+status: completed
 owner: codex
 ---
 
@@ -118,4 +118,13 @@ Verification:
 
 ## Approval gate
 
-No active skill, configuration, or instruction file is moved or edited until the user approves execution of this plan.
+Execution required explicit user approval; approval was received before the execution result below.
+
+## Execution result — 2026-09-06
+
+- Moved 346 unused/overlapping directories to dated cold storage. Five frequently used entries were restored before verification; the manifest retains their history.
+- Isolated 44 unused remote Vercel leaf skills under `C:\Users\manaz\.codex\plugins-disabled\vercel-0.21.4\skills`; retained 11 Vercel guidance skills.
+- Disabled the broad Vercel plugin plus unused documents, spreadsheets, presentations, PDF, template-creator, visualize, and sites plugins in `C:\Users\manaz\.codex\config.toml`.
+- Updated `C:\Users\manaz\.codex\AGENTS.md` with the compact active catalog and cold-storage restore procedure.
+- Fresh Codex verification: 78 model-visible skill entries and no skill context-budget warning, no omitted-skills warning, and no shortened-description warning.
+- The Supabase MCP emitted its existing unauthenticated OAuth transport error during the smoke process; this is unrelated to skill discovery and did not prevent the agent from returning `OK`.
