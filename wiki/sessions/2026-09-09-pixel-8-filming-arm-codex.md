@@ -12,14 +12,17 @@ status: in-progress
 - Exported three STEP reference assemblies and added a physical fit checklist.
 - Added regression checks for valid single solids, monotonic clearance variants, 30° indexing, clamp closure travel, and collision-free mating references.
 - Validated every STL as one watertight mesh within the 220 × 220 mm build volume.
+- Added a responsive browser viewer with three coloured GLB scenes, touch orbit/zoom, assembly tabs, reset and full-screen controls.
+- Verified the viewer in headless Chromium at a 390 × 844 phone viewport; all three local models returned HTTP 200 and rendered successfully.
 
 ## Files changed
 
 - Project workspace: `C:\Users\manaz\Documents\Codex\2026-09-09\pixel-8-filming-arm-compact-build`
-- Project commit: `bc20e9e` on `agents/fit-test-package`
+- Project commits: `bc20e9e` and `0accd7c` on `agents/fit-test-package`
 - Fit instructions: `FIT-CHECKLIST.md`
 - Editable parameters: `cad/parameters.py`
 - Generated artifacts: `outputs/stl/`, `outputs/reference/`, and `outputs/validation.json`
+- Mobile preview: `preview/index.html`, `preview/models/`, and `serve-viewer.ps1`
 
 ## Decisions made
 
@@ -28,6 +31,7 @@ status: in-progress
 - Tested joint mate clearances at M4/M3 diameters of 4.20/3.20, 4.40/3.40, and 4.60/3.60 mm.
 - Tested rigid padded-grip gaps of 12.30, 12.70, and 13.10 mm.
 - Used a guarded Python 3.11 runner because the installed CadQuery OCP/VTK binaries corrupt the heap during Windows interpreter teardown after successful operations.
+- Kept the interactive preview explicitly limited to Batch 1 so it does not imply that the full arm has already been designed.
 
 ## Next steps
 
