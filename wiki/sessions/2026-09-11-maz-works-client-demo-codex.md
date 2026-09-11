@@ -19,4 +19,6 @@ Keep the complete website, CAD/STL and marketing-kit scope. Do not invent the cl
 
 ## Next steps
 
+Follow-up: user requested online visual references for efficiency. Found https://allin-studio.com/ and inspected its hero product photograph. Saved image and attribution in the actual project references/ directory, not memory. Raised relief, contrasting colour and hand/phone demonstration are useful principles. Screenshot no longer blocks reference work; client identity remains missing.
+
 Receive client identity and missing reference assets, complete client/competitor research, then commit Batch A and execute build/audit. No website or physical manufacturing completion claimed.
