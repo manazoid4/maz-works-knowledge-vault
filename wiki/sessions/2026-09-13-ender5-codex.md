@@ -61,3 +61,14 @@ Stopped only old sender PID31848 while it awaited M109; persistent COM3 monitor 
 
 ## Resumed handoff, after 04:43 BST
 Reloaded this latest Ender 5 session after pulling `fork/main`. Read-only process and artifact checks found `fast-bed-test-status.json` completed at 04:43:58: 164/164 commands, heaters off, motion settings restored. The serial monitor remains alive on COM3; the fast-bed sender has exited. Log tail confirms final `M400`, lift/park, `M104 S0`, `M140 S0`, `M107`, restore `M204 P800 R500 T1000`, `M82`, and `G92 E0`, each acknowledged. No new printer command was injected and the port was not reopened. Next action is physical inspection of the completed first-layer sheet from a clear full-bed photo; do not change bed wheels before reading that evidence.
+
+# Ender-5 USB diagnostics — 2026-09-13
+
+COM3: healthy CH340 VID1A86/PID7523. Existing serial monitor PID25572 owns the port; reused its command.txt interface. M115 confirms Marlin 1.1.0-RC3 at 115200 baud. M105 shows both heater targets zero. M27 reports SD printing byte280/2004175; user idle confirmation is pending before any controller reset.
+
+No bootloader test or firmware write has occurred. M503 captured in printer-settings-before-bootloader-test.txt, including Z400 and E92.64. Monitor remains connected.
+
+Downloaded Marlin2.1.2.8 source, matching configurations, and portable AVRDUDE8.3 into downloads. See firmware-research.md for official sources. USB-only programming requires an existing AVR bootloader; Cardputer cannot bypass this requirement.
+
+Next: after idle confirmation, release COM3 from the monitor, run AVRDUDE read-only identification at57600 and115200, restore the monitor hidden, and verify firmware/temperatures. Back up firmware before any eventual update. No-sync alone does not prove bootloader absence.
+
