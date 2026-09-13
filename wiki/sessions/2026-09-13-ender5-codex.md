@@ -42,3 +42,10 @@ Found SD MINI_H~1.GCO and local C:\Users\manaz\Desktop\3d Printing Stuff\Gcode F
 - https://marlinfw.org/docs/gcode/M503.html : reports active settings; EEPROM persistence needs reload verification.
 
 Unified Memory start returned unknown_project:ender5; no session ID was issued. Used bounded Ender5 project notes from LocalKnowledgeVault. Obsidian CLI unavailable because Obsidian not running; filesystem fallback used.
+
+## Cleaning-sheet addition
+User confirmed failed object removed and requested a thin sacrificial layer to lift stubborn old filament, alongside the original optimisation goals. Asked whether residue is flat or raised, surface type, and clip positions. Physical details still pending; no print/heating started.
+
+Prepared C:\Users\manaz\ender5-zero-cost\CLEAN40.gcode and CLEAN200.gcode, plus cleaning-sheet-checks.json. One 0.20 mm PLA layer, nominal 0.48 mm line width, 1.75 mm filament assumption, 205/60 C, 20 mm/s, fan0, flow100, temporary M204 P300 R500 T500 restored to original P500 R500 T500 at end. No EEPROM writes. Small centre patch paths X/Y90..130; full sheet X/Y10..210, actual bead extends 0.24mm outside these path bounds. Perimeter plus connected serpentine; border primes extrusion. Statically checked all positive extrusion occurs at Z0.2, XY travel within 220mm bed, extrusion path within intended footprint, and no EEPROM/mesh/cold-extrusion/endstop-disable commands. Physical success unverified. Extrusion-only estimates 3.1min /76.7min, filament137mm /3344mm; heating and acceleration add time. Test small patch release before full sheet. Residue-lifting is an experiment, not guaranteed; allow cooling and never force release. Raised debris must be removed first. Clean-bed diagnostic remains needed afterward to separate residue effects from bed tilt/warp.
+
+Earlier Orca full-sheet and machine profiles are Klipper drafts and must not be sent to this Marlin printer. New cleaning files use ordinary Marlin G-code. No benchmark measured yet.
