@@ -72,3 +72,10 @@ Downloaded Marlin2.1.2.8 source, matching configurations, and portable AVRDUDE8.
 
 Next: after idle confirmation, release COM3 from the monitor, run AVRDUDE read-only identification at57600 and115200, restore the monitor hidden, and verify firmware/temperatures. Back up firmware before any eventual update. No-sync alone does not prove bootloader absence.
 
+
+## Funnel scoop request, 19:17 BST
+User requested MakerWorld model1849558/profile1976861, sliced and printed at nozzle200C/bed60C, minimal initial airflow and slow first layer. Confirmed CH340 COM3, Cura5.13 installed, saved Creality Ender-5 machine, and existing serial monitor PID25572. Reused command.txt only for M105/M27. Replies: nozzle22.0/target0, bed21.8/target0, SD printing byte280/2004175. No port reopen, motion, heating, cancellation or start.
+
+MakerWorld fetch failed (web402; direct403); browser/Computer Use JS execution tool unavailable. No matching model in Downloads. Asked user to download STL/3MF and confirm PLA plus abandoned old job/clear bed. No slice or time estimate possible yet.
+
+Prepared draft funnel-scoop-plan.json in C:\Users\manaz\Documents\Codex\2026-09-13\ender-is-connected-go-print-this. Not applied. Proposed first layer15mm/s, fan0 initially, low30% later, 0.2mm layers, nozzle200/bed60 throughout. Verify geometry/orientation/bridges before final settings. Next: acquire file, slice for Marlin, inspect toolpath and estimate, resolve old selected job after user response, start through existing connection and verify first-layer progress. No firmware or EEPROM changes.
