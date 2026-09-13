@@ -15,3 +15,9 @@ Reuse Supabase hkzlsyxcpxcambakdaws and Maz Works main 71bfa2d; no duplicate gat
 
 ## Next steps
 Present the live demo. Confirm owner content/image rights, direct Google review URL, NFC sticker dimensions and loyalty terms. Maz prints fit coupons, one review tap and optional 197 × 92 × 9.6 mm tray, then checks fit/NFC on phones. No physical validation or production customer ledger claimed.
+
+## Approved publication follow-up
+
+User approved the latest-demo plan. Source c8ba78e was pushed before publishing ten protected content paths at 17:41:18 UTC on 13 September. Stored content matches the tested bundle. Existing Maz Works host/main 71bfa2d and Supabase hkzlsyxcpxcambakdaws were reused; no credential rotation or host deployment.
+
+Canonical source now lives in deployment/source/ with deterministic compilation, a loopback preview at port 4174 and guarded SQL publication against an exact baseline. The live kit includes the actual tray/card artwork; loyalty includes six-stamp completion, demo redemption/reset and storage failure handling. Preview and live checks pass three pages at 320/390/768/1440 px, keyboard, assets, reduced motion and access flows; six unit/bundle tests pass. PR #1 remains open, while content is already published. Physical/owner gates above remain unchanged.
