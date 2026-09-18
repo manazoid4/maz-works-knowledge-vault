@@ -1,13 +1,13 @@
 ---
 project: maz-works
-updated: 2026-09-08
+updated: 2026-09-18
 status: production-live
 repo: https://github.com/manazoid4/mazos-site
 branch: main
 pr: https://github.com/manazoid4/mazos-site/pull/23
 handoff_pr: https://github.com/manazoid4/mazos-site/pull/10
 preview: https://mazos-site-git-agents-maz-works-quie-fc7f31-manazir-s-projects1.vercel.app
-production: https://mazos-site.vercel.app
+production: https://mazworks.uk
 ---
 
 # Maz Works Site Status
@@ -22,7 +22,7 @@ The shared cross-project knowledge system is canonically named **Maz Works Knowl
 - Merge: [PR #23 — Launch Maz Works Objects Touch collection](https://github.com/manazoid4/mazos-site/pull/23), commit `e6e5257`
 - Documentation: [PR #10 — Record Maz Works production handoff](https://github.com/manazoid4/mazos-site/pull/10), checks green
 - State: Maz Works Objects implementation merged and live; main GitHub/Vercel and production checks pass
-- Production: `https://mazos-site.vercel.app`
+- Production: `https://mazworks.uk`
 - Preview: Ready, but anonymous requests are redirected to Vercel login; use an authenticated session or the verified local export/captures
 - Flagships: JobFilter; Scrap Finance Partners
 - Selected work: Agent Nudge; OpenFlowKit
@@ -64,5 +64,11 @@ Print and NFC-test one Touch Three prototype. Confirm actual filament, fit, disc
 
 ## Human identity inputs
 
-- Confirm the final public domain or retain `mazos-site.vercel.app`.
+- Public domain confirmed by user and live HTTP 200 on 2026-09-18: `https://mazworks.uk`. GitHub identity: `manazoid4`; site repository: `manazoid4/mazos-site`. Use these first for future Maz Works planning.
 - Supply the exact public LinkedIn URL or intentionally keep it omitted.
+
+## Current acquisition context — verified 2026-09-18
+Canonical public site is https://mazworks.uk; the old Vercel address is a deployment alias, not the public brand address. PR #33 merged 2026-09-16 updates canonical metadata. PRs #30–32 already address scroll, proof placement and CTA friction, so do not recommend repeating a generic redesign without evidence.
+Live homepage, /work/scrap-finance-partners and /3d-printing return HTTP 200. Public offers: Quick Win £150; Website Launch from £299; Growth System from £499; support from £49/month. Objects: £29/£49/£79 plus optional artwork. Objects still uses concept visuals and repo README lists manufacturing validation as outstanding; do not assume the user's recent print satisfies these tests.
+Read current GitHub README and docs/maz-works/CLIENT-ACQUISITION.md before proposing new acquisition infrastructure. Existing manazoid4/leadfinder covers lead discovery, research, demos, manual outreach and pipeline tracking; the older Call Desk note is not the only acquisition asset. Scrap Finance Partners is contract-delivery proof, without published revenue or conversion results. Product repositories show capability, not paid-client counts.
+Founder request: plan four high-leverage client-acquisition goals, using multiple perspectives and conserving tokens; planning first. Draft is in tasks/plan.md. User expects the live site and GitHub to supply known business context rather than being asked to repeat it. Revenue target, actual pipeline and available sales time remain unverified.

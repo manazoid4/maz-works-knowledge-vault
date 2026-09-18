@@ -12,3 +12,6 @@ wiki/projects/maz-works/tasks/plan.md and todo.md; Local Knowledge/projects/maz-
 Plan is provisional pending founder context. Use existing tools and proof. Avoid assuming a niche, commercial results or conversion forecast. Unified Memory returned unknown_project:maz-works.
 ## Next steps
 Incorporate founder context, set measurable commercial target and finalise priority and bounded first work package.
+
+## Corrected source review
+User confirmed https://mazworks.uk. Verified live site and current GitHub repository documentation/merged PRs. Updated canonical project memory and revised acquisition plan around existing LeadFinder, client-delivery proof, a bounded campaign and conversion discipline. No public site, repo code or outreach changed.
