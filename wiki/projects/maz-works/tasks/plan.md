@@ -62,3 +62,7 @@ Four concrete deliverables:
 Objects is a challenger acquisition route: a tested physical stand can open a local-business conversation leading to website or workflow work. Only test this after physical/NFC/QR validation and margin/time checks. Do not assume a £29–£79 object sale produces a profitable software upsell. Existing relevant prototype work may lower the test cost, but it is not published outcome proof.
 
 Initial horizon: one two-week learning cycle, paced to founder availability. Objective is identify a route to profitable paid clients. Counts are experiment bounds; no sales yield or revenue promise. Start minimal conversations as soon as usable proof exists rather than waiting for all content. Report bottleneck and choose next action before expanding campaign work.
+
+## Post-mortem requirement
+Planning review completed: [[wiki/projects/maz-works/POST-MORTEM-2026-09-18]]. Keep all four acquisition goals. Before heavy execution, distinguish the observed funnel constraint from hypotheses using available commercial records. At the end of the initial campaign cycle, review actual results, sales and delivery effort, objections, and keep/stop/change decisions before scaling.
+

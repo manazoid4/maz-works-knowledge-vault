@@ -15,3 +15,6 @@ Incorporate founder context, set measurable commercial target and finalise prior
 
 ## Corrected source review
 User confirmed https://mazworks.uk. Verified live site and current GitHub repository documentation/merged PRs. Updated canonical project memory and revised acquisition plan around existing LeadFinder, client-delivery proof, a bounded campaign and conversion discipline. No public site, repo code or outreach changed.
+
+## Added post-mortem
+Completed a planning-session post-mortem covering stale context, premature synthesis, duplicated discovery, unverified commercial assumptions and persistence checks. Added a post-experiment review to the four-goal plan. Mirrored the post-mortem, plan and checklist into Local Knowledge. Campaign execution remains pending; no acquisition results claimed.
