@@ -1,6 +1,6 @@
 ---
 project: maz-works
-updated: 2026-09-18
+updated: 2026-09-20
 status: production-live
 repo: https://github.com/manazoid4/mazos-site
 branch: main
@@ -11,6 +11,10 @@ production: https://mazworks.uk
 ---
 
 # Maz Works Site Status
+
+## Recovery state — verified 20 September 2026
+Current main is 81742c6 (PR34). Codex's 19 September run hit its usage limit before making changes; Claude completed PR34 and Agent B completed unmerged PR35. Draft [recovery PR37](https://github.com/manazoid4/mazos-site/pull/37) is stacked on PR35, branch agents/maz-works-recovery-20260920, commits f680214 and 17e71eb. Production remains unchanged. Code/build/48 tests and browser checks passed. FormSubmit custom-domain activation and real inbox receipt remain unverified release gates; Objects still needs physical validation. Read [[wiki/sessions/2026-09-20-maz-works-codex]] and repo docs/maz-works/RECOVERY-CONTEXT-2026-09-20.md before continuing. Older verification below describes historical releases.
+
 
 Maz Works is Manazir Hussain's umbrella identity for useful software, AI tools, automation, products, experiments, and client work. It is visibly one accountable builder, not a large agency.
 
