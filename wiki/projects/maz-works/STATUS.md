@@ -1,10 +1,10 @@
 ---
 project: maz-works
-updated: 2026-09-20
+updated: 2026-09-21
 status: production-live
 repo: https://github.com/manazoid4/mazos-site
 branch: main
-pr: https://github.com/manazoid4/mazos-site/pull/23
+pr: https://github.com/manazoid4/mazos-site/pull/40
 handoff_pr: https://github.com/manazoid4/mazos-site/pull/10
 preview: https://mazos-site-git-agents-maz-works-quie-fc7f31-manazir-s-projects1.vercel.app
 production: https://mazworks.uk
@@ -12,7 +12,13 @@ production: https://mazworks.uk
 
 # Maz Works Site Status
 
-## Recovery state — verified 20 September 2026
+## Current state — verified 21 September 2026
+
+Main is now **9e0ebc9**, merged PR40: prior recovery plus the shorter enquiry form, FAQ/What's New and visual cleanup. Codex preserved this newer work and opened draft [PR42](https://github.com/manazoid4/mazos-site/pull/42) from `agents/maz-works-enquiry-resilience-20260921` for enquiry resilience, keyboard/mobile fixes and new-page overflow. Commits: `8ac44a2`, `eefbe99`, `36097a3`. Build/16 pages, typecheck/lint, 51 tests, smoke and all five browser scripts passed, including 28 responsive checks. No production merge/deploy by this run.
+
+**Release gates:** FormSubmit custom-domain activation and actual inbox receipt remain unverified; Objects needs physical validation. Claude's separate handoff has not been received/reviewed. Do not blindly merge the old #35/#37 stack; PR40 already consolidated it. Resume from repo `docs/maz-works/WORK-BLOCK-2026-09-21.md` and [[wiki/sessions/2026-09-21-maz-works-codex]]. The session was interrupted, not continuous hours of execution.
+
+## Historical recovery state — 20 September 2026
 Current main is 81742c6 (PR34). Codex's 19 September run hit its usage limit before making changes; Claude completed PR34 and Agent B completed unmerged PR35. Draft [recovery PR37](https://github.com/manazoid4/mazos-site/pull/37) is stacked on PR35, branch agents/maz-works-recovery-20260920, commits f680214 and 17e71eb. Production remains unchanged. Code/build/48 tests and browser checks passed. FormSubmit custom-domain activation and real inbox receipt remain unverified release gates; Objects still needs physical validation. Read [[wiki/sessions/2026-09-20-maz-works-codex]] and repo docs/maz-works/RECOVERY-CONTEXT-2026-09-20.md before continuing. Older verification below describes historical releases.
 
 
@@ -20,7 +26,7 @@ Maz Works is Manazir Hussain's umbrella identity for useful software, AI tools, 
 
 The shared cross-project knowledge system is canonically named **Maz Works Knowledge Vault**. It covers every Maz Works project; JobFilter is one project inside it. Legacy repository or archive names do not define the vault's scope.
 
-## Current build
+## Historical launch baseline (superseded by the current state above)
 
 - Production branch: `main`
 - Merge: [PR #23 — Launch Maz Works Objects Touch collection](https://github.com/manazoid4/mazos-site/pull/23), commit `e6e5257`
