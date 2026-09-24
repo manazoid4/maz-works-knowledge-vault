@@ -27,3 +27,7 @@ Confirm exact board/MCU, extruder/nozzle/endstops and capture M115/M503/M119 plu
 Product PR: https://github.com/manazoid4/enderforge/pull/1
 Memory PR: https://github.com/manazoid4/unified-memory-database/pull/7
 Project: [[wiki/projects/enderforge/INDEX]]
+
+## Firmware inventory follow-up
+
+Sent M115/M503/M119 via OctoPrint. Marlin 2.0.7.2 verified; Z400, print/travel acceleration 500 mm/s². Official 2.1.2.8 machine example defaults to Z800. No motion, firmware flash or EEPROM write. Serial logging restored. User reports centred gold 220 x 220 mm PEI; boundaries unmeasured. Await exact board and thermal hardware/display confirmation. Evidence: https://github.com/manazoid4/enderforge/pull/8 (6970c38).

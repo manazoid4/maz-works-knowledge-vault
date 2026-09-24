@@ -40,3 +40,7 @@ Scaffold commit: 47a38cd. Verification: 41 Markdown files, zero broken local lin
 Local Knowledge/projects/enderforge contains this status, roadmap and a tracked-source ZIP archive. That directory is also accessible through C:/Users/manaz/LocalKnowledgeVault.
 
 Related: [[wiki/sessions/2026-09-24-enderforge-codex]]
+
+## Firmware inventory follow-up
+
+Sent M115/M503/M119 via OctoPrint. Marlin 2.0.7.2 verified; Z400, print/travel acceleration 500 mm/s². Official 2.1.2.8 machine example defaults to Z800. No motion, firmware flash or EEPROM write. Serial logging restored. User reports centred gold 220 x 220 mm PEI; boundaries unmeasured. Await exact board and thermal hardware/display confirmation. Evidence: https://github.com/manazoid4/enderforge/pull/8 (6970c38).
