@@ -72,11 +72,11 @@ From: Claude Code (Opus 5.5). To: any agent (Claude, Codex, other).
 
 ## 7. Finish-up checklist for this branch
 
-- [ ] `git push -u origin agents/ultra-audit`, open PR, merge (owner asked for merges).
-- [ ] Copy §0 + §5 to vault `manazoid4/maz-works-knowledge-vault` → `wiki/projects/enderforge/` and unified memory `manazoid4/claude-obsidian` → `wiki/projects/enderforge/`.
+- [x] Pushed `agents/ultra-audit`, PR #11 opened (merge when owner OKs).
+- [x] Copy the handover to vault `manazoid4/maz-works-knowledge-vault` → `wiki/sessions/YYYY-MM-DD-HHMM-enderforge-handover.md` (`wiki/projects/` is gitignored there).
 
 ## 8. Where memory lives
 
 - Repo: `docs/handovers/` (newest = current truth), ledger, TEST-PLAN.
-- Vault: `manazoid4/maz-works-knowledge-vault` (`wiki/projects/enderforge/`, `wiki/sessions/`).
-- Unified memory: `manazoid4/claude-obsidian` (`wiki/projects/enderforge/`).
+- Vault = unified memory: `manazoid4/maz-works-knowledge-vault` (`wiki/sessions/*enderforge*`). Local clone: `Desktop/Maz Works Knowledge Vault`, push with `git push fork HEAD:main`.
+- (`manazoid4/claude-obsidian` is archived/read-only since 2026: don't write there.)
