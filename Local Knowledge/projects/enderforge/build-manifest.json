@@ -1,0 +1,27 @@
+{
+  "version": "2.1.2.8",
+  "marlin_commit": "1cd56c4ccd483045eb5a92c99e3ad3b5ab1bea6d",
+  "configuration_commit": "f083973abeb6ece641e3437ddf03dc43a268c6a4",
+  "configuration": "Creality/Ender-5/BigTreeTech SKR Mini E3 2.0",
+  "environment": "STM32F103RE_btt",
+  "platformio": "6.1.19",
+  "binary_bytes": 179740,
+  "sha256": "b3f03a7d54091930cfa2259ce7d37ec57526c522e3826eecbfbac02bf612b4bd",
+  "flash_tested": false,
+  "changes": {
+    "steps_per_mm": [
+      80,
+      80,
+      400,
+      93
+    ],
+    "max_feedrates_mm_s": [
+      500,
+      500,
+      5,
+      60
+    ],
+    "retract_acceleration_mm_s2": 1000
+  },
+  "hardware": "Ender 5; SKR Mini E3 V2.0; stock hotend, thermistors, display; no probe"
+}
