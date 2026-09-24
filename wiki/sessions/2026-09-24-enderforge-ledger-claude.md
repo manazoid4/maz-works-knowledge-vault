@@ -12,3 +12,6 @@ No probe; manual corner tram via ef.py tram. Every change: baseline row + cube r
 ## Next steps
 C1 mechanical check (owner) -> C2 homing -> C3 PID -> C4 E-steps -> C5 tram -> B0 cube x3.
 PR: https://github.com/manazoid4/enderforge/pull/9
+
+## Follow-up: ef CLI v1 (PR #10 merged)
+PR #9 merged, #8 closed (superseded). Built `ef` CLI: `.\ef` shows plan + next step from ledger; guided check/home/pid/esteps/tram/cube/save each write a ledger row. Stdlib, --json/--dry-run/--yes, exit codes, printer profile JSON, 7 tests vs fake OctoPrint. Design: clig.dev + r/ClaudeAI CLI-first threads (help, errors, JSON for agents, safe defaults). Next: owner runs `.\ef check`.
