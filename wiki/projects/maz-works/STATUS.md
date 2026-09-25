@@ -12,6 +12,13 @@ production: https://mazworks.uk
 
 # Maz Works Site Status
 
+## Sales context (updated 2026-09-25) — read first
+- Lead rules + niche needs + gift rule + hand-off format: [[maz-works-niche-needs]] (`prompts/maz-works-niche-needs.md`)
+- Prompts / `/mw-*` commands: `prompts/maz-works-prompt-library.md`
+- Leads + call list + pitches: PRIVATE https://github.com/manazoid4/maz-works-leads (never copy here)
+- Current call list: Yumi (Nottingham), Hurley's (West Bridgford), Flicks Hair (Toton), Lana Dessert, Revive (Sheffield)
+
+
 ## Current state — verified 21 September 2026
 
 Main is now **9e0ebc9**, merged PR40: prior recovery plus the shorter enquiry form, FAQ/What's New and visual cleanup. Codex preserved this newer work and opened draft [PR42](https://github.com/manazoid4/mazos-site/pull/42) from `agents/maz-works-enquiry-resilience-20260921` for enquiry resilience, keyboard/mobile fixes and new-page overflow. Commits: `8ac44a2`, `eefbe99`, `36097a3`. Build/16 pages, typecheck/lint, 51 tests, smoke and all five browser scripts passed, including 28 responsive checks. No production merge/deploy by this run.

@@ -4,6 +4,15 @@ The unified Maz Works vault lives at `C:\Users\manaz\Desktop\Maz Works Knowledge
 
 It covers every Maz Works project, client engagement, experiment, research thread, reusable delivery pattern, and agent handoff. JobFilter is one project inside the system.
 
+
+## Maz Works sales: start here (every agent)
+- Focus: `NOW.md` (3 projects only)
+- Lead rules, niche needs, gifts (paying clients only), lead hand-off format: `prompts/maz-works-niche-needs.md`
+- Prompt library + /mw-* commands: `prompts/maz-works-prompt-library.md`
+- LinkedIn posts: `prompts/maz-works-linkedin-launch.md`
+- Leads, call list, pitches: PRIVATE repo https://github.com/manazoid4/maz-works-leads (local: `leads/`, git-ignored here). Never copy lead data into this public repo.
+- Give leads to the owner as plain-text blocks (Google Docs format in niche-needs). Keep replies short.
+
 ## Begin a session
 
 1. Read `AGENTS.md`.
