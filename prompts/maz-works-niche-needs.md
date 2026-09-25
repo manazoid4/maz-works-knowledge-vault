@@ -4,6 +4,13 @@ Used by `/mw-leads`, `/mw-pitch`, `/mw-demo`. Public file: no business names her
 Updated 2026-09-25.
 
 ## Who we target
+**Any business type.** A lead qualifies when ALL 4 are true (evidence for each):
+1. **LinkedIn-active**: owner or page posted/reacted/updated in last 90 days.
+2. **Working on their website**: recent change seen (new site/launch post, updated copy, new pages, recent copyright/sitemap date, or they posted about it).
+3. **Lots of reviews**: 50+ Google (or equivalent), proof customers exist.
+4. **Real leak**: something on the site verifiably costs enquiries (broken HTTPS, dead form, no tap-to-call, typo in Google title, no review link…).
+Meet all 4 = potential lead (not a client until they pay). The niche table below is only a guide to which leak to look for.
+
 Independent, owner-run, Nottingham (NG1–NG16 first, then Beeston/West Bridgford/Arnold/Hucknall). Service businesses where **one lost booking = £20–£200** and the owner answers the phone themselves. Skip chains, franchises, anyone with a recent agency site.
 
 ## Niche needs map (what they actually lose money on)
