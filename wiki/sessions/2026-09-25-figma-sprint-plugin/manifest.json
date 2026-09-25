@@ -1,0 +1,8 @@
+{
+  "name": "Maz Figma Sprint",
+  "id": "maz-figma-sprint-2026-09",
+  "api": "1.0.0",
+  "main": "code.js",
+  "editorType": ["figma"],
+  "documentAccess": "dynamic-page"
+}
