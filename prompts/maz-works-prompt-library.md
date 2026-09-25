@@ -7,7 +7,7 @@ In Claude Code the starred ones are also slash commands: `/mw-next`, `/mw-leads`
 ## Facts every prompt relies on (update here first if they change)
 
 - **Offer (mazos-site `app/page.tsx` OFFERS):** £0 first step (problem → direction before commitment) · **Quick Win £150 fixed** (£75 start / £75 on completion, one agreed change, not a rebuild) · **Website Launch from £299** (scope + fixed price agreed first) · **Growth System from £499** (site/journey + one automation) · **Support from £49/month** (no long contract).
-- **Target + needs:** Nottingham independents, niche services. Needs map + good-lead gift rule (score ≥7 + LinkedIn-active → 2 free custom 3D prints): `prompts/maz-works-niche-needs.md`.
+- **Target + needs:** Nottingham independents, niche services. Needs map + good-lead gift rule (4 rules + score ≥7 → 2 free custom 3D prints): `prompts/maz-works-niche-needs.md`.
 - **Physical:** Maz Works Objects "Touch" 3D-printed tap stands (Touch One, Touch Three, Touch + Carry) that open reviews/menu/bookings/socials; £10 artwork option. Route `/3d-printing`. Printed on the owner's Ender 5.
 - **Positioning (live hero):** "Stop losing time and enquiries to jobs done by hand." Direct with the builder, fixed scope and price, see the direction first.
 - **Contact:** manazoid4@gmail.com (site form posts via formsubmit to this address). Live site https://mazos-site.vercel.app.
@@ -49,7 +49,7 @@ Write a handover before we stop: what changed (files, PRs, links), proof it work
 ```
 Goal: 20 UK small businesses in <NICHE> around <TOWN> that are losing enquiries online and could buy a Quick Win (£150), Website Launch (from £299) or a Touch stand.
 Use LeadFinder (C:\Users\manaz\leadfinder) if it runs; otherwise public search + each business's own site/Google profile.
-For each lead capture: name, site URL, Google rating + review count, the ONE specific leak you can see (e.g. no booking link on mobile, contact form 404s, no reviews link, menu is a PDF, site not HTTPS), evidence (URL + what you saw), best-fit offer, good-lead score 0–10 (prompts/maz-works-niche-needs.md), LinkedIn-active (last 90 days, URL + date), gift-eligible (≥7 AND LinkedIn-active).
+For each lead capture: name, site URL, Google rating + review count, the ONE specific leak you can see (e.g. no booking link on mobile, contact form 404s, no reviews link, menu is a PDF, site not HTTPS), evidence (URL + what you saw), best-fit offer, good-lead score 0–10 (prompts/maz-works-niche-needs.md), active online (any channel, last 30 days), gift-eligible (≥7).
 Skip chains/franchises and businesses with a clearly recent agency site.
 Done = CSV at C:\Users\manaz\Desktop\Maz Works Knowledge Vault\leads\<date>-<niche>-<town>.csv with 20 rows, every leak backed by evidence. Report the top 5 in chat.
 Never contact anyone. Never invent a problem you didn't observe.

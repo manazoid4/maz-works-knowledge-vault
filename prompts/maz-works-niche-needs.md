@@ -5,7 +5,7 @@ Updated 2026-09-25.
 
 ## Who we target
 **Any business type.** A lead qualifies when ALL 4 are true (evidence for each):
-1. **LinkedIn-active**: owner or page posted/reacted/updated in last 90 days.
+1. **Active online**: posted on ANY channel (Instagram, Facebook, TikTok, Google Business, LinkedIn) in last 30 days. They care about getting customers, so they'll feel a broken link. LinkedIn-active = bonus point, not required.
 2. **Working on their website**: recent change seen (new site/launch post, updated copy, new pages, recent copyright/sitemap date, or they posted about it).
 3. **Lots of reviews**: 50+ Google (or equivalent), proof customers exist.
 4. **Real leak**: something on the site verifiably costs enquiries (broken HTTPS, dead form, no tap-to-call, typo in Google title, no review link…).
@@ -30,9 +30,9 @@ Look for the leak in column 3 first. It's the one they feel.
 | Phone/laptop repair, alterations, key cutting | "Can you fix X, how much, how long?" | No price guide; no tap-to-call; hours wrong on Google | Quick Win £150 (price guide + call button) | Counter stand "Tap to review" |
 
 ## Good-lead rule: who gets the free gifts
-Score each lead 0–10 after `/mw-pitch`. **Good lead = score 7+ AND LinkedIn-active → gets 2 free custom 3D-printed items.**
+Score each lead 0–10 after `/mw-pitch`. **Good lead = meets the 4 rules + score 7+ → gets 2 free custom 3D-printed items.**
 
-**LinkedIn-active (hard filter):** owner or business has a LinkedIn profile/page that posted, reacted, or was updated in the last 90 days. Record the URL + date seen as evidence. No LinkedIn = keep as phone/walk-in lead, no gift.
+**LinkedIn (bonus, not required):** owner or business has a LinkedIn profile/page that posted, reacted, or was updated in the last 90 days. Record the URL + date seen as evidence. 
 Why: Maz Works wins on LinkedIn; an active owner sees the series, can be tagged (with permission) and shares the fix. Food shops often fail this; niche services (PT, tattoo, mechanics, cleaners, groomers, wedding) pass more often.
 
 | Points | Signal |
@@ -55,3 +55,15 @@ Why: Maz Works wins on LinkedIn; an active owner sees the series, can be tagged 
 - Only link to pages that work. If their booking link is the broken thing, the gift links to the fixed demo only after they say yes.
 - Ask one thing back: "If it's useful, would you leave a line I can quote?" Never invent it.
 - Log in `leads/` (local): score, gift sent date, reply, outcome.
+
+## Lead hand-off format (paste into Google Docs)
+Plain text, one block per lead, no tables:
+
+BUSINESS NAME (Town)
+Contact: phone / email / social handle
+Problem: one plain sentence
+Proof: reviews + rating, where the problem is (URL)
+Demo to build: the fixed version in one line
+Offer: tier + price
+Gift: item (if score 7+)
+Opener: one sentence to say on the call
