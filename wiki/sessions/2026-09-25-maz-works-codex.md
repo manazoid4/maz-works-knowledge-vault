@@ -17,3 +17,13 @@ Keep rules and prompts in the public vault and identifiable lead records in the 
 
 ## Next steps
 Complete HubSpot account authorization, then verify CRM access before reporting the connection ready. PR: https://github.com/manazoid4/mazos-site/pull/44
+
+
+## HubSpot MCP setup follow-up
+User requested Codex MCP setup separately from the existing Claude-side installation. Added global `hubspot` Streamable HTTP server at https://mcp.hubspot.com in the local Codex config, after making a local backup. Verified all other Codex settings are unchanged.
+
+Authentication is NOT complete: the official endpoint rejects automatic OAuth client registration with `Dynamic client registration not supported`. Its OAuth metadata requires `client_secret_post` and does not advertise a registration endpoint. HubSpot documents creating an MCP Auth App with client ID, client secret and matching callback. No HubSpot MCP entry was found in the inspected Claude Code or Claude Desktop configuration. Claude's hosted connection cannot be assumed to authorize Codex. Browser tooling has no available browser in this session, so account setup could not be completed here.
+
+No CRM data was read or written. Next: authorize the Codex HubSpot integration, or provision a HubSpot MCP Auth App for the direct MCP connection; then verify access with a read-only account/tool check. Never store credentials in the vault or Git.
+
+Sources: https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server and https://developers.openai.com/codex/mcp
