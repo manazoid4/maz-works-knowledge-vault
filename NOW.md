@@ -6,7 +6,7 @@ Updated: 2026-09-25 · prompt library: prompts/maz-works-prompt-library.md (/mw-
 ## 1. Scrap Finance Partners (paid client): finish + hand over
 Repo: manazoid4/scrap-finance-partners · Live: https://scrap-finance-partners.vercel.app
 Done =
-- [ ] Close the 1 open issue
+- [x] Close the 1 open issue (#16 verified fixed on live, 2026-09-25)
 - [ ] Check every page against client's "Website changes" doc (live page.tsx, not old data/*.ts)
 - [ ] Founder name: ask client (still a placeholder); ship when given
 - [ ] Final walkthrough sent to client + invoice/sign-off
@@ -15,10 +15,10 @@ Done =
 ## 2. Maz Works site (get clients)
 Repo: manazoid4/mazos-site · Live: https://mazos-site.vercel.app
 Done =
-- [ ] Merge or close the 6 open PRs (2026-09-25: closed superseded #22, #37; merge next: #42 enquiry leak first, then #41, #25, #36)
+- [x] Merge or close the 6 open PRs (2026-09-25: merged #42 #41 #36 #25, closed superseded #22 #37)
 - [ ] Ship new hero + price list + proof (Figma page "02 Maz Works")
 - [ ] One CTA everywhere: "Tell me the problem" (£0 first step) → enquiry form
-- [ ] LinkedIn: page fixes + EP1 video posted (video pack in Projects/)
+- [ ] LinkedIn: Post 1 (text, prompts/maz-works-linkedin-launch.md) → then EP1 video; leads in leads/ (local)
 - [ ] Domain cut-over when ready
 
 ## 3. EnderForge v0.1 (printer + content engine)
