@@ -23,7 +23,10 @@ Look for the leak in column 3 first. It's the one they feel.
 | Phone/laptop repair, alterations, key cutting | "Can you fix X, how much, how long?" | No price guide; no tap-to-call; hours wrong on Google | Quick Win £150 (price guide + call button) | Counter stand "Tap to review" |
 
 ## Good-lead rule: who gets the free gifts
-Score each lead 0–10 after `/mw-pitch`. **7+ = good lead → gets 2 free custom 3D-printed items.**
+Score each lead 0–10 after `/mw-pitch`. **Good lead = score 7+ AND LinkedIn-active → gets 2 free custom 3D-printed items.**
+
+**LinkedIn-active (hard filter):** owner or business has a LinkedIn profile/page that posted, reacted, or was updated in the last 90 days. Record the URL + date seen as evidence. No LinkedIn = keep as phone/walk-in lead, no gift.
+Why: Maz Works wins on LinkedIn; an active owner sees the series, can be tagged (with permission) and shares the fix. Food shops often fail this; niche services (PT, tattoo, mechanics, cleaners, groomers, wedding) pass more often.
 
 | Points | Signal |
 |---|---|
