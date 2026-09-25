@@ -3,17 +3,21 @@
 Used by `/mw-leads`, `/mw-pitch`, `/mw-demo`. Public file: no business names here (those live in `leads/`, local only).
 Updated 2026-09-25.
 
-## Who we target
-**Any business type.** A lead qualifies when rules 1–3 are true AND (rule 4 OR rule 5). Evidence for each:
-1. **Active online**: posted on ANY channel (Instagram, Facebook, TikTok, Google Business, LinkedIn) in last 30 days. They care about getting customers, so they'll feel a broken link. LinkedIn-active = bonus point, not required.
-2. **Working on their website**: recent change seen (new site/launch post, updated copy, new pages, recent copyright/sitemap date, or they posted about it).
-3. **Lots of reviews**: 50+ Google (or equivalent), proof customers exist.
-4. **Real leak**: something on the site verifiably costs enquiries (broken HTTPS, dead form, no tap-to-call, typo in Google title, no review link…).
-5. **Doing work by hand (bigger job)**: signs of a manual process an automation could fix: bookings only by phone/DM/email, PDF or paper forms, deposits by bank transfer, no confirmation/reminder texts, enquiry form with no auto-reply, quotes done by hand, orders taken by phone. Fits Growth System £499+ or Support £49/mo.
-Rule 4 = quick fix (£150). Rule 5 = bigger job (£499+). Both = best lead.
-Meet the rules = potential lead (not a client until they pay). The niche table below is only a guide to which leak to look for.
+## Who we target (maximum reach)
+**Anywhere in the UK, any business type.** Only 1 must-have:
 
-Independent, owner-run, within ~90 min drive of Nottingham: Derby, Sheffield, Leicester, Lincoln, Birmingham, Leeds, Northampton, Stoke and everywhere between. Under 45 min = hand over demo + gift in person; further = demo on a video call, gift posted. Service businesses where **one lost booking = £20–£200** and the owner answers the phone themselves. Skip chains, franchises, anyone with a recent agency site.
+**MUST: a real problem we can fix, with evidence.** Either:
+- **Quick fix (£150):** something broken or missing on the site: dead booking link, site won't open, no tap-to-call, typo on Google, no review link.
+- **Bigger job (£499+):** work done by hand: bookings only by phone/DM/email, paper/PDF forms, deposits by bank transfer, no reminder texts, quotes by hand, orders by phone.
+
+**Only skip:** chains/franchises, and anything we can't verify.
+
+**Priority signals (rank higher, never exclude):**
+- Near Nottingham (in person: demo + gift). Far = video call, gift posted.
+- Active online in last 30 days (any channel; LinkedIn = extra point)
+- Working on their website recently
+- Lots of reviews (busy = can pay)
+- Has both a quick fix AND a bigger job
 
 ## Niche needs map (what they actually lose money on)
 Look for the leak in column 3 first. It's the one they feel.
@@ -32,7 +36,7 @@ Look for the leak in column 3 first. It's the one they feel.
 | Phone/laptop repair, alterations, key cutting | "Can you fix X, how much, how long?" | No price guide; no tap-to-call; hours wrong on Google | Quick Win £150 (price guide + call button) | Counter stand "Tap to review" |
 
 ## Good-lead rule: who gets the free gifts
-Score each lead 0–10 after `/mw-pitch`. **Good lead = meets the 4 rules + score 7+ → gets 2 free custom 3D-printed items.**
+Score each lead 0–10 after `/mw-pitch`. **Good lead = score 7+ → gets 2 free custom 3D-printed items.**
 
 **LinkedIn (bonus, not required):** owner or business has a LinkedIn profile/page that posted, reacted, or was updated in the last 90 days. Record the URL + date seen as evidence. 
 Why: Maz Works wins on LinkedIn; an active owner sees the series, can be tagged (with permission) and shares the fix. Food shops often fail this; niche services (PT, tattoo, mechanics, cleaners, groomers, wedding) pass more often.
