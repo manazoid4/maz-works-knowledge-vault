@@ -79,17 +79,17 @@ If you're not sure your site opens properly, send me the link. I'll check it for
 
 ---
 
-### POST 4 — MEDIUM: no way to book (after Homemade Cafe or similar)
+### POST 4 — EASY: the number you can't tap (after a café Quick Win)
 ```
-"Please note, we do not accept reservations via this form."
+A busy park café has hundreds of good Google reviews.
 
-That line was on a lovely park café's contact page.
+On their website, the phone number is just text. On a phone you can't tap it. You have to copy it, switch apps and paste it.
 
-So how do you book? You don't. You call, maybe, if you can find the number. On a phone there wasn't a tap-to-call button either.
+Most people won't bother. They'll book somewhere else.
 
-Three fixes, smallest first:
-1. Tap-to-call button at the top on mobile
-2. One clear "how to book" line
+Three small fixes, smallest first:
+1. Make the number a tap-to-call button at the top on mobile
+2. Write the line Google shows under your name (theirs was blank)
 3. A tap stand on the counter that opens the review page
 
 None of this is a new website. It's removing the reasons people give up.
