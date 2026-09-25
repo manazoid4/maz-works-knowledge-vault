@@ -17,7 +17,7 @@ Repo: manazoid4/mazos-site · Live: https://mazos-site.vercel.app
 Done =
 - [ ] Merge or close the 6 open PRs (2026-09-25: closed superseded #22, #37; merge next: #42 enquiry leak first, then #41, #25, #36)
 - [ ] Ship new hero + price list + proof (Figma page "02 Maz Works")
-- [ ] One CTA everywhere: free demo → manazoid4@gmail.com
+- [ ] One CTA everywhere: "Tell me the problem" (£0 first step) → enquiry form
 - [ ] LinkedIn: page fixes + EP1 video posted (video pack in Projects/)
 - [ ] Domain cut-over when ready
 
