@@ -5,7 +5,7 @@ Built 25 Sep 2026. Pairs with maz-works-linkedin-kit.md (posts) and maz-works-cl
 Film yourself fixing a £200 3D printer the same way you fix small-business websites: **back up → measure → fix one thing → prove it.** The printer is the visual hook; the method is the pitch.
 
 Why it works: people stop for machines moving; small-business owners trust someone who measures before charging. Every episode ends on the same bridge line:
-> "That's exactly how I fix websites for small businesses. Measure it, fix it, prove it — fixed price, demo before you pay."
+> "That's exactly how I fix things for small businesses. Measure it, fix it, prove it. Fixed scope and price, and you see the direction before you commit."
 
 ## RULES THAT DECIDE REACH (2026, researched)
 - Shoot **vertical 9:16, 1080×1920**, MP4 H.264, 30 fps, under 200 MB.
@@ -113,11 +113,11 @@ Film at the printer with it printing behind you.
 
 > "I'm Manazir, I run Maz Works.
 > If your website's broken, slow, or not bringing in enquiries — here's my whole price list.
-> Quick fix: £150. Full site: from £299. Automation that follows up your enquiries: from £499.
-> And before you pay anything, I build a working demo around your actual business and show you.
-> If you don't like it, you don't pay. Message me 'demo'."
+> Quick Win: £150 fixed. Website Launch: from £299. Growth System, a site plus one automation: from £499.
+> First step is free: tell me the problem and I'll show you the direction before you commit.
+> Message me 'problem'."
 
-On-screen: the four prices as they're spoken. End card: "Message 'demo'".
+On-screen: the four prices as they're spoken. End card: "Message 'problem'".
 
 ---
 

@@ -144,3 +144,7 @@ Archive/
 
 # Local desktop imports can contain secrets, backup codes, and private loose files.
 99_Inbox/Desktop_Roots/
+
+# Client + lead data: local only (this repo is PUBLIC)
+leads/
+clients/

@@ -190,14 +190,14 @@ async function mazworks() {
 
   const nav = H({ n: 'Nav', p: [20, 80], justify: 'SPACE_BETWEEN', align: 'CENTER', w: 1440 }, [
     T('Maz Works', { f: F.b, s: 20, c: c.ink }),
-    H({ gap: 32, align: 'CENTER' }, [T('Work', { s: 15, c: c.mute }), T('Prices', { s: 15, c: c.mute }), T('How it works', { s: 15, c: c.mute }), btn('Get your free demo')]),
+    H({ gap: 32, align: 'CENTER' }, [T('Work', { s: 15, c: c.mute }), T('Objects', { s: 15, c: c.mute }), T('Prices', { s: 15, c: c.mute }), btn('Tell me the problem')]),
   ]);
   const heroL = V({ gap: 22, w: 700 }, [
-    T('UK · FIXED-PRICE WEBSITES, AUTOMATION & AI FOR SMALL BUSINESSES', { f: F.mono, s: 13, c: c.acc, ls: 4 }),
-    T('See it working before you pay.', { f: F.b, s: 64, c: c.ink, lh: 68, w: 680 }),
-    T('I build a near-working demo around your actual business problem, then walk you through it. Fixed prices. Done in days. No contract.', { s: 20, c: c.mute, lh: 30, w: 640 }),
-    H({ gap: 12 }, [btn('Get your free demo'), btn('See all prices', false)]),
-    H({ gap: 8 }, [tag('Demo before payment'), tag('Fixed price'), tag('Days, not weeks'), tag('One named human')]),
+    T('MAZ WORKS · MANAZIR HUSSAIN · DIRECT WITH THE BUILDER', { f: F.mono, s: 13, c: c.acc, ls: 4 }),
+    T('Stop losing time and enquiries to jobs done by hand.', { f: F.b, s: 58, c: c.ink, lh: 62, w: 680 }),
+    T('Websites, automations and small physical products for small businesses. Tell me the problem; I show you the direction before you commit. £0 first step.', { s: 20, c: c.mute, lh: 30, w: 640 }),
+    H({ gap: 12 }, [btn('Tell me the problem'), btn('See real work', false)]),
+    H({ gap: 8 }, [tag('£0 first step'), tag('Fixed scope and price'), tag('See the direction first'), tag('Direct with the builder')]),
   ]);
   const step = (n, a, b) => H({ gap: 16, grow: true }, [T(n, { f: F.mono, s: 14, c: c.acc }), V({ gap: 4, grow: true }, [T(a, { f: F.sb, s: 17, c: c.ink }), T(b, { s: 15, c: c.mute, grow: true })])]);
   const heroR = V({ n: 'How it works', p: 28, r: 16, bg: c.surf, stroke: c.line, gap: 20, w: 520 }, [
@@ -210,14 +210,14 @@ async function mazworks() {
   const hero = H({ n: 'Hero', p: [56, 80], gap: 60, align: 'CENTER', w: 1440 }, [heroL, heroR]);
 
   const prices = [
-    ['QUICK FIX', '£150', 'Flat rate. Fix what is broken on your current site or booking flow.'],
-    ['FULL SITE BUILD', 'from £299', 'Fixed price. Live demo before you pay. In days, not weeks.'],
-    ['AUTOMATION / AI SYSTEM', 'from £499', 'The follow-up work that turns enquiries into paying customers.'],
-    ['SUPPORT', 'from £49/mo', 'Ongoing changes and monitoring. Cancel any time.'],
+    ['QUICK WIN', '£150 fixed', 'One tightly scoped improvement. £75 to start, £75 on completion.'],
+    ['WEBSITE LAUNCH', 'from £299', 'A focused small-business site with a clear enquiry route. Scope and price agreed first.'],
+    ['GROWTH SYSTEM', 'from £499', 'Site or customer journey plus one useful automation. One workflow, not a department.'],
+    ['SUPPORT', 'from £49/mo', 'Optional. No long contract.'],
   ];
   const priceRow = H({ gap: 16 }, prices.map(([a, b, d], k) => inst(K['Price card'], [a, b, d], k === 1 ? { stroke: c.acc } : {})));
   const pricing = V({ n: 'Prices', p: [40, 80], gap: 24, w: 1440 }, [
-    H({ gap: 24, align: 'MAX' }, [T('The whole price list.', { f: F.b, s: 36, c: c.ink }), T('No hidden calls. Every £150 fix is an honest audition for the bigger build.', { s: 16, c: c.mute })]),
+    H({ gap: 24, align: 'MAX' }, [T('The whole price list.', { f: F.b, s: 36, c: c.ink }), T('Scope and price agreed before any paid work. Physical Touch stands: see /3d-printing.', { s: 16, c: c.mute })]),
     priceRow,
   ]);
   const proof = V({ n: 'Proof', p: [40, 80], gap: 24, w: 1440 }, [
@@ -228,8 +228,8 @@ async function mazworks() {
     ]),
   ]);
   const cta = H({ n: 'CTA band', p: [40, 80], bg: c.ink, justify: 'SPACE_BETWEEN', align: 'CENTER', w: 1440 }, [
-    T("Tell me what's broken. I'll show you the fix working.", { f: F.b, s: 32, c: '#FFFFFF' }),
-    inst(K['Button/Primary'], ['Get your free demo'], { bg: '#FFFFFF', fg: c.ink }),
+    T("Tell me the problem. I'll show you the direction first.", { f: F.b, s: 32, c: '#FFFFFF' }),
+    inst(K['Button/Primary'], ['Tell me the problem'], { bg: '#FFFFFF', fg: c.ink }),
   ]);
   const screen = V({ n: 'Desktop — Home (client acquisition)', bg: c.bg, w: 1440 }, [nav, hero, pricing, proof, cta]);
   pg.appendChild(screen); screen.x = 0; screen.y = 0;

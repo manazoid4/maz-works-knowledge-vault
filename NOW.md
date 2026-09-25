@@ -1,7 +1,7 @@
 # NOW (only these 3 until done)
 
 Rule: nothing new starts until one of these ships. "Also…" ideas go to **Later**, not into the current session.
-Updated: 2026-09-25
+Updated: 2026-09-25 · prompt library: prompts/maz-works-prompt-library.md (/mw-* commands)
 
 ## 1. Scrap Finance Partners (paid client): finish + hand over
 Repo: manazoid4/scrap-finance-partners · Live: https://scrap-finance-partners.vercel.app
@@ -15,7 +15,7 @@ Done =
 ## 2. Maz Works site (get clients)
 Repo: manazoid4/mazos-site · Live: https://mazos-site.vercel.app
 Done =
-- [ ] Merge or close the 6 open PRs
+- [ ] Merge or close the 6 open PRs (2026-09-25: closed superseded #22, #37; merge next: #42 enquiry leak first, then #41, #25, #36)
 - [ ] Ship new hero + price list + proof (Figma page "02 Maz Works")
 - [ ] One CTA everywhere: free demo → manazoid4@gmail.com
 - [ ] LinkedIn: page fixes + EP1 video posted (video pack in Projects/)
