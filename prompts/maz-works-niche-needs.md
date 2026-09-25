@@ -4,14 +4,16 @@ Used by `/mw-leads`, `/mw-pitch`, `/mw-demo`. Public file: no business names her
 Updated 2026-09-25.
 
 ## Who we target
-**Any business type.** A lead qualifies when ALL 4 are true (evidence for each):
+**Any business type.** A lead qualifies when rules 1–3 are true AND (rule 4 OR rule 5). Evidence for each:
 1. **Active online**: posted on ANY channel (Instagram, Facebook, TikTok, Google Business, LinkedIn) in last 30 days. They care about getting customers, so they'll feel a broken link. LinkedIn-active = bonus point, not required.
 2. **Working on their website**: recent change seen (new site/launch post, updated copy, new pages, recent copyright/sitemap date, or they posted about it).
 3. **Lots of reviews**: 50+ Google (or equivalent), proof customers exist.
 4. **Real leak**: something on the site verifiably costs enquiries (broken HTTPS, dead form, no tap-to-call, typo in Google title, no review link…).
-Meet all 4 = potential lead (not a client until they pay). The niche table below is only a guide to which leak to look for.
+5. **Doing work by hand (bigger job)**: signs of a manual process an automation could fix: bookings only by phone/DM/email, PDF or paper forms, deposits by bank transfer, no confirmation/reminder texts, enquiry form with no auto-reply, quotes done by hand, orders taken by phone. Fits Growth System £499+ or Support £49/mo.
+Rule 4 = quick fix (£150). Rule 5 = bigger job (£499+). Both = best lead.
+Meet the rules = potential lead (not a client until they pay). The niche table below is only a guide to which leak to look for.
 
-Independent, owner-run, within ~45 min drive of Nottingham: Nottingham, Derby, Sheffield, Leicester, Mansfield, Chesterfield, Loughborough and villages between (so gifts + demos can be handed over in person). Service businesses where **one lost booking = £20–£200** and the owner answers the phone themselves. Skip chains, franchises, anyone with a recent agency site.
+Independent, owner-run, within ~90 min drive of Nottingham: Derby, Sheffield, Leicester, Lincoln, Birmingham, Leeds, Northampton, Stoke and everywhere between. Under 45 min = hand over demo + gift in person; further = demo on a video call, gift posted. Service businesses where **one lost booking = £20–£200** and the owner answers the phone themselves. Skip chains, franchises, anyone with a recent agency site.
 
 ## Niche needs map (what they actually lose money on)
 Look for the leak in column 3 first. It's the one they feel.
