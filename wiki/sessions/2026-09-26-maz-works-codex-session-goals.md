@@ -35,3 +35,10 @@ Start with Goal 1 in chat, then use that fictional opportunity for Goals 2 and 3
 
 ## Founder screenshot clarification
 The user supplied a screenshot of the active Claude session confirming ownership of booking buttons, narrower Scrap Finance Partners wording, rules derived from an email, and HubSpot emails. Treat all of those as reserved. The proposed call rehearsal, internal scope template and capacity worksheet remain separate. The Local Knowledge mirror is intentionally Git-ignored; retain it locally and commit only the wiki session note to the vault remote.
+
+## Revised direction: client acquisition
+Founder clarified that HubSpot already manages leads, emails and calls. This replaces the earlier call-practice/delivery/economics recommendation with three acquisition goals:
+1. Find and rank a small batch of prospects with a current, evidenced problem matching an existing offer. Check existing HubSpot records for duplicates once access is verified. Output: ten researched candidates and three priorities; keep identifiable data private.
+2. Prepare a specific reason for each priority prospect to talk: verified observation, useful fix, bounded offer and a short call opener or demonstration brief. Keep these as separate drafts; the other agent retains HubSpot email and site/LinkedIn ownership. Output: three reviewed prospect briefs, no messages sent.
+3. Define a two-week acquisition experiment around founder capacity, recording attempts, replies, qualified conversations, booked calls and paid work in the existing HubSpot workflow. Review results and adjust one variable at a time. Output: a weekly activity plan and review criteria; no CRM configuration changes while another agent owns that work.
+Plugin directory verified HubSpot is available but not installed in this Codex context. Suggested its installation/connection; no live CRM access was claimed. No additional sales tooling is needed for this planning stage. Begin with goal 1; CRM-dependent checks wait for verified access.
