@@ -1,75 +1,87 @@
-# Maz Works: lead rules, niche needs + client gifts
+# Maz Works: Lead Quality v2 (canonical lead rules)
 
-Used by `/mw-leads`, `/mw-pitch`, `/mw-demo`. Public file: no business names here (those live in `leads/`, local only).
-Updated 2026-09-25.
+**Version:** v2, adopted 28 Sep 2026 by Maz. Replaces the v1 score (proximity, reviews, premises, LinkedIn, gifts, case-study points) and the 7 "quality rules" of 28 Sep morning. Every agent (Claude, Codex, others) uses this file. Public file: no business names, contacts or prospect details here; those live in the private `maz-works-leads` repo and HubSpot.
 
-## Who we target (maximum reach)
-**Anywhere in the UK, any business type.** Only 1 must-have:
+Offers and prices: read them from `mazos-site/app/offers.ts` (Offer v9). Never copy prices into lead notes or prompts; name the offer and let the price come from that file.
 
-**MUST: a real problem we can fix, with evidence.** Either:
-- **Quick fix (£150):** something broken or missing on the site: dead booking link, site won't open, no tap-to-call, typo on Google, no review link.
-- **Bigger job (£499+):** work done by hand: bookings only by phone/DM/email, paper/PDF forms, deposits by bank transfer, no reminder texts, quotes by hand, orders by phone.
+## The method
 
-**Only skip:** chains/franchises, and anything we can't verify.
+**Find a repeated business problem → establish credible evidence → identify a useful paid intervention.**
 
-**Priority signals (rank higher, never exclude):**
-- Near Nottingham (in person: demo + gift). Far = video call, gift posted.
-- Active online in last 30 days (any channel; LinkedIn = extra point)
-- Working on their website recently
-- Lots of reviews (busy = can pay)
-- Has both a quick fix AND a bigger job
+Small website issues (typos, template text, no tap-to-call, a broken footer link) are supporting observations or a small standalone opportunity. On their own they never qualify a business for the main list.
 
-## Niche needs map (what they actually lose money on)
-Look for the leak in column 3 first. It's the one they feel.
+Look beyond the homepage: service pages, team and recruitment pages, booking pages, FAQs, terms, contact and process pages, the owner's own posts.
 
-| Niche | What they need most | Leak to check (evidence) | Best paid offer | Free 3D gift (paying clients) |
-|---|---|---|---|---|
-| Barbers | Fill quiet weekday slots, fewer no-shows | No online booking or booking buried; walk-in only with no hours on Google | Quick Win £150 (booking button + hours) | Touch One "Book / Review" stand for the counter |
-| Nail, lash, brow techs | Deposits to stop no-shows, show portfolio | Booking via Instagram DM only; no deposit; link-in-bio broken | Website Launch £299 (booking + deposit page) | Touch One "Book next appointment" stand + aftercare card holder |
-| Tattoo / piercing studios | Pre-qualified enquiries (style, size, budget), deposits | Contact form asks nothing; enquiries by DM; no aftercare page | Growth System £499 (enquiry form → auto-reply + deposit link) | Touch stand linking to aftercare page |
-| Dog groomers / walkers | Rebooking every 4–8 weeks, reminders | No rebooking prompt; phone-only; no reviews link | Growth System £499 (rebook reminder automation) | Touch + Carry keyring for the van/lead hook |
-| Dessert shops / cafés | Late-night Google traffic, reviews, clear menu | Title/typo errors, PDF menu, no tap-to-call, HTTPS broken | Quick Win £150 | Touch Three (menu / review / Instagram) |
-| Independent gyms, PT, martial arts, dance | Free-trial sign-ups, class timetable | Timetable is an image/PDF; trial form goes nowhere | Website Launch £299 (trial booking page) | "Tap to join trial" stand for reception |
-| Mobile mechanics, MOT garages | Quote requests with reg + problem, reviews | Phone-only; no quote form; no reviews link | Quick Win £150 (quote form with reg field) | Touch + Carry keyring "Tap to review us" to hand customers with keys |
-| Cleaners, window cleaners, gardeners | Recurring customers, area coverage, quotes | No area/postcode list; no quote form; Facebook-only | Website Launch £299 (one-page site + quote form) | Van-window QR/NFC sign "Get a quote" |
-| Cake makers, florists, wedding services | Order enquiries with date + budget, portfolio | Enquiry by DM; no date/budget fields; gallery slow | Growth System £499 (order form → auto-reply + deposit) | Display stand "Order for your date" at markets/fairs |
-| Phone/laptop repair, alterations, key cutting | "Can you fix X, how much, how long?" | No price guide; no tap-to-call; hours wrong on Google | Quick Win £150 (price guide + call button) | Counter stand "Tap to review" |
+## Four problem families (start roughly 6 / 6 / 4 / 4 in a batch of 20; never fill a quota with weak leads)
 
-## Lead score + client gifts
-Score each lead 0–10 after `/mw-pitch`. Score ranks who to contact first. **Free gifts are for PAYING customers only**: 2 custom 3D-printed items, handed over when the job is paid/delivered. Mention it in the offer as a thank-you bonus, never give it before payment.
-
-**LinkedIn (bonus, not required):** owner or business has a LinkedIn profile/page that posted, reacted, or was updated in the last 90 days. Record the URL + date seen as evidence. 
-Why: Maz Works wins on LinkedIn; an active owner sees the series, can be tagged (with permission) and shares the fix. Food shops often fail this; niche services (PT, tattoo, mechanics, cleaners, groomers, wedding) pass more often.
-
-| Points | Signal |
+| Family | What to investigate |
 |---|---|
-| +3 | Clear, evidenced leak that costs bookings (not cosmetic) |
-| +2 | Owner-run, reachable in person in Nottingham |
-| +2 | Busy already (50+ Google reviews or visibly full) = can pay, gains fast |
-| +1 | Fits a paid offer ≥ £299, or recurring (Support £49/mo) |
-| +1 | Physical counter/van where a Touch stand gets seen daily |
-| +1 | Would agree to be a named case study |
+| Enquiries and quoting | Requests arriving through several channels, repeated estimates, survey or site-visit scheduling, quote follow-up |
+| Bookings and repeat customers | Repeated scheduling, cancellations, reminders, rebooking, waiting lists, customer chasing |
+| Job delivery and invoicing | Manual paperwork, repeated data entry, staff hand-offs, completion records, invoice delays |
+| Professional-service projects | Gathering client briefs, qualification, onboarding, document collection, progress updates |
 
-**Gift pack (2 items, custom to them):**
-1. The niche gift from the table above, with their name/logo, NFC + QR set to their real review/booking link.
-2. One small extra: business-card holder, keyring, or window sign in their colours.
+Any UK business, any trade. A polished website is not an exclusion. A PDF, a missing booking button or a phone-based service is **not automatically a problem**: check what routes already exist (booking app, WhatsApp, portal) before suggesting work.
 
-**Rules**
-- Cost cap ~£5 per pack (PLA ~£1–2/item + NFC tag ~£0.30). Max 4 packs/month (printer time); gift only after payment.
-- The free demo is the pitch. The gift is a thank-you when they pay: hand over in person with the finished job (or post it).
-- Every gift carries a small "Maz Works" mark on the base. That's the advertising.
-- Only link to pages that work. If their booking link is the broken thing, the gift links to the fixed demo only after they say yes.
-- Ask one thing back: "If it's useful, would you leave a line I can quote?" Never invent it.
-- Log in `leads/` (local): score, gift sent date, reply, outcome.
+## Score (0–10)
 
-## Lead hand-off format (paste into Google Docs)
-Plain text, one block per lead, no tables:
+| Dimension | Points | Evidence required |
+|---|---:|---|
+| Business problem | 0–3 | 0 none or cosmetic · 1 hypothesis only · 2 documented recurring bottleneck (in their own words or visible process) · 3 corroborated operational consequence (e.g. they state lost calls, overflowing inbox, no-shows, turning work away) |
+| Repetition or workload | 0–2 | 1 verified recurring process · 2 concrete evidence of frequency or volume (e.g. "100+ emails a day", "fully booked 6 weeks", several staff doing it) |
+| Paid solution fit | 0–2 | 1 plausible match to a current offer · 2 a bounded intervention the known workflow clearly supports |
+| Buyer access | 0–2 | 1 verified business contact route · 2 named responsible decision-maker plus a route to them |
+| Relevant timing | 0–1 | Dated expansion, recruitment, new site/service, or a stated priority connected to the problem |
 
-BUSINESS NAME (Town)
-Contact: phone / email / social handle
-Problem: one plain sentence
-Proof: reviews + rating, where the problem is (URL)
-Demo to build: the fixed version in one line
-Offer: tier + price
-Gift: item they get when they pay
-Opener: one sentence to say on the call
+**Gates (all required):** business problem ≥ 2, solution fit ≥ 1, a verified contact route, evidence checked in the last 30 days, and no exclusion.
+
+**Tiers**
+- **Gold 8–10**, passes every gate. A strong research prospect, not a confirmed buyer. **Gold does not require a limited company.**
+- **Silver 6–7**, passes every gate.
+- **Bronze** = the Bench / re-check queue: plausible but missing evidence. Not counted in any "20 leads" target.
+- **Exclude** from the campaign: cosmetic-only findings, disproven problems, duplicates, chains/franchises, or no credible paid intervention.
+
+**No points for:** geography or distance, gifts, LinkedIn presence, assumed case-study willingness, number of reviews. Reviews never establish budget.
+
+**Contact route is separate from tier.** UK PECR: cold email only to a confirmed limited company or LLP at a business address; everyone else is phone, walk-in or a reply to their own published channel. Record `Contact route` accordingly. A sole trader can be Gold.
+
+## What every private lead record contains
+
+1. Evidence URLs and the date each was checked
+2. Score breakdown (5 dimensions) and tier, plus the previous score if re-scored
+3. **Observed facts** (what we saw) kept separate from **commercial hypotheses** (what we think it costs) and **owner-confirmed** information (only after a conversation)
+4. Business consequence in one plain sentence (no invented £ losses)
+5. Proposed intervention: name the Offer v9 package or add-on. Starter = one genuinely useful automation. Recommend a Business System or custom work only when the confirmed scope warrants it.
+6. Contact route and decision-maker (if named)
+7. Unanswered questions (budget, urgency, current tools stay "unknown" until the owner says)
+8. Next action
+
+## Discovery questions (first real conversation)
+
+- What happens from enquiry to payment?
+- Where does someone repeatedly copy, chase or correct information?
+- How often, and how much time does it take?
+- What happens when that step fails?
+- Could software you already pay for do it?
+- Who approves spending, and when would a change matter?
+
+## HubSpot and measurement
+
+- Priority (tier) is separate from sales progress (lead status). Research never marks a lead contacted.
+- Refresh and dedupe (domain, business identity, phone) before creating. Import Gold → Silver → Bronze. Preserve owners, history and opt-outs.
+- Company names start with `🥇 GOLD · `, `🥈 SILVER · ` or `BENCH · ` (Bronze). Keep the `Lead tier` property in sync.
+- Measure: owner-validated opportunities, quotes requested, paid starts. Review the method after 10 real conversations.
+
+## Gifts (unchanged, not a scoring factor)
+
+Free 3D-printed items are a thank-you for **paying** clients only, handed over with the finished job. Never offered before payment and never used to rank a lead.
+
+## Lead hand-off format (plain text, one block per lead)
+
+BUSINESS NAME (Town) · Tier + score
+Contact: route / named decision-maker
+Problem (observed): one plain sentence + URL + date
+Consequence (hypothesis): one plain sentence
+Intervention: Offer v9 package or add-on
+Unknowns: what we still need to learn
+Next action: one line
