@@ -38,12 +38,12 @@ Any UK business, any trade. A polished website is not an exclusion. A PDF, a mis
 **Tiers**
 - **Gold 8–10**, passes every gate. A strong research prospect, not a confirmed buyer. **Gold does not require a limited company.**
 - **Silver 6–7**, passes every gate.
-- **Bronze** = the Bench / re-check queue: plausible but missing evidence. Not counted in any "20 leads" target.
+- **Bench** (re-check queue): plausible but missing evidence. Not counted in any "20 leads" target.
 - **Exclude** from the campaign: cosmetic-only findings, disproven problems, duplicates, chains/franchises, or no credible paid intervention.
 
 **No points for:** geography or distance, gifts, LinkedIn presence, assumed case-study willingness, number of reviews. Reviews never establish budget.
 
-**Contact route is separate from tier.** UK PECR: cold email only to a confirmed limited company or LLP at a business address; everyone else is phone, walk-in or a reply to their own published channel. Record `Contact route` accordingly. A sole trader can be Gold.
+**Contact route is separate from tier.** UK PECR: cold email only to a confirmed limited company (Ltd) at a business address; everyone else is phone, walk-in or a reply to their own published channel. Record `Contact route` accordingly. A sole trader can be Gold.
 
 ## What every private lead record contains
 
@@ -68,8 +68,8 @@ Any UK business, any trade. A polished website is not an exclusion. A PDF, a mis
 ## HubSpot and measurement
 
 - Priority (tier) is separate from sales progress (lead status). Research never marks a lead contacted.
-- Refresh and dedupe (domain, business identity, phone) before creating. Import Gold → Silver → Bronze. Preserve owners, history and opt-outs.
-- Company names start with `🥇 GOLD · `, `🥈 SILVER · ` or `BENCH · ` (Bronze). Keep the `Lead tier` property in sync.
+- Refresh and dedupe (domain, business identity, phone) before creating. Import Gold → Silver → Bench. Preserve owners, history and opt-outs.
+- Company names start with `🥇 GOLD · `, `🥈 SILVER · ` or `BENCH · `. Keep the `Lead tier` property in sync.
 - Measure: owner-validated opportunities, quotes requested, paid starts. Review the method after 10 real conversations.
 
 ## Gifts (unchanged, not a scoring factor)

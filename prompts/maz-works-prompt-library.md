@@ -7,7 +7,7 @@ In Claude Code the starred ones are also slash commands: `/mw-next`, `/mw-leads`
 ## Facts every prompt relies on (update here first if they change)
 
 - **Offer (Offer v9, source of truth `mazos-site/app/offers.ts`; read prices there, never copy them into prompts):** Free Plan & Fixed Quote → **Starter Automation** (one genuinely useful automation) · **Business System** (several jobs joined up) · **Custom Software & Websites** · priced add-ons · **Keep It Running** monthly care. Half to start, rest when it works. Retired and never quoted: Quick Win, Website Launch, Growth System, Support £49, Booking & Enquiry Repair.
-- **Target + lead rules:** any UK small business or team, any trade. **Lead Quality v2** (problem → evidence → paid intervention; gates; Gold/Silver/Bronze): `prompts/maz-works-niche-needs.md`. Gifts are for paying clients only and never a scoring factor.
+- **Target + lead rules:** any UK small business or team, any trade. **Lead Quality v2** (problem → evidence → paid intervention; gates; Gold/Silver/Bench): `prompts/maz-works-niche-needs.md`. Gifts are for paying clients only and never a scoring factor.
 - **Physical:** Maz Works Objects "Touch" 3D-printed tap stands (Touch One, Touch Three, Touch + Carry) that open reviews/menu/bookings/socials; £10 artwork option. Route `/3d-printing`. Printed on the owner's Ender 5.
 - **Positioning (live hero):** "Stop losing time and enquiries to jobs done by hand." Direct with the builder, fixed scope and price, see the direction first.
 - **Contact:** info@mazworks.uk (public address; never publish a personal email). Live site https://www.mazworks.uk.
@@ -50,8 +50,8 @@ Write a handover before we stop: what changed (files, PRs, links), proof it work
 Read prompts/maz-works-niche-needs.md (Lead Quality v2) first and follow it exactly.
 Goal: UK businesses with a documented, recurring business problem (enquiries and quoting · bookings and repeat customers · job delivery and invoicing · professional-service projects) that a current Offer v9 package or add-on can solve.
 Research service, booking, team/recruitment, FAQ, terms and contact pages, not just the homepage. Check what routes they already have before assuming a problem.
-Score each on the 5 v2 dimensions; apply the gates; tier Gold 8–10 / Silver 6–7 / Bronze (re-check). Cosmetic website issues never qualify a lead on their own. No points for location, reviews, LinkedIn, gifts or case-study willingness.
-Each record: evidence URLs + dates, score breakdown, observed facts vs hypotheses vs owner-confirmed, consequence, proposed intervention, contact route (email only a confirmed Ltd/LLP, else phone/walk-in), decision-maker if named, unknowns, next action.
+Score each on the 5 v2 dimensions; apply the gates; tier Gold 8–10 / Silver 6–7 / Bench (re-check). Cosmetic website issues never qualify a lead on their own. No points for location, reviews, LinkedIn, gifts or case-study willingness.
+Each record: evidence URLs + dates, score breakdown, observed facts vs hypotheses vs owner-confirmed, consequence, proposed intervention, contact route (email only a confirmed Ltd, else phone/walk-in), decision-maker if named, unknowns, next action.
 Dedupe against HubSpot and the private maz-works-leads repo before adding. Save to the private leads repo, never the public vault.
 Never contact anyone. Never invent a problem, a £ loss or a buyer.
 ```
@@ -61,7 +61,7 @@ Never contact anyone. Never invent a problem, a £ loss or a buyer.
 Lead: <URL>. Inspect the live site on mobile width (390 px) and desktop, plus its Google profile if public.
 Start from the lead's private v2 record. Name the recurring business problem (not a cosmetic website issue), in the owner's own terms where possible.
 Write:
-1) A first message (≤110 words, subject ≤6 words, no hype) that names one checkable observation, asks one discovery question, and offers the free plan and fixed quote. No price in a first message. Cold email only if the business is a confirmed Ltd/LLP; otherwise write a call opener instead.
+1) A first message (≤110 words, subject ≤6 words, no hype) that names one checkable observation, asks one discovery question, and offers the free plan and fixed quote. No price in a first message. Cold email only if the business is a confirmed Ltd; otherwise write a call opener instead.
 2) A LinkedIn/Instagram DM version (≤50 words).
 3) A 45-second screen-recording script showing the leak and the fix idea.
 Done = all three in C:\Users\manaz\Desktop\Maz Works Knowledge Vault\leads\pitches\<business-slug>.md. Don't send anything.
