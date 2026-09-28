@@ -6,11 +6,11 @@ In Claude Code the starred ones are also slash commands: `/mw-next`, `/mw-leads`
 
 ## Facts every prompt relies on (update here first if they change)
 
-- **Offer (mazos-site `app/page.tsx` OFFERS):** £0 first step (problem → direction before commitment) · **Quick Win £150 fixed** (£75 start / £75 on completion, one agreed change, not a rebuild) · **Website Launch from £299** (scope + fixed price agreed first) · **Growth System from £499** (site/journey + one automation) · **Support from £49/month** (no long contract).
-- **Target + needs:** Nottingham independents, niche services. Needs map + good-lead gift rule (free custom 3D-print gift for paying clients only): `prompts/maz-works-niche-needs.md`.
+- **Offer (Offer v9, source of truth `mazos-site/app/offers.ts`; read prices there, never copy them into prompts):** Free Plan & Fixed Quote → **Starter Automation** (one genuinely useful automation) · **Business System** (several jobs joined up) · **Custom Software & Websites** · priced add-ons · **Keep It Running** monthly care. Half to start, rest when it works. Retired and never quoted: Quick Win, Website Launch, Growth System, Support £49, Booking & Enquiry Repair.
+- **Target + lead rules:** any UK small business or team, any trade. **Lead Quality v2** (problem → evidence → paid intervention; gates; Gold/Silver/Bronze): `prompts/maz-works-niche-needs.md`. Gifts are for paying clients only and never a scoring factor.
 - **Physical:** Maz Works Objects "Touch" 3D-printed tap stands (Touch One, Touch Three, Touch + Carry) that open reviews/menu/bookings/socials; £10 artwork option. Route `/3d-printing`. Printed on the owner's Ender 5.
 - **Positioning (live hero):** "Stop losing time and enquiries to jobs done by hand." Direct with the builder, fixed scope and price, see the direction first.
-- **Contact:** manazoid4@gmail.com (site form posts via formsubmit to this address). Live site https://mazos-site.vercel.app.
+- **Contact:** info@mazworks.uk (public address; never publish a personal email). Live site https://www.mazworks.uk.
 - **Proof:** Scrap Finance Partners (https://scrap-finance-partners.vercel.app), JobFilter (https://jobfilter.uk), Dessert Lane demo (private), Agent Nudge, MAZ Pocket.
 - **Tools:** LeadFinder (`C:\Users\manaz\leadfinder`, Tauri desktop, `npm run tauri dev`, SQLite, Google Maps discovery via Gosom, tech detection via httpx/wappalyzergo, demo configs in `public/demo-configs/*.json`, route `#/demo/<slug>`).
 - **Market ammo (verified 23 Aug 2026):** GoDaddy UK web design 6–8 weeks, price behind a call · Yell subscription lock-in, no public price · Fiverr Trustpilot 2.3/5 (14,838 reviews) · UK micro-agency floor ~£825–£995.
@@ -45,22 +45,23 @@ Write a handover before we stop: what changed (files, PRs, links), proof it work
 
 ## B. Win clients
 
-### ★ B1 — Find 20 qualified leads (`/mw-leads <niche> <town>`)
+### ★ B1 — Find qualified leads, Lead Quality v2 (`/mw-leads <problem family or trade> <area or UK>`)
 ```
-Goal: 20 UK small businesses in <NICHE> around <TOWN> that are losing enquiries online and could buy a Quick Win (£150), Website Launch (from £299) or a Touch stand.
-Use LeadFinder (C:\Users\manaz\leadfinder) if it runs; otherwise public search + each business's own site/Google profile.
-For each lead capture: name, site URL, Google rating + review count, the ONE specific leak you can see (e.g. no booking link on mobile, contact form 404s, no reviews link, menu is a PDF, site not HTTPS), evidence (URL + what you saw), best-fit offer, good-lead score 0–10 (prompts/maz-works-niche-needs.md), active online (any channel, last 30 days).
-Skip chains/franchises and businesses with a clearly recent agency site.
-Done = CSV at C:\Users\manaz\Desktop\Maz Works Knowledge Vault\leads\<date>-<niche>-<town>.csv with 20 rows, every leak backed by evidence. Report the top 5 in chat.
-Never contact anyone. Never invent a problem you didn't observe.
+Read prompts/maz-works-niche-needs.md (Lead Quality v2) first and follow it exactly.
+Goal: UK businesses with a documented, recurring business problem (enquiries and quoting · bookings and repeat customers · job delivery and invoicing · professional-service projects) that a current Offer v9 package or add-on can solve.
+Research service, booking, team/recruitment, FAQ, terms and contact pages, not just the homepage. Check what routes they already have before assuming a problem.
+Score each on the 5 v2 dimensions; apply the gates; tier Gold 8–10 / Silver 6–7 / Bronze (re-check). Cosmetic website issues never qualify a lead on their own. No points for location, reviews, LinkedIn, gifts or case-study willingness.
+Each record: evidence URLs + dates, score breakdown, observed facts vs hypotheses vs owner-confirmed, consequence, proposed intervention, contact route (email only a confirmed Ltd/LLP, else phone/walk-in), decision-maker if named, unknowns, next action.
+Dedupe against HubSpot and the private maz-works-leads repo before adding. Save to the private leads repo, never the public vault.
+Never contact anyone. Never invent a problem, a £ loss or a buyer.
 ```
 
 ### ★ B2 — Personal pitch for one lead (`/mw-pitch <url>`)
 ```
 Lead: <URL>. Inspect the live site on mobile width (390 px) and desktop, plus its Google profile if public.
-Find the single most expensive leak (lost bookings/enquiries/reviews). Be specific: where, what happens, why a customer gives up.
+Start from the lead's private v2 record. Name the recurring business problem (not a cosmetic website issue), in the owner's own terms where possible.
 Write:
-1) A cold email (≤110 words, subject ≤6 words, no hype, no "I hope this finds you well") that names the leak, offers the £0 first step: "I'll show you the fixed version working before you pay anything", and gives one fixed price (usually Quick Win £150).
+1) A first message (≤110 words, subject ≤6 words, no hype) that names one checkable observation, asks one discovery question, and offers the free plan and fixed quote. No price in a first message. Cold email only if the business is a confirmed Ltd/LLP; otherwise write a call opener instead.
 2) A LinkedIn/Instagram DM version (≤50 words).
 3) A 45-second screen-recording script showing the leak and the fix idea.
 Done = all three in C:\Users\manaz\Desktop\Maz Works Knowledge Vault\leads\pitches\<business-slug>.md. Don't send anything.
@@ -85,7 +86,7 @@ Each ≤80 words, plain text, no pressure tactics, no fake scarcity. Save to lea
 
 ### B5 — Fixed-price proposal from call notes
 ```
-Call notes: <PASTE>. Turn this into a one-page fixed-price proposal using only these tiers: Quick Win £150 (£75 start, £75 on completion) · Website Launch from £299 · Growth System from £499 · Support from £49/month · Touch stand if physical.
+Call notes: <PASTE>. Turn this into a one-page fixed-price proposal using only Offer v9 packages and add-ons, with prices read from mazos-site/app/offers.ts (Starter for one useful automation; Business System or custom only when the confirmed scope warrants it).
 Sections: the problem (their words) · what I'll deliver (bullets, testable) · not included · price + payment split · timeline in days · what I need from them · how we'll know it worked (a measurable check, not a % promise).
 ≤350 words. Save as Markdown in the vault clients/<slug>/proposal.md and also give me an email-ready version.
 ```
@@ -94,18 +95,18 @@ Sections: the problem (their words) · what I'll deliver (bullets, testable) · 
 
 ## C. Deliver
 
-### ★ C1 — Quick Win £150 (`/mw-quickwin <client> <change>`)
+### ★ C1 — Single agreed change (`/mw-quickwin <client> <change>`) · used inside a Starter or an add-on, not sold alone
 ```
 Client: <CLIENT>. Agreed change: <ONE CHANGE>. Access: <repo/hosting/CMS>.
 1) Record before-state: screenshots at 390 px and 1280 px + the exact broken behaviour.
 2) Make only the agreed change on a branch. Smallest diff.
 3) Verify: build passes, the change works on mobile + desktop, nothing else changed (list files touched).
 4) Before/after pack for the client: 2 screenshots each side + 3-line summary in plain English.
-Done = PR link (or deploy link) + before/after pack in clients/<slug>/quickwin-<date>.md + reminder to invoice the second £75.
+Done = PR link (or deploy link) + before/after pack in clients/<slug>/quickwin-<date>.md + reminder to invoice the balance (half on completion).
 Never touch DNS, payments or email settings without my explicit OK.
 ```
 
-### C2 — Website Launch (from £299)
+### C2 — Custom Software & Websites (price: offers.ts)
 ```
 Client: <CLIENT>. Approved demo: <URL>. Content from client: <PATH/LINK>.
 Build the production site from the demo: real content only (flag gaps as TODO, never invent), clear enquiry route that actually delivers to the client (test it end to end), basic SEO (title/description/OG), accessibility pass, Lighthouse mobile ≥ 90 perf/SEO/accessibility.
@@ -113,7 +114,7 @@ Done = production URL + enquiry test proof (screenshot of received message) + ha
 Domain/DNS changes: prepare exact steps for me; don't apply them yourself.
 ```
 
-### C3 — Growth System (from £499): enquiry follow-up automation
+### C3 — Starter Automation / Business System: enquiry follow-up automation (price: offers.ts)
 ```
 Client: <CLIENT>. Where enquiries arrive now: <FORM/EMAIL/WHATSAPP>. What goes wrong: <e.g. replies take 2 days>.
 Design + build ONE workflow: capture → instant acknowledgement to the customer → notify the owner → log to a simple sheet/CRM → reminder if unanswered in 24 h.
@@ -121,7 +122,7 @@ Use tools the client already pays for where possible. No secrets in repos. Test 
 Done = diagram (5 boxes) + working test run with timestamps + 1-page owner guide + what it costs them monthly (should be £0–£10).
 ```
 
-### C4 — Support (£49/month) monthly report
+### C4 — Keep It Running (monthly care, price: offers.ts) monthly report
 ```
 Client: <CLIENT>, site <URL>. Check: uptime/HTTPS, form still delivers (send a test), broken links, Lighthouse mobile, any content they asked to change.
 Write a 6-line monthly report: what I checked, what I fixed, anything they should know, next month's one suggestion. Save to clients/<slug>/support-<yyyy-mm>.md.

@@ -18,6 +18,9 @@ sources:
   - "https://ico.org.uk/for-organisations/direct-marketing-and-privacy-and-electronic-communications/guidance-on-direct-marketing-using-live-calls/"
 ---
 
+> **Superseded (28 Sep 2026):** lead scoring, offers and prices in this note are historical. Lead rules: `prompts/maz-works-niche-needs.md` (Lead Quality v2). Offers: `mazos-site/app/offers.ts` (Offer v9).
+
+
 # Maz Works Call Desk
 
 ## Decision
