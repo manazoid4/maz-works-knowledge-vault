@@ -3,7 +3,7 @@
 
 ## Maz Works sales: start here (every agent)
 - Focus: `NOW.md` (3 projects only)
-- **Lead rules: Lead Quality v2** (problem → evidence → paid intervention; gates; Gold/Silver/Bronze; Gold does not need a Ltd) + hand-off format: `prompts/maz-works-niche-needs.md`. Offers/prices only from `mazos-site/app/offers.ts`.
+- **Lead rules: Lead Quality v2** (problem → evidence → paid intervention; gates; Gold/Silver/Bench; Gold does not need a Ltd) + hand-off format: `prompts/maz-works-niche-needs.md`. Offers/prices only from `mazos-site/app/offers.ts`.
 - Prompt library + /mw-* commands: `prompts/maz-works-prompt-library.md`
 - LinkedIn posts: `prompts/maz-works-linkedin-launch.md`
 - Leads, call list, pitches: PRIVATE repo https://github.com/manazoid4/maz-works-leads (local: `leads/`, git-ignored here). Never copy lead data into this public repo.
