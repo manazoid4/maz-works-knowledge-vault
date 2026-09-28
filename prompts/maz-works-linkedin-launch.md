@@ -35,7 +35,7 @@ First comment: `Prices and what I do: mazos-site.vercel.app`
 
 ---
 
-### POST 2 — EASY: the one-letter typo (after pitching Lana Dessert)
+### POST 2 — EASY: the one-letter typo
 ```
 One letter was costing a local dessert shop.
 
@@ -57,7 +57,7 @@ When did you last Google your own business on your phone?
 
 ---
 
-### POST 3 — MEDIUM: the site that won't open (after contacting Yumi)
+### POST 3 — MEDIUM: the site that won't open
 ```
 A well-loved ice cream parlour's website won't open securely.
 

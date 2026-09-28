@@ -13,4 +13,4 @@
 ## Next
 1. Fresh session → "import leads to HubSpot" (see maz-works-leads README NEXT).
 2. Merge mazos-site PR #44.
-3. Call Yumi 0115 970 4504 or build Revive demo (owner to pick).
+3. Next call: see the private leads repo (details removed from this public vault).
