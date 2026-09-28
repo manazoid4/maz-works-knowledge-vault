@@ -95,3 +95,15 @@ When giving Maz several leads, use one short table, best first:
 | Business (town) | 🥇 Gold 9 | One plain line: the repeated problem | Offer v9 package or add-on | Email (Ltd) / Call / Walk-in |
 
 Keep each cell to one line. Details stay in the private record and HubSpot.
+
+## Pitch + script in HubSpot (every lead, Maz 28 Sep 2026)
+
+Every lead added to HubSpot gets a **note on the company** headed `📞 PITCH + SCRIPT` (notes show on Maz's phone; custom properties don't). No lead is finished without one.
+
+- **Gold and Silver:** full note.
+  - **Pitch:** the solution in one line (Offer v9 package or add-on, named in plain words) + **Result:** the outcome for them.
+  - **Route:** Call, or Email from Gmail as info@mazworks.uk only if a confirmed Ltd.
+  - **Script:** 1) who you are, 2) the one thing you noticed (their own words, job ad or evidence), 3) one discovery question, 4) the solution and outcome, 5) offer the free plan and fixed quote and ask for the best email. Plus a one-line answer to "no".
+  - If they're **hiring** for the task, the pitch is: the system takes that work off the new hire (or covers it if they don't hire). Never "replace your staff".
+- **Bench:** short note headed `📞 BENCH: basic solution`: one line "If <problem is confirmed>: <solution>", plus a one-line opener.
+- Always: no price on the first call, no AI, no "fix/repair" wording, outcome first.
