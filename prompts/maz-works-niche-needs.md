@@ -85,3 +85,13 @@ Consequence (hypothesis): one plain sentence
 Intervention: Offer v9 package or add-on
 Unknowns: what we still need to learn
 Next action: one line
+
+## Lead table (for Maz, standard format)
+
+When giving Maz several leads, use one short table, best first:
+
+| Lead | Tier | What's wrong (their words or evidence) | What we sell them | How to reach |
+|---|---|---|---|---|
+| Business (town) | 🥇 Gold 9 | One plain line: the repeated problem | Offer v9 package or add-on | Email (Ltd) / Call / Walk-in |
+
+Keep each cell to one line. Details stay in the private record and HubSpot.
