@@ -4,6 +4,7 @@
 ## Maz Works sales: start here (every agent)
 - Focus: `NOW.md` (3 projects only)
 - **Lead rules: Lead Quality v2** (problem → evidence → paid intervention; gates; Gold/Silver/Bench; Gold does not need a Ltd) + hand-off format: `prompts/maz-works-niche-needs.md`. Offers/prices only from `mazos-site/app/offers.ts`.
+- **YouTube URL from Maz → video intelligence:** follow `prompts/youtube-video-intelligence.md` (full transcript, facts vs opinion vs inference, connect to our projects, save a note in `wiki/sources/video-intelligence/`, commit `knowledge: ingest YouTube research - <title>`). Search `wiki/sources/video-intelligence/_index.md` before new research or a related strategic decision.
 - Prompt library + /mw-* commands: `prompts/maz-works-prompt-library.md`
 - LinkedIn posts: `prompts/maz-works-linkedin-launch.md`
 - Leads, call list, pitches: PRIVATE repo https://github.com/manazoid4/maz-works-leads (local: `leads/`, git-ignored here). Never copy lead data into this public repo.

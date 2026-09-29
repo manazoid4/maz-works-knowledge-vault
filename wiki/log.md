@@ -1,5 +1,11 @@
 # Wiki Log
 
+## [2026-09-29] decision | YouTube video intelligence workflow
+
+- Type: standing workflow (Maz)
+- Location: `prompts/youtube-video-intelligence.md`, index `wiki/sources/video-intelligence/_index.md`, script `scripts/yt-transcript.py`
+- From: every YouTube URL Maz sends becomes a saved, project-linked video-intelligence note.
+
 ## [2026-09-06] save | MAZ Pocket element14 Batch A
 
 - Type: session
