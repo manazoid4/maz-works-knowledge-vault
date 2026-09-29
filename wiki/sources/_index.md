@@ -24,6 +24,8 @@ All source pages — summaries of ingested documents, transcripts, articles, and
 
 ## Transcripts
 
+- **Video intelligence (YouTube):** [[wiki/sources/video-intelligence/_index]]. Every ingested video by topic. Workflow: [[prompts/youtube-video-intelligence]].
+
 
 ---
 
