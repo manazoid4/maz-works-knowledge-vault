@@ -107,3 +107,9 @@ Every lead added to HubSpot gets a **note on the company** headed `📞 PITCH + 
   - If they're **hiring** for the task, the pitch is: the system takes that work off the new hire (or covers it if they don't hire). Never "replace your staff".
 - **Bench:** short note headed `📞 BENCH: basic solution`: one line "If <problem is confirmed>: <solution>", plus a one-line opener.
 - Always: no price on the first call, no AI, no "fix/repair" wording, outcome first.
+
+## Every lead is on Maz's to-do list, with URLs (Maz, 28 Sep 2026)
+
+- **Every lead gets a HubSpot Task** assigned to Maz, so all leads show on his to-do list: Gold due first (priority High), then Silver (Medium), then Bench as "Re-check" (Low). Subject: `🥇 Call <Business>: <phone>` or `🥇 Email then call …` for a confirmed Ltd.
+- **Always include the URLs** in HubSpot (task body, pitch note and `Website problem`): the business website and the exact evidence URL (job ad or page) so Maz can open and see the problem himself. If a problem is hidden (e.g. off-screen spam, a slide-out menu), say so and link the exact page.
+- Re-check a claim before it goes in a task. If it can't be seen or verified, don't state it as fact.
