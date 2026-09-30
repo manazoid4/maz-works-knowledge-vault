@@ -18,3 +18,6 @@ npm run verify passed: typecheck, production export, 108 tests and smoke. Headed
 
 ## Next steps
 Maz: review PR102 preview on phone, check links and disclosure, merge if satisfied. The LinkedIn account audit still needs screenshots; the separate personal profile link needs Maz's URL. Unified memory registration previously rejected both project slugs, so no lifecycle ID was available; durable session notes preserve the handoff.
+
+## Merge follow-up
+Maz explicitly authorised merging everything. PR102 was the only open mazos-site PR. A valid review finding about linkedin-company attribution was reproduced with a failing test, fixed in 8e39f5d, and verified with npm run verify (108 tests) plus both GitHub verify checks and Vercel preview. Resolved the review thread and squash-merged via protected-branch rules as 3886ad5acc538911e6dd9a0b025919e23fcca197 at 2026-09-30T20:43:32Z. No open site PRs remain. Earlier review/merge next steps are complete.
