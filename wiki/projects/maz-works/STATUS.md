@@ -13,6 +13,7 @@ production: https://mazworks.uk
 # Maz Works Site Status
 
 ## Sales context (updated 2026-09-25) — read first
+- **Sales operating guide + verified capability index + `/mw-council` five-lens review (2026-10-01):** [[SALES-OPERATING-GUIDE]]
 - Lead rules (**Lead Quality v2**, 28 Sep 2026) + hand-off format: [[maz-works-niche-needs]] (`prompts/maz-works-niche-needs.md`)
 - Prompts / `/mw-*` commands: `prompts/maz-works-prompt-library.md`
 - Leads + call list + pitches: PRIVATE https://github.com/manazoid4/maz-works-leads (never copy here)
