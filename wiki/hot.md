@@ -15,6 +15,10 @@ related:
 
 # Recent Context
 
+## Shared agent policy — 2026-10-01
+
+- [[wiki/meta/shared-agent-operating-policy]] preserves the user's full initiative, commercial-value and orchestration requirements. Shared retrieval is linked from unified-memory INDEX; broader audit/implementation is pending.
+
 ## MAZ Pocket element14 Batch A
 
 - [[2026-09-06-maz-pocket-codex]] records PR #36, successful firmware build, physical CALL/PLAN/Nudge failures and the Astra decision boundary.

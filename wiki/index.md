@@ -32,6 +32,8 @@
 
 ## Engineering
 
+- [[wiki/meta/shared-agent-operating-policy]] — confirmed shared initiative, commercial-value and 32-concept runtime policy; detailed audit remains pending.
+
 - [[wiki/sources/video-intelligence/_index]]: YouTube video intelligence. Search it before new research; workflow in `prompts/youtube-video-intelligence.md`.
 
 - [[wiki/meta/unified-memory-always-save]] — active rule to persist every agent

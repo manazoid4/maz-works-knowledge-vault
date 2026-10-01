@@ -1,5 +1,12 @@
 # Wiki Log
 
+## [2026-10-01] save | Shared Agent Operating Policy
+
+- Type: confirmed cross-agent decision
+- Location: wiki/meta/shared-agent-operating-policy.md
+- From: user-supplied reference and explicit confirmation to save to unified memory for all agents.
+- Preserves commercial initiative, all 32 architecture concepts and 12 first-task requirements; no claim that the architecture has been implemented.
+
 ## [2026-09-29] decision | YouTube video intelligence workflow
 
 - Type: standing workflow (Maz)
