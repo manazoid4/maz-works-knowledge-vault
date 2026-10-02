@@ -34,4 +34,5 @@ Done =
 - JobFilter: 30 open PRs; needs its own clean-up sprint
 - FlowLens (revenue product, stalled since Aug)
 - Figma: run plugin (C:\Users\manaz\figma-sprint) when at PC
+- Brand kit for social-media creators (trainers etc.), idea raised 2026-09-30; no earlier notes found
 - Everything else on GitHub: review for archiving after the 3 above ship

@@ -90,3 +90,10 @@ Canonical public site is https://mazworks.uk; the old Vercel address is a deploy
 Live homepage, /work/scrap-finance-partners and /3d-printing return HTTP 200. Public offers: Quick Win £150; Website Launch from £299; Growth System from £499; support from £49/month. Objects: £29/£49/£79 plus optional artwork. Objects still uses concept visuals and repo README lists manufacturing validation as outstanding; do not assume the user's recent print satisfies these tests.
 Read current GitHub README and docs/maz-works/CLIENT-ACQUISITION.md before proposing new acquisition infrastructure. Existing manazoid4/leadfinder covers lead discovery, research, demos, manual outreach and pipeline tracking; the older Call Desk note is not the only acquisition asset. Scrap Finance Partners is contract-delivery proof, without published revenue or conversion results. Product repositories show capability, not paid-client counts.
 Founder request: plan four high-leverage client-acquisition goals, using multiple perspectives and conserving tokens; planning first. Draft is in tasks/plan.md. User expects the live site and GitHub to supply known business context rather than being asked to repeat it. Revenue target, actual pipeline and available sales time remain unverified.
+
+
+## 2026-09-25 sales pointer merge
+PR #44 merged as b233b2a: site AGENTS.md now points to public sales rules/prompts and the private maz-works-leads repository. HubSpot authorization is pending; CRM access has not been verified. See [[wiki/sessions/2026-09-25-maz-works-codex]].
+
+
+HubSpot follow-up: direct MCP server registered in Codex; authentication blocked by HubSpot requiring a pre-registered OAuth app. No CRM access verified. See 2026-09-25 Codex session note.
