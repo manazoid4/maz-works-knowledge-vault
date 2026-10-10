@@ -1,8 +1,8 @@
 # Maz Works: Lead Quality v2 (canonical lead rules)
 
-**Version:** v2, adopted 28 Sep 2026 by Maz. Replaces the v1 score (proximity, reviews, premises, LinkedIn, gifts, case-study points) and the 7 "quality rules" of 28 Sep morning. Every agent (Claude, Codex, others) uses this file. Public file: no business names, contacts or prospect details here; those live in the private `maz-works-leads` repo and HubSpot.
+**Version:** v2, adopted 28 Sep 2026 by Maz; navigation, current-offer and contact-channel clarifications made 10 Oct 2026 without changing scoring. Replaces the v1 score (proximity, reviews, premises, LinkedIn, gifts, case-study points) and the 7 "quality rules" of 28 Sep morning. Every agent (Claude, Codex, others) uses this file. Public file: no business names, contacts or prospect details here; those live in the private `maz-works-leads` repo and HubSpot.
 
-Offers and prices: read them from `mazos-site/app/offers.ts` (Offer v9). Never copy prices into lead notes or prompts; name the offer and let the price come from that file.
+Offers and prices: read them from `mazos-site/app/offers.ts` at the time of the work (never trust a historical version label). Never copy prices into lead notes or prompts; name the offer and let the price come from that file.
 
 ## The method
 
@@ -43,7 +43,7 @@ Any UK business, any trade. A polished website is not an exclusion. A PDF, a mis
 
 **No points for:** geography or distance, gifts, LinkedIn presence, assumed case-study willingness, number of reviews. Reviews never establish budget.
 
-**Contact route is separate from tier.** UK PECR: cold email only to a confirmed limited company (Ltd) at a business address; everyone else is phone, walk-in or a reply to their own published channel. Record `Contact route` accordingly. A sole trader can be Gold.
+**Contact route is separate from tier.** Under Maz's internal policy, draft cold email only for a verified Ltd business address, subject to all applicable UK GDPR/PECR requirements and opt-outs; otherwise do NOT automatically email. Calls require TPS/CTPS checks, and publicly available social profiles are not blanket consent for electronic direct marketing. Record contact eligibility separately and require Maz's approval for any send. A sole trader can be Gold.
 
 ## What every private lead record contains
 
@@ -51,7 +51,7 @@ Any UK business, any trade. A polished website is not an exclusion. A PDF, a mis
 2. Score breakdown (5 dimensions) and tier, plus the previous score if re-scored
 3. **Observed facts** (what we saw) kept separate from **commercial hypotheses** (what we think it costs) and **owner-confirmed** information (only after a conversation)
 4. Business consequence in one plain sentence (no invented £ losses)
-5. Proposed intervention: name the Offer v9 package or add-on. Starter = one genuinely useful automation. Recommend a Business System or custom work only when the confirmed scope warrants it.
+5. Proposed intervention: name the current live package or add-on. Starter = one genuinely useful automation. Recommend a Business System or custom work only when the confirmed scope warrants it.
 6. Contact route and decision-maker (if named)
 7. Unanswered questions (budget, urgency, current tools stay "unknown" until the owner says)
 8. Next action
@@ -82,7 +82,7 @@ BUSINESS NAME (Town) · Tier + score
 Contact: route / named decision-maker
 Problem (observed): one plain sentence + URL + date
 Consequence (hypothesis): one plain sentence
-Intervention: Offer v9 package or add-on
+Intervention: current live package or add-on
 Unknowns: what we still need to learn
 Next action: one line
 
@@ -92,7 +92,7 @@ When giving Maz several leads, use one short table, best first:
 
 | Lead | Tier | What's wrong (their words or evidence) | What we sell them | How to reach |
 |---|---|---|---|---|
-| Business (town) | 🥇 Gold 9 | One plain line: the repeated problem | Offer v9 package or add-on | Email (Ltd) / Call / Walk-in |
+| Business (town) | 🥇 Gold 9 | One plain line: the repeated problem | current live package or add-on | Email (Ltd) / Call / Walk-in |
 
 Keep each cell to one line. Details stay in the private record and HubSpot.
 
@@ -101,7 +101,7 @@ Keep each cell to one line. Details stay in the private record and HubSpot.
 Every lead added to HubSpot gets a **note on the company** headed `📞 PITCH + SCRIPT` (notes show on Maz's phone; custom properties don't). No lead is finished without one.
 
 - **Gold and Silver:** full note.
-  - **Pitch:** the solution in one line (Offer v9 package or add-on, named in plain words) + **Result:** the outcome for them.
+  - **Pitch:** the solution in one line (current live package or add-on, named in plain words) + **Result:** the outcome for them.
   - **Route:** Call, or Email from Gmail as info@mazworks.uk only if a confirmed Ltd.
   - **Script:** 1) who you are, 2) the one thing you noticed (their own words, job ad or evidence), 3) one discovery question, 4) the solution and outcome, 5) offer the free plan and fixed quote and ask for the best email. Plus a one-line answer to "no".
   - If they're **hiring** for the task, the pitch is: the system takes that work off the new hire (or covers it if they don't hire). Never "replace your staff".
