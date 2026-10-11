@@ -4,6 +4,8 @@
 
 ## Projects
 
+- [[wiki/projects/maz-works/EVENT-PROOF-PASS]] — 2026-10-11 NFC Proof Pass: reusable event card, seven-day return invitation and bounded personalised free-demo pilot; proposed, not built.
+
 - [[2026-09-06-maz-pocket-codex]] — element14 Batch A, PR #36, physical findings and Astra handoff.
 - [[2026-08-28-unified-memory-push-codex]] — final safe-push audit, bounded memory receipt, and exclusions for oversized/private untracked archives.
 - [[2026-08-27-maz-pocket-codex]] — MAZ Pocket v1 release-gap closure,
