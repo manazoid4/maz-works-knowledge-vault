@@ -12,6 +12,10 @@ production: https://mazworks.uk
 
 # Maz Works Site Status
 
+## 2026-10-11 — Event Proof Pass (proposed; NOT live)
+
+- [[wiki/projects/maz-works/EVENT-PROOF-PASS]] — owner-requested, reusable NFC return-pass concept for founder and small-business meetups. Working *test demo* via existing free-demo process plus optional seven-day personal walkthrough; no full production work promised. Stage: documentation/pilot only; do not override `NOW.md` priorities. No physical NFC test or software deployment verified.
+
 ## Sales context (updated 2026-09-25) — read first
 - **Sales operating guide + verified capability index + `/mw-council` five-lens review (2026-10-01):** [[SALES-OPERATING-GUIDE]]
 - Lead rules (**Lead Quality v2**, 28 Sep 2026) + hand-off format: [[maz-works-niche-needs]] (`prompts/maz-works-niche-needs.md`)
