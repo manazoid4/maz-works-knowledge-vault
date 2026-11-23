@@ -6,8 +6,7 @@ Lifecycle hooks for the Maz Works Knowledge Vault. All hooks are defined in `hoo
 
 | Event | Type | Purpose |
 |---|---|---|
-| `SessionStart` | command + prompt | Loads `wiki/hot.md` into context. Command type runs `[ -f wiki/hot.md ] && cat wiki/hot.md` as the canonical safety check (works for non-vault sessions without erroring). Prompt type complements with semantic context restoration. Matcher: `startup\|resume`. |
-| `PostCompact` | prompt | Re-loads `wiki/hot.md` after context compaction. Hook-injected context does NOT survive compaction (only `CLAUDE.md` does), so this hook restores the hot cache mid-session. |
+| `SessionStart` | command | Loads `wiki/hot.md` into context with `[ -f wiki/hot.md ] && cat wiki/hot.md` (no error outside a vault). Matcher: `startup\|resume\|compact`, so it also restores the hot cache after compaction. Claude Code rejects prompt-type hooks on SessionStart ("no conversation context is available"), so there is none; the old PostCompact prompt hook was replaced by the `compact` matcher (22 Nov 2026). |
 | `PostToolUse` | command | Auto-commits any wiki/ or .raw/ changes after Write or Edit tool calls. Guarded by `[ -d .git ]` so it never errors in non-git directories, and by `git diff --cached --quiet` so it never creates empty commits. |
 | `Stop` | prompt | Updates `wiki/hot.md` at the end of every Claude response with a brief summary of what changed. |
 
@@ -15,7 +14,7 @@ Lifecycle hooks for the Maz Works Knowledge Vault. All hooks are defined in `hoo
 
 `anthropics/claude-code#10875` documents that **plugin hook STDOUT may not be captured** by Claude Code, while identical inline hooks in `settings.json` work correctly.
 
-**Impact**: If this bug is active in your Claude Code version, the prompt-type SessionStart and PostCompact hooks may not inject context as expected.
+**Impact**: If this bug is active in your Claude Code version, the SessionStart command hook may not inject context as expected.
 
 **Workaround**: The command-type SessionStart hook (`cat wiki/hot.md`) is the canonical safety check. It relies on STDOUT capture for context injection, so test against this issue if hot cache restoration fails. As a fallback, copy the hook config from `hooks.json` into your user-level `~/.claude/settings.json` instead of relying on plugin hooks.
 
